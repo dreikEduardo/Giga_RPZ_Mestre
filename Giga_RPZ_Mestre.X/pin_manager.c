@@ -12,7 +12,7 @@ void PinManager_Initialize(void)
 
     ADCON1 = 0b00000110;
 
-    OPTION_REG = 0b00000111;
+    OPTION_REG = 0b00000100;
 }
 
 

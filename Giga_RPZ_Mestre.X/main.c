@@ -1,9 +1,7 @@
-// Nome do projeto: Giga Teste RAGZ
+// Nome do projeto: Giga Teste RPZ - Placa Mestre
 // Descrição:
-// Microcontrolador: PIC16F876
+// Microcontrolador: PIC16F876A
 // Compilador: XC8
-// Data - Revisão - Descrição
-// 08/04/2021 - v1.0 - Início
 
 // Bibliotecas 
 #include <xc.h>
@@ -20,7 +18,7 @@ void main(void)
 { 
     PinManager_Initialize();
     TMR0_Initialize();
-    PWM_Initialize();
+    //PWM_Initialize();
     USART_Initialize();
     Interrupt_Enable();
     
@@ -36,7 +34,7 @@ void main(void)
     timerchaveNF = 0;
     timerchaveNA = 0;
     timerpwm = 0;
-    pwm_setado = PWM_LAMPADA_DESLIGADA;
+    //pwm_setado = PWM_LAMPADA_DESLIGADA;
              
     while(1)
     {
@@ -82,6 +80,14 @@ void main(void)
         {
             timerfimcurso = 0;
             estado.fimcurso = 0;
+            if(estado.testando == 1)
+            {
+                estagio = INTERROMPIDO;
+                estado.testando = 0;
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x00;   
+                USART_Write(comunicacao.byte);
+            }
         }
         
         if(CHAVE_TESTE_NF == 0)
@@ -89,13 +95,17 @@ void main(void)
             if(estado.chaveNF == 0)
             {
                 if(timerchaveNF > TEMPO_DEBOUNCE)
-                    estado.chaveNF = 1; 
+                {
+                    estado.chaveNF = 1;
+                    LED_TESTE_NF = 1;
+                }
             }
         }
         else
         {
             timerchaveNF = 0;
             estado.chaveNF = 0;
+            LED_TESTE_NF = 0;
         }
 
         if(CHAVE_TESTE_NA == 0)
@@ -103,15 +113,20 @@ void main(void)
             if(estado.chaveNA == 0)
             {
                 if(timerchaveNA > TEMPO_DEBOUNCE)
+                {
                     estado.chaveNA = 1; 
+                    LED_TESTE_NA = 1;
+                }
             }
         }
         else
         {
             timerchaveNA = 0;
             estado.chaveNA = 0;
+            LED_TESTE_NA = 0;
         }
         
+        /*
         if(pwm_setado == PWM_LAMPADA_LIGADA)
         {
             PWM_LoadDutyValue(PWM_LAMPADA_LIGADA);
@@ -139,20 +154,30 @@ void main(void)
                 }
             }
         }
+        */
                 
         switch(estagio)
         {
             case INTERROMPIDO:
             {
-                if(timer > TEMPO_PISCADA)
+                if(timer < TEMPO_PISCADA)
                 {
-                    timer = 0;
-                    LED_DEFEITO_TESTE ^= 1;
-                    LED_TESTE_OK ^= 1; 
-                    LED_EM_TESTE ^= 1;
-                    LED_TESTE_NF ^= 1;
-                    LED_TESTE_NA ^= 1;
-                }                
+                    LED_DEFEITO_TESTE = 1;
+                    LED_TESTE_OK = 1; 
+                    LED_EM_TESTE = 1;
+                }
+                else
+                {
+                    LED_DEFEITO_TESTE = 0;
+                    LED_TESTE_OK = 0; 
+                    LED_EM_TESTE = 0;
+                    if(timer > (TEMPO_PISCADA*2))
+                        timer = 0;
+                }
+                //pwm_setado = PWM_LAMPADA_DESLIGADA;
+                LAMPADA = 0;
+                RELE_ALIMENTACAO_PLACA = 0;
+                RELE_VALVULA = 0;
                 if((estado.botao1 == 1) && (estado.botao2 == 1))
                     estagio = TESTE_BOTOES;
             }
@@ -165,16 +190,6 @@ void main(void)
                     if((timerbotao1 < 500) && (timerbotao2 < 500))
                         estagio = INICIA_TESTE;
                 }       
-                if(estado.chaveNF == 1)
-                {
-                    if(estado.tipo != 1)
-                        estado.tipo = 1;
-                }  
-                else
-                {
-                    if(estado.tipo != 0)
-                        estado.tipo = 0;
-                }
             }
             break;
             
@@ -208,9 +223,23 @@ void main(void)
             case ALIMENTA_PLACA:
             {
                 RELE_ALIMENTACAO_PLACA = 1;
-                pwm_setado = PWM_LAMPADA_LIGADA;
-                comunicacao.endereco = ENDERECO;
-                comunicacao.resposta = 5;
+                if(estado.chaveNA == 1)
+                    //pwm_setado = PWM_LAMPADA_DESLIGADA;
+                    LAMPADA = 0;
+                else
+                    //pwm_setado = PWM_LAMPADA_LIGADA;
+                    LAMPADA = 1;    
+                estado.testando = 1;
+                comunicacao.endereco = 0x0F;
+                if(estado.chaveNF == 1)
+                    comunicacao.resposta = 0x09;
+                else
+                {
+                    if(estado.chaveNA == 1)
+                        comunicacao.resposta = 0x05;
+                    else
+                        comunicacao.resposta = 0x03;   
+                }
                 USART_Write(comunicacao.byte);
                 timer = 0;
                 estagio = ESTABILIZACAO;
@@ -226,7 +255,12 @@ void main(void)
             
             case TESTE_LIGA:
             {
-                pwm_setado = PWM_LAMPADA_MIN;
+                if(estado.chaveNA == 1)
+                    //pwm_setado = PWM_LAMPADA_MAX;
+                    LAMPADA = 1;
+                else
+                    //pwm_setado = PWM_LAMPADA_MIN;
+                    LAMPADA = 0;  
                 timer = 0;
                 estagio = AGUARDA_TEMPO_LIGA;
             }
@@ -235,18 +269,18 @@ void main(void)
             case AGUARDA_TEMPO_LIGA:
             {
                 if(timer > TEMPO_LIGA)
-                {
-                    if(estado.reteste == 1)
-                        estagio = VERIFICA_PLACAS;
-                    else
-                        estagio = TESTE_DESLIGA;
-                }
+                    estagio = TESTE_DESLIGA;
             }
             break;
             
             case TESTE_DESLIGA:
             {
-                pwm_setado = PWM_LAMPADA_MAX;
+                if(estado.chaveNA == 1)
+                    //pwm_setado = PWM_LAMPADA_MIN;
+                    LAMPADA = 0;
+                else
+                    //pwm_setado = PWM_LAMPADA_MAX;
+                    LAMPADA = 1;  
                 timer = 0;
                 estagio = AGUARDA_TEMPO_DESLIGA;
             }
@@ -255,7 +289,12 @@ void main(void)
             case AGUARDA_TEMPO_DESLIGA:
             {
                 if(timer > TEMPO_DESLIGA)
-                    estagio = RETESTE;
+                {
+                    if(estado.reteste == 1)
+                        estagio = VERIFICA_PLACAS;
+                    else
+                        estagio = RETESTE;
+                }
             }
             break;
             
@@ -269,11 +308,12 @@ void main(void)
             case VERIFICA_PLACAS:
             {
                 endereco++;
-                if(endereco < 10)
+                if(endereco <= 10)
                 {
                     timer = 0;
                     USART_RX_Clear_Buffer();
                     comunicacao.endereco = endereco;
+                    comunicacao.resposta = 0x0F;
                     USART_Write(comunicacao.byte);
                     estagio = MENSAGEM_RETORNO;  
                 }
@@ -301,7 +341,7 @@ void main(void)
                         comunicacao.byte = USART_Read();
                         if(comunicacao.endereco == endereco)
                         {
-                            if(comunicacao.resposta != 3)
+                            if(comunicacao.resposta != 0x08)
                                 estado.falha = 1;
                         }
                         else
@@ -314,7 +354,8 @@ void main(void)
  
             case FALHA:
             {
-                pwm_setado = PWM_LAMPADA_DESLIGADA;
+                //pwm_setado = PWM_LAMPADA_DESLIGADA;
+                LAMPADA = 0;
                 LED_DEFEITO_TESTE = 1;
                 BUZZER = 1;
                 timer = 0;
@@ -324,7 +365,8 @@ void main(void)
             
             case OK:
             {
-                pwm_setado = PWM_LAMPADA_DESLIGADA;
+                //pwm_setado = PWM_LAMPADA_DESLIGADA;
+                LAMPADA = 0;
                 LED_TESTE_OK = 1;
                 estagio = TESTE_FINALIZADO;
             }
@@ -337,8 +379,10 @@ void main(void)
                     BUZZER = 0;
                     estagio = TESTE_BOTOES;
                 }
+                LED_EM_TESTE = 0;
                 RELE_ALIMENTACAO_PLACA = 0;
                 RELE_VALVULA = 0;
+                estado.testando = 0;
             }
             break;
 

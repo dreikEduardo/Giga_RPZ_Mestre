@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>Giga_RPZ_Mestre_v1</name>
+            <name>Giga_RPZ_Mestre</name>
             <creation-uuid>07c0d13a-b29b-4614-9043-87148052d378</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
@@ -14,7 +14,6 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
-                <sourceRootElem>../Giga_RPZ_Escravo_v1.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

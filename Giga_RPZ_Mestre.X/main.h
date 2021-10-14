@@ -11,8 +11,8 @@ unsigned char timerchaveNF = 0;
 unsigned char timerchaveNA = 0;
 unsigned int timer = 0;
 unsigned char timerpwm = 0;
-unsigned int pwm_setado = 0;
-unsigned int pwm_atual = 0;
+unsigned char pwm_setado = 0;
+unsigned char pwm_atual = 0;
 unsigned char endereco = 0;
 
 union
@@ -21,8 +21,7 @@ union
     struct
     {
         unsigned endereco:4;
-        unsigned tipo:1;
-        unsigned resposta:3;
+        unsigned resposta:4;
     };
 }comunicacao;
 
@@ -34,11 +33,9 @@ struct
     unsigned fimcurso:1;
     unsigned chaveNF:1;
     unsigned chaveNA:1;
-    unsigned tipo:1;
+    unsigned testando:1;
     unsigned reteste:1;
     unsigned falha:1;
-    unsigned dadorecebido:1;
-    unsigned :7;
 }estado;
 
 static enum _estagio
@@ -73,8 +70,8 @@ static enum _estagio
 #define TEMPO_BUZZER 2000           //2s -> base de tempo 1ms
 #define TEMPO_RAMPA_PWM 10
 #define PWM_LAMPADA_LIGADA 150 
-#define PWM_LAMPADA_MAX 120      
-#define PWM_LAMPADA_MIN 80
+#define PWM_LAMPADA_MAX 80     
+#define PWM_LAMPADA_MIN 20
 #define PWM_LAMPADA_DESLIGADA 0 
 
 #endif

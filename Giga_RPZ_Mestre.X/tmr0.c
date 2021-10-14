@@ -27,3 +27,18 @@ void TMR0_ISR(void)
     TMR0 = 0x64;
     INTCONbits.T0IF = 0;
 }
+
+    /*
+    dutyCycle++;
+    if(dutyCycle > 9)
+        dutyCycle = 0;
+    if(pwm_atual == 0)
+        LAMPADA = 0;
+    else
+    {
+        if(dutyCycle > pwm_atual)
+            LAMPADA = 0;
+        else
+            LAMPADA = 1;   
+    }
+    */

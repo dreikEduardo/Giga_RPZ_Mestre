@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Giga_RPZ_Mestre_v1.X
+PROJECTNAME=Giga_RPZ_Mestre.X
 
 # Active Configuration
 DEFAULTCONF=default

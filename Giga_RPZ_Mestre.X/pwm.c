@@ -11,8 +11,7 @@ void PWM_Initialize(void)
     PWM_LoadDutyValue(0);
 }
 
-void PWM_LoadDutyValue(unsigned int dutyValue)
+void PWM_LoadDutyValue(unsigned char dutyValue)
 {
-    CCPR1L = ((dutyValue & 0x03FC)>>2);
-    CCP1CON = ((unsigned char)(CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+    CCPR1L = dutyValue;
 }
