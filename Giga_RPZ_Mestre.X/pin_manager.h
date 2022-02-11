@@ -13,7 +13,7 @@ void PinManager_Initialize(void);
 #define FIM_CURSO PORTBbits.RB2
 #define CHAVE_TESTE_NF PORTBbits.RB3
 #define CHAVE_TESTE_NA PORTBbits.RB4
-#define RESERVA PORTBbits.RB5
+#define CHAVE_TESTE_COPO PORTBbits.RB5
 #define RX PORTCbits.RC7
 
 // Saídas

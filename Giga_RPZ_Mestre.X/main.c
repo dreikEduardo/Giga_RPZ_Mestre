@@ -17,10 +17,13 @@
 void main(void)
 { 
     PinManager_Initialize();
+    PWM_Initialize();
     TMR0_Initialize();
-    //PWM_Initialize();
     USART_Initialize();
     Interrupt_Enable();
+    
+    PR2 = 0xFF;             
+    T2CON = 0b00000111;    
     
     estagio = INTERROMPIDO;
     estado.botao1 = 0;
@@ -28,18 +31,20 @@ void main(void)
     estado.fimcurso = 0;
     estado.chaveNF = 0;
     estado.chaveNA = 0;
+    estado.chavecopo = 0;
     timerbotao1 = 0;
     timerbotao2 = 0;
     timerfimcurso = 0;
     timerchaveNF = 0;
     timerchaveNA = 0;
+    timerchavecopo = 0;
     timerpwm = 0;
-    //pwm_setado = PWM_LAMPADA_DESLIGADA;
-             
+    pwm_setado = PWM_LAMPADA_DESLIGADA;
+              
     while(1)
     {
         CLRWDT();
-        
+         
         if(BOTAO_1 == 0)
         {
             if(estado.botao1 == 0)
@@ -114,7 +119,7 @@ void main(void)
             {
                 if(timerchaveNA > TEMPO_DEBOUNCE)
                 {
-                    estado.chaveNA = 1; 
+                    estado.chaveNA = 1;
                     LED_TESTE_NA = 1;
                 }
             }
@@ -126,17 +131,61 @@ void main(void)
             LED_TESTE_NA = 0;
         }
         
-        /*
-        if(pwm_setado == PWM_LAMPADA_LIGADA)
+        if(CHAVE_TESTE_COPO == 0)
         {
-            PWM_LoadDutyValue(PWM_LAMPADA_LIGADA);
-            pwm_atual = PWM_LAMPADA_LIGADA;
+            if(estado.chavecopo == 0)
+            {
+                if(timerchavecopo > TEMPO_DEBOUNCE)
+                    estado.chavecopo = 1;
+            }
         }
+        else
+        {
+            timerchavecopo = 0;
+            estado.chavecopo = 0;
+        }
+        
+        if(pwm_setado == PWM_LAMPADA_MAX)
+        {
+            if(pwm_atual == PWM_LAMPADA_DESLIGADA)
+            {
+                LAMPADA = 1;
+                pwm_atual++;
+            }
+            else
+            {
+                if(pwm_atual == PWM_LAMPADA_MAX)
+                {
+                    CCP1CON = 0b00001111;
+                    PWM_LoadDutyValue(PWM_LAMPADA_MAX);
+                }
+            }
+        }
+        
+        if(pwm_setado == PWM_LAMPADA_MAX_COPO)
+        {
+            if(pwm_atual == PWM_LAMPADA_DESLIGADA)
+            {
+                LAMPADA = 1;
+                pwm_atual++;
+            }
+            else
+            {
+                if(pwm_atual == PWM_LAMPADA_MAX_COPO)
+                {
+                    CCP1CON = 0b00001111;
+                    PWM_LoadDutyValue(PWM_LAMPADA_MAX_COPO);
+                }
+            }
+        }
+        
         if(pwm_setado == PWM_LAMPADA_DESLIGADA)
         {
-            PWM_LoadDutyValue(PWM_LAMPADA_DESLIGADA);
+            CCP1CON = 0b00000000;
+            LAMPADA = 0;
             pwm_atual = PWM_LAMPADA_DESLIGADA;
         }
+        
         if(timerpwm > TEMPO_RAMPA_PWM)
         {
             timerpwm = 0;
@@ -144,18 +193,19 @@ void main(void)
             {
                 if(pwm_atual < pwm_setado)
                 {
-                    pwm_atual++;
+                    if(pwm_atual < 1000)
+                        pwm_atual++;
                     PWM_LoadDutyValue(pwm_atual);
                 }
                 else
                 {
-                    pwm_atual--;
+                    if(pwm_atual > 0)
+                        pwm_atual--;  
                     PWM_LoadDutyValue(pwm_atual);
                 }
             }
         }
-        */
-                
+       
         switch(estagio)
         {
             case INTERROMPIDO:
@@ -174,8 +224,7 @@ void main(void)
                     if(timer > (TEMPO_PISCADA*2))
                         timer = 0;
                 }
-                //pwm_setado = PWM_LAMPADA_DESLIGADA;
-                LAMPADA = 0;
+                pwm_setado = PWM_LAMPADA_DESLIGADA;
                 RELE_ALIMENTACAO_PLACA = 0;
                 RELE_VALVULA = 0;
                 if((estado.botao1 == 1) && (estado.botao2 == 1))
@@ -203,6 +252,7 @@ void main(void)
                 estado.reteste = 0;
                 estado.falha = 0;
                 endereco = 0;
+                escravo.byte = 0;
                 timer = 0;
                 estagio = TESTE_TAMPA_FECHADA;
             }
@@ -211,38 +261,47 @@ void main(void)
             case TESTE_TAMPA_FECHADA:
             {
                 if(timer > TEMPO_FECHA_TAMPA)
-                    estagio = FALHA;
+                    estagio = FALHA_FIM_CURSO;
                 else
                 {
                     if(estado.fimcurso == 1)
+                    {
+                        timer = 0;
                         estagio = ALIMENTA_PLACA;
+                    }
                 }
             }
             break;
             
             case ALIMENTA_PLACA:
             {
-                RELE_ALIMENTACAO_PLACA = 1;
-                if(estado.chaveNA == 1)
-                    //pwm_setado = PWM_LAMPADA_DESLIGADA;
-                    LAMPADA = 0;
-                else
-                    //pwm_setado = PWM_LAMPADA_LIGADA;
-                    LAMPADA = 1;    
                 estado.testando = 1;
-                comunicacao.endereco = 0x0F;
-                if(estado.chaveNF == 1)
-                    comunicacao.resposta = 0x09;
+                if(estado.chaveNA == 1)
+                    pwm_setado = PWM_LAMPADA_DESLIGADA;
                 else
                 {
-                    if(estado.chaveNA == 1)
-                        comunicacao.resposta = 0x05;
+                    if(estado.chavecopo == 1)
+                        pwm_setado = PWM_LAMPADA_MAX_COPO;
                     else
-                        comunicacao.resposta = 0x03;   
+                        pwm_setado = PWM_LAMPADA_MAX; 
                 }
-                USART_Write(comunicacao.byte);
-                timer = 0;
-                estagio = ESTABILIZACAO;
+                if(timer > 2000)
+                {
+                    RELE_ALIMENTACAO_PLACA = 1;
+                    comunicacao.endereco = 0x0F;
+                    if(estado.chaveNF == 1)
+                        comunicacao.resposta = 0x09;
+                    else
+                    {
+                        if(estado.chaveNA == 1)
+                            comunicacao.resposta = 0x05;
+                        else
+                            comunicacao.resposta = 0x03;
+                    }
+                    USART_Write(comunicacao.byte);
+                    timer = 0;
+                    estagio = ESTABILIZACAO;
+                }
             }
             break;
              
@@ -250,17 +309,42 @@ void main(void)
             {
                 if(timer > TEMPO_ESTABILIZACAO)
                     estagio = TESTE_LIGA;
+                
+                if(USART_RX_Ready() == 0)
+                    timeoutRx = 0;
+                else
+                {
+                    if(timeoutRx > TEMPO_TIMEOUT_RX)
+                    {
+                        USART_RX_Clear_Buffer();
+                        timeoutRx = 0;
+                    }
+                }
+        
+                if(USART_RX_Ready() == 1)
+                {
+                    comunicacao.byte = USART_Read();
+                    if(comunicacao.endereco == 0x00)
+                    {
+                        if(comunicacao.resposta == 0x0F)
+                        {
+                            estagio = FALHA;
+                            estado.testando = 0;
+                            comunicacao.endereco = 0x0F;
+                            comunicacao.resposta = 0x00;   
+                            USART_Write(comunicacao.byte);
+                        }
+                    }
+                }
             }
             break;
             
             case TESTE_LIGA:
             {
                 if(estado.chaveNA == 1)
-                    //pwm_setado = PWM_LAMPADA_MAX;
-                    LAMPADA = 1;
+                    pwm_setado = PWM_LAMPADA_MAX;
                 else
-                    //pwm_setado = PWM_LAMPADA_MIN;
-                    LAMPADA = 0;  
+                    pwm_setado = PWM_LAMPADA_MIN;
                 timer = 0;
                 estagio = AGUARDA_TEMPO_LIGA;
             }
@@ -268,32 +352,196 @@ void main(void)
             
             case AGUARDA_TEMPO_LIGA:
             {
-                if(timer > TEMPO_LIGA)
-                    estagio = TESTE_DESLIGA;
+                if((timer > TEMPO_LIGA) || (escravo.byte == 0x03FF))
+                {
+                    if(timer > TEMPO_LIGADO)
+                    {
+                        escravo.byte = 0;
+                        endereco = 0;
+                        estagio = TESTE_DESLIGA;
+                    }
+                }
+                else
+                    estagio = VERIFICA_PLACAS_LIGA;
+            }
+            break;
+            
+            case VERIFICA_PLACAS_LIGA:
+            {
+                endereco++;
+                if(endereco <= 10)
+                {
+                    timeoutRx = 0;
+                    USART_RX_Clear_Buffer();
+                    comunicacao.endereco = endereco;
+                    comunicacao.resposta = 0x0F;
+                    USART_Write(comunicacao.byte);
+                    estagio = MENSAGEM_RETORNO_PLACAS_LIGA;  
+                }
+                else
+                    endereco = 0;
+            }
+            break;
+            
+            case MENSAGEM_RETORNO_PLACAS_LIGA:
+            {
+                if(timeoutRx > TEMPO_TIMEOUT_RX)
+                    estagio = AGUARDA_TEMPO_LIGA;
+                else
+                {
+                    if(USART_RX_Ready() == 1)
+                    {
+                        comunicacao.byte = USART_Read();
+                        if(comunicacao.endereco == endereco)
+                        {
+                            if(comunicacao.resposta != 0x00)
+                            {
+                                switch(endereco)
+                                {
+                                    case 1:
+                                        escravo.endereco1 = 1;
+                                    break; 
+                                    case 2:
+                                        escravo.endereco2 = 1;
+                                    break;
+                                    case 3:
+                                        escravo.endereco3 = 1;
+                                    break; 
+                                    case 4:
+                                        escravo.endereco4 = 1;
+                                    break; 
+                                    case 5:
+                                        escravo.endereco5 = 1;
+                                    break; 
+                                    case 6:
+                                        escravo.endereco6 = 1;
+                                    break;
+                                    case 7:
+                                        escravo.endereco7 = 1;
+                                    break; 
+                                    case 8:
+                                        escravo.endereco8 = 1;
+                                    break; 
+                                    case 9:
+                                        escravo.endereco9 = 1;
+                                    break; 
+                                    case 10:
+                                        escravo.endereco10 = 1;
+                                    break; 
+                                }      
+                            }
+                        }
+                        estagio = AGUARDA_TEMPO_LIGA;
+                    }
+                }
             }
             break;
             
             case TESTE_DESLIGA:
             {
                 if(estado.chaveNA == 1)
-                    //pwm_setado = PWM_LAMPADA_MIN;
-                    LAMPADA = 0;
+                    pwm_setado = PWM_LAMPADA_MIN;
                 else
-                    //pwm_setado = PWM_LAMPADA_MAX;
-                    LAMPADA = 1;  
+                {
+                    if(estado.chavecopo == 1)
+                        pwm_setado = PWM_LAMPADA_MAX_COPO;
+                    else
+                        pwm_setado = PWM_LAMPADA_MAX; 
+                } 
                 timer = 0;
                 estagio = AGUARDA_TEMPO_DESLIGA;
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x07;
+                USART_Write(comunicacao.byte);
             }
             break;
             
             case AGUARDA_TEMPO_DESLIGA:
             {
-                if(timer > TEMPO_DESLIGA)
+                if((timer > TEMPO_DESLIGA) || (escravo.byte == 0x03FF))
                 {
-                    if(estado.reteste == 1)
-                        estagio = VERIFICA_PLACAS;
-                    else
-                        estagio = RETESTE;
+                    if((timer > TEMPO_DESLIGADO) || (estado.reteste == 1))
+                    {
+                        escravo.byte = 0;
+                        endereco = 0;
+                        if(estado.reteste == 1)
+                            estagio = VERIFICA_PLACAS;
+                        else
+                            estagio = RETESTE;
+                    }
+                }
+                else
+                    estagio = VERIFICA_PLACAS_DESLIGA;
+            }
+            break;
+            
+            case VERIFICA_PLACAS_DESLIGA:
+            {
+                endereco++;
+                if(endereco <= 10)
+                {
+                    timeoutRx = 0;
+                    USART_RX_Clear_Buffer();
+                    comunicacao.endereco = endereco;
+                    comunicacao.resposta = 0x0F;
+                    USART_Write(comunicacao.byte);
+                    estagio = MENSAGEM_RETORNO_PLACAS_DESLIGA;  
+                }
+                else
+                    endereco = 0;
+            }
+            break;
+            
+            case MENSAGEM_RETORNO_PLACAS_DESLIGA:
+            {
+                if(timeoutRx > TEMPO_TIMEOUT_RX)
+                    estagio = AGUARDA_TEMPO_DESLIGA;
+                else
+                {
+                    if(USART_RX_Ready() == 1)
+                    {
+                        comunicacao.byte = USART_Read();
+                        if(comunicacao.endereco == endereco)
+                        {
+                            if(comunicacao.resposta != 0x00)
+                            {
+                                switch(endereco)
+                                {
+                                    case 1:
+                                        escravo.endereco1 = 1;
+                                    break; 
+                                    case 2:
+                                        escravo.endereco2 = 1;
+                                    break;
+                                    case 3:
+                                        escravo.endereco3 = 1;
+                                    break; 
+                                    case 4:
+                                        escravo.endereco4 = 1;
+                                    break; 
+                                    case 5:
+                                        escravo.endereco5 = 1;
+                                    break; 
+                                    case 6:
+                                        escravo.endereco6 = 1;
+                                    break;
+                                    case 7:
+                                        escravo.endereco7 = 1;
+                                    break; 
+                                    case 8:
+                                        escravo.endereco8 = 1;
+                                    break; 
+                                    case 9:
+                                        escravo.endereco9 = 1;
+                                    break; 
+                                    case 10:
+                                        escravo.endereco10 = 1;
+                                    break; 
+                                }      
+                            }
+                        }
+                        estagio = AGUARDA_TEMPO_DESLIGA;
+                    }
                 }
             }
             break;
@@ -302,6 +550,9 @@ void main(void)
             {
                 estado.reteste = 1;
                 estagio = TESTE_LIGA;
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x0C;
+                USART_Write(comunicacao.byte);
             }
             break;
             
@@ -310,12 +561,12 @@ void main(void)
                 endereco++;
                 if(endereco <= 10)
                 {
-                    timer = 0;
+                    timeoutRx = 0;
                     USART_RX_Clear_Buffer();
                     comunicacao.endereco = endereco;
                     comunicacao.resposta = 0x0F;
                     USART_Write(comunicacao.byte);
-                    estagio = MENSAGEM_RETORNO;  
+                    estagio = MENSAGEM_RETORNO_PLACAS;  
                 }
                 else
                 {
@@ -327,9 +578,9 @@ void main(void)
             }
             break;            
 
-            case MENSAGEM_RETORNO:
+            case MENSAGEM_RETORNO_PLACAS:
             {
-                if(timer > TEMPO_TIMEOUT_RX)
+                if(timeoutRx > TEMPO_TIMEOUT_RX)
                 {
                     estado.falha = 1;
                     estagio = VERIFICA_PLACAS;
@@ -350,12 +601,24 @@ void main(void)
                     }
                 }
             }
-            break;               
+            break;
+            
+            case FALHA_FIM_CURSO:
+            {
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x00;   
+                USART_Write(comunicacao.byte);
+                pwm_setado = PWM_LAMPADA_DESLIGADA;
+                LED_DEFEITO_TESTE = 1;
+                BUZZER = 1;
+                timer = 0;
+                estagio = TESTE_FINALIZADO;
+            }
+            break;
  
             case FALHA:
             {
-                //pwm_setado = PWM_LAMPADA_DESLIGADA;
-                LAMPADA = 0;
+                pwm_setado = PWM_LAMPADA_DESLIGADA;
                 LED_DEFEITO_TESTE = 1;
                 BUZZER = 1;
                 timer = 0;
@@ -365,8 +628,7 @@ void main(void)
             
             case OK:
             {
-                //pwm_setado = PWM_LAMPADA_DESLIGADA;
-                LAMPADA = 0;
+                pwm_setado = PWM_LAMPADA_DESLIGADA;
                 LED_TESTE_OK = 1;
                 estagio = TESTE_FINALIZADO;
             }

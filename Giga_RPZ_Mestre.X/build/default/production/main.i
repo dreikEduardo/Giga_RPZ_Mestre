@@ -4,7 +4,7 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\language_support.h" 1 3
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
 
@@ -13,8 +13,8 @@
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
+# 18 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
@@ -25,22 +25,22 @@ extern double __fpnormalize(double);
 # 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\xc8debug.h" 3
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
-# 23 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 2 3
+# 24 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\builtins.h" 1 3
 
 
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 1 3
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 1 3
-# 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int8_t;
 
 
 
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 1 3
 
 
 
-typedef signed int int16_t;
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
+# 5 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\htc.h" 2 3
+# 6 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 2 3
 
 
 
@@ -48,166 +48,12 @@ typedef signed int int16_t;
 
 
 
-typedef __int24 int24_t;
-
-
-
-
-
-
-
-typedef signed long int int32_t;
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint8_t;
-
-
-
-
-
-typedef unsigned int uint16_t;
-
-
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-
-
-typedef unsigned long int uint32_t;
-# 88 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_least8_t;
-
-
-
-
-
-
-
-typedef signed int int_least16_t;
-# 109 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_least24_t;
-# 118 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed long int int_least32_t;
-# 136 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_least8_t;
-
-
-
-
-
-
-typedef unsigned int uint_least16_t;
-# 154 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_least24_t;
-
-
-
-
-
-
-
-typedef unsigned long int uint_least32_t;
-# 181 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef signed char int_fast8_t;
-
-
-
-
-
-
-typedef signed int int_fast16_t;
-# 200 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __int24 int_fast24_t;
-
-
-
-
-
-
-
-typedef signed long int int_fast32_t;
-# 224 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef unsigned char uint_fast8_t;
-
-
-
-
-
-typedef unsigned int uint_fast16_t;
-# 240 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef __uint24 uint_fast24_t;
-
-
-
-
-
-
-typedef unsigned long int uint_fast32_t;
-# 268 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef int32_t intmax_t;
-# 282 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c90\\stdint.h" 3
-typedef uint32_t uintmax_t;
-
-
-
-
-
-
-typedef int16_t intptr_t;
-
-
-
-
-typedef uint16_t uintptr_t;
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\builtins.h" 2 3
-
-
-
-#pragma intrinsic(__nop)
-extern void __nop(void);
-
-
-#pragma intrinsic(_delay)
-extern __attribute__((nonreentrant)) void _delay(uint32_t);
-#pragma intrinsic(_delaywdt)
-extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 2 3
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 1 3
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\htc.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\htc.h" 2 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 2 3
-
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic_chip_select.h" 1 3
-# 2664 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic_chip_select.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 1 3
-# 45 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\__at.h" 1 3
-# 45 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 2 3
-
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic_chip_select.h" 1 3
+# 643 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic_chip_select.h" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 1 3
+# 44 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__at.h" 1 3
+# 45 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 2 3
 
 
 
@@ -263,7 +109,7 @@ typedef union {
     };
 } STATUSbits_t;
 extern volatile STATUSbits_t STATUSbits __attribute__((address(0x003)));
-# 160 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 159 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char FSR __attribute__((address(0x004)));
 
 __asm("FSR equ 04h");
@@ -287,7 +133,7 @@ typedef union {
     };
 } PORTAbits_t;
 extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
-# 217 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 216 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PORTB __attribute__((address(0x006)));
 
 __asm("PORTB equ 06h");
@@ -306,7 +152,7 @@ typedef union {
     };
 } PORTBbits_t;
 extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
-# 279 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 278 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PORTC __attribute__((address(0x007)));
 
 __asm("PORTC equ 07h");
@@ -325,7 +171,7 @@ typedef union {
     };
 } PORTCbits_t;
 extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
-# 341 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 340 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PCLATH __attribute__((address(0x00A)));
 
 __asm("PCLATH equ 0Ah");
@@ -337,7 +183,7 @@ typedef union {
     };
 } PCLATHbits_t;
 extern volatile PCLATHbits_t PCLATHbits __attribute__((address(0x00A)));
-# 361 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 360 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char INTCON __attribute__((address(0x00B)));
 
 __asm("INTCON equ 0Bh");
@@ -362,7 +208,7 @@ typedef union {
     };
 } INTCONbits_t;
 extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-# 439 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 438 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PIR1 __attribute__((address(0x00C)));
 
 __asm("PIR1 equ 0Ch");
@@ -380,7 +226,7 @@ typedef union {
     };
 } PIR1bits_t;
 extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
-# 495 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 494 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PIR2 __attribute__((address(0x00D)));
 
 __asm("PIR2 equ 0Dh");
@@ -397,7 +243,7 @@ typedef union {
     };
 } PIR2bits_t;
 extern volatile PIR2bits_t PIR2bits __attribute__((address(0x00D)));
-# 535 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 534 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned short TMR1 __attribute__((address(0x00E)));
 
 __asm("TMR1 equ 0Eh");
@@ -445,7 +291,7 @@ typedef union {
     };
 } T1CONbits_t;
 extern volatile T1CONbits_t T1CONbits __attribute__((address(0x010)));
-# 631 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 630 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TMR2 __attribute__((address(0x011)));
 
 __asm("TMR2 equ 011h");
@@ -475,7 +321,7 @@ typedef union {
     };
 } T2CONbits_t;
 extern volatile T2CONbits_t T2CONbits __attribute__((address(0x012)));
-# 709 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 708 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char SSPBUF __attribute__((address(0x013)));
 
 __asm("SSPBUF equ 013h");
@@ -504,7 +350,7 @@ typedef union {
     };
 } SSPCONbits_t;
 extern volatile SSPCONbits_t SSPCONbits __attribute__((address(0x014)));
-# 786 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 785 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned short CCPR1 __attribute__((address(0x015)));
 
 __asm("CCPR1 equ 015h");
@@ -545,7 +391,7 @@ typedef union {
     };
 } CCP1CONbits_t;
 extern volatile CCP1CONbits_t CCP1CONbits __attribute__((address(0x017)));
-# 865 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 864 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char RCSTA __attribute__((address(0x018)));
 
 __asm("RCSTA equ 018h");
@@ -577,7 +423,7 @@ typedef union {
     };
 } RCSTAbits_t;
 extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x018)));
-# 960 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 959 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TXREG __attribute__((address(0x019)));
 
 __asm("TXREG equ 019h");
@@ -632,7 +478,7 @@ typedef union {
     };
 } CCP2CONbits_t;
 extern volatile CCP2CONbits_t CCP2CONbits __attribute__((address(0x01D)));
-# 1053 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1052 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
 
 __asm("ADRESH equ 01Eh");
@@ -672,7 +518,7 @@ typedef union {
     };
 } ADCON0bits_t;
 extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
-# 1156 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1155 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char OPTION_REG __attribute__((address(0x081)));
 
 __asm("OPTION_REG equ 081h");
@@ -694,7 +540,7 @@ typedef union {
     };
 } OPTION_REGbits_t;
 extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x081)));
-# 1226 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1225 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TRISA __attribute__((address(0x085)));
 
 __asm("TRISA equ 085h");
@@ -711,7 +557,7 @@ typedef union {
     };
 } TRISAbits_t;
 extern volatile TRISAbits_t TRISAbits __attribute__((address(0x085)));
-# 1276 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1275 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TRISB __attribute__((address(0x086)));
 
 __asm("TRISB equ 086h");
@@ -730,7 +576,7 @@ typedef union {
     };
 } TRISBbits_t;
 extern volatile TRISBbits_t TRISBbits __attribute__((address(0x086)));
-# 1338 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1337 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TRISC __attribute__((address(0x087)));
 
 __asm("TRISC equ 087h");
@@ -749,7 +595,7 @@ typedef union {
     };
 } TRISCbits_t;
 extern volatile TRISCbits_t TRISCbits __attribute__((address(0x087)));
-# 1400 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1399 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PIE1 __attribute__((address(0x08C)));
 
 __asm("PIE1 equ 08Ch");
@@ -767,7 +613,7 @@ typedef union {
     };
 } PIE1bits_t;
 extern volatile PIE1bits_t PIE1bits __attribute__((address(0x08C)));
-# 1456 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1455 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PIE2 __attribute__((address(0x08D)));
 
 __asm("PIE2 equ 08Dh");
@@ -784,7 +630,7 @@ typedef union {
     };
 } PIE2bits_t;
 extern volatile PIE2bits_t PIE2bits __attribute__((address(0x08D)));
-# 1496 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1495 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PCON __attribute__((address(0x08E)));
 
 __asm("PCON equ 08Eh");
@@ -800,7 +646,7 @@ typedef union {
     };
 } PCONbits_t;
 extern volatile PCONbits_t PCONbits __attribute__((address(0x08E)));
-# 1530 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1529 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char SSPCON2 __attribute__((address(0x091)));
 
 __asm("SSPCON2 equ 091h");
@@ -819,7 +665,7 @@ typedef union {
     };
 } SSPCON2bits_t;
 extern volatile SSPCON2bits_t SSPCON2bits __attribute__((address(0x091)));
-# 1592 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1591 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char PR2 __attribute__((address(0x092)));
 
 __asm("PR2 equ 092h");
@@ -889,7 +735,7 @@ typedef union {
     };
 } SSPSTATbits_t;
 extern volatile SSPSTATbits_t SSPSTATbits __attribute__((address(0x094)));
-# 1775 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1774 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char TXSTA __attribute__((address(0x098)));
 
 __asm("TXSTA equ 098h");
@@ -917,7 +763,7 @@ typedef union {
     };
 } TXSTAbits_t;
 extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x098)));
-# 1856 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1855 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char SPBRG __attribute__((address(0x099)));
 
 __asm("SPBRG equ 099h");
@@ -946,7 +792,7 @@ typedef union {
     };
 } CMCONbits_t;
 extern volatile CMCONbits_t CMCONbits __attribute__((address(0x09C)));
-# 1933 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1932 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char CVRCON __attribute__((address(0x09D)));
 
 __asm("CVRCON equ 09Dh");
@@ -968,7 +814,7 @@ typedef union {
     };
 } CVRCONbits_t;
 extern volatile CVRCONbits_t CVRCONbits __attribute__((address(0x09D)));
-# 1998 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 1997 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
 
 __asm("ADRESL equ 09Eh");
@@ -996,7 +842,7 @@ typedef union {
     };
 } ADCON1bits_t;
 extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x09F)));
-# 2064 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 2063 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char EEDATA __attribute__((address(0x10C)));
 
 __asm("EEDATA equ 010Ch");
@@ -1041,11 +887,11 @@ typedef union {
     };
 } EECON1bits_t;
 extern volatile EECON1bits_t EECON1bits __attribute__((address(0x18C)));
-# 2137 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 2136 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile unsigned char EECON2 __attribute__((address(0x18D)));
 
 __asm("EECON2 equ 018Dh");
-# 2150 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic16f876a.h" 3
+# 2149 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\proc\\pic16f876a.h" 3
 extern volatile __bit ACKDT __attribute__((address(0x48D)));
 
 
@@ -1686,9 +1532,12 @@ extern volatile __bit nW __attribute__((address(0x4A2)));
 
 
 extern volatile __bit nWRITE __attribute__((address(0x4A2)));
-# 2664 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic_chip_select.h" 2 3
-# 13 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 2 3
-# 76 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 3
+# 644 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic_chip_select.h" 2 3
+# 14 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 2 3
+# 30 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 3
+#pragma intrinsic(__nop)
+extern void __nop(void);
+# 78 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 3
 __attribute__((__unsupported__("The " "FLASH_READ" " macro function is no longer supported. Please use the MPLAB X MCC."))) unsigned char __flash_read(unsigned short addr);
 
 __attribute__((__unsupported__("The " "FLASH_WRITE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_write(unsigned short addr, unsigned short data);
@@ -1697,16 +1546,25 @@ __attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longe
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\eeprom_routines.h" 1 3
-# 114 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\eeprom_routines.h" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\eeprom_routines.h" 1 3
+# 114 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\eeprom_routines.h" 3
 extern void eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
-# 83 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 2 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\pic.h" 3
+# 86 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 2 3
+
+
+
+
+
+#pragma intrinsic(_delay)
+extern __attribute__((nonreentrant)) void _delay(unsigned long);
+#pragma intrinsic(_delaywdt)
+extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
+# 137 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\pic.h" 3
 extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
-# 28 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 2 3
+# 28 "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
 # 7 "main.c" 2
 
 # 1 "./main.h" 1
@@ -1721,12 +1579,13 @@ unsigned int timerbotao2 = 0;
 unsigned char timerfimcurso = 0;
 unsigned char timerchaveNF = 0;
 unsigned char timerchaveNA = 0;
+unsigned char timerchavecopo = 0;
 unsigned int timer = 0;
-unsigned char timerpwm = 0;
-unsigned char pwm_setado = 0;
-unsigned char pwm_atual = 0;
+unsigned int timerpwm = 0;
+unsigned char timeoutRx = 0;
+unsigned int pwm_setado = 0;
+unsigned int pwm_atual = 0;
 unsigned char endereco = 0;
-
 union
 {
     unsigned char byte;
@@ -1736,6 +1595,24 @@ union
         unsigned resposta:4;
     };
 }comunicacao;
+union
+{
+    unsigned int byte;
+    struct
+    {
+        unsigned endereco1:1;
+        unsigned endereco2:1;
+        unsigned endereco3:1;
+        unsigned endereco4:1;
+        unsigned endereco5:1;
+        unsigned endereco6:1;
+        unsigned endereco7:1;
+        unsigned endereco8:1;
+        unsigned endereco9:1;
+        unsigned endereco10:1;
+        unsigned :6;
+    };
+}escravo;
 
 
 struct
@@ -1745,9 +1622,11 @@ struct
     unsigned fimcurso:1;
     unsigned chaveNF:1;
     unsigned chaveNA:1;
+    unsigned chavecopo:1;
     unsigned testando:1;
     unsigned reteste:1;
     unsigned falha:1;
+    unsigned :7;
 }estado;
 
 static enum _estagio
@@ -1760,11 +1639,16 @@ static enum _estagio
     ESTABILIZACAO,
     TESTE_LIGA,
     AGUARDA_TEMPO_LIGA,
+    VERIFICA_PLACAS_LIGA,
+    MENSAGEM_RETORNO_PLACAS_LIGA,
     TESTE_DESLIGA,
     AGUARDA_TEMPO_DESLIGA,
+    VERIFICA_PLACAS_DESLIGA,
+    MENSAGEM_RETORNO_PLACAS_DESLIGA,
     RETESTE,
     VERIFICA_PLACAS,
-    MENSAGEM_RETORNO,
+    MENSAGEM_RETORNO_PLACAS,
+    FALHA_FIM_CURSO,
     FALHA,
     OK,
     TESTE_FINALIZADO
@@ -1811,7 +1695,7 @@ void TMR0_ISR(void);
 
 
 void PWM_Initialize(void);
-void PWM_LoadDutyValue(unsigned char dutyValue);
+void PWM_LoadDutyValue(unsigned int dutyValue);
 # 13 "main.c" 2
 
 # 1 "./usart.h" 1
@@ -1833,10 +1717,13 @@ void USART_RX_Clear_Buffer(void);
 void main(void)
 {
     PinManager_Initialize();
+    PWM_Initialize();
     TMR0_Initialize();
-
     USART_Initialize();
     Interrupt_Enable();
+
+    PR2 = 0xFF;
+    T2CON = 0b00000111;
 
     estagio = INTERROMPIDO;
     estado.botao1 = 0;
@@ -1844,13 +1731,15 @@ void main(void)
     estado.fimcurso = 0;
     estado.chaveNF = 0;
     estado.chaveNA = 0;
+    estado.chavecopo = 0;
     timerbotao1 = 0;
     timerbotao2 = 0;
     timerfimcurso = 0;
     timerchaveNF = 0;
     timerchaveNA = 0;
+    timerchavecopo = 0;
     timerpwm = 0;
-
+    pwm_setado = 0;
 
     while(1)
     {
@@ -1941,7 +1830,82 @@ void main(void)
             estado.chaveNA = 0;
             PORTCbits.RC1 = 0;
         }
-# 159 "main.c"
+
+        if(PORTBbits.RB5 == 0)
+        {
+            if(estado.chavecopo == 0)
+            {
+                if(timerchavecopo > 100)
+                    estado.chavecopo = 1;
+            }
+        }
+        else
+        {
+            timerchavecopo = 0;
+            estado.chavecopo = 0;
+        }
+
+        if(pwm_setado == 105)
+        {
+            if(pwm_atual == 0)
+            {
+                PORTCbits.RC2 = 1;
+                pwm_atual++;
+            }
+            else
+            {
+                if(pwm_atual == 105)
+                {
+                    CCP1CON = 0b00001111;
+                    PWM_LoadDutyValue(105);
+                }
+            }
+        }
+
+        if(pwm_setado == 170)
+        {
+            if(pwm_atual == 0)
+            {
+                PORTCbits.RC2 = 1;
+                pwm_atual++;
+            }
+            else
+            {
+                if(pwm_atual == 170)
+                {
+                    CCP1CON = 0b00001111;
+                    PWM_LoadDutyValue(170);
+                }
+            }
+        }
+
+        if(pwm_setado == 0)
+        {
+            CCP1CON = 0b00000000;
+            PORTCbits.RC2 = 0;
+            pwm_atual = 0;
+        }
+
+        if(timerpwm > 10)
+        {
+            timerpwm = 0;
+            if(pwm_atual != pwm_setado)
+            {
+                if(pwm_atual < pwm_setado)
+                {
+                    if(pwm_atual < 1000)
+                        pwm_atual++;
+                    PWM_LoadDutyValue(pwm_atual);
+                }
+                else
+                {
+                    if(pwm_atual > 0)
+                        pwm_atual--;
+                    PWM_LoadDutyValue(pwm_atual);
+                }
+            }
+        }
+
         switch(estagio)
         {
             case INTERROMPIDO:
@@ -1960,8 +1924,7 @@ void main(void)
                     if(timer > (500*2))
                         timer = 0;
                 }
-
-                PORTCbits.RC2 = 0;
+                pwm_setado = 0;
                 PORTCbits.RC5 = 0;
                 PORTAbits.RA5 = 0;
                 if((estado.botao1 == 1) && (estado.botao2 == 1))
@@ -1989,6 +1952,7 @@ void main(void)
                 estado.reteste = 0;
                 estado.falha = 0;
                 endereco = 0;
+                escravo.byte = 0;
                 timer = 0;
                 estagio = TESTE_TAMPA_FECHADA;
             }
@@ -1997,56 +1961,90 @@ void main(void)
             case TESTE_TAMPA_FECHADA:
             {
                 if(timer > 5000)
-                    estagio = FALHA;
+                    estagio = FALHA_FIM_CURSO;
                 else
                 {
                     if(estado.fimcurso == 1)
+                    {
+                        timer = 0;
                         estagio = ALIMENTA_PLACA;
+                    }
                 }
             }
             break;
 
             case ALIMENTA_PLACA:
             {
-                PORTCbits.RC5 = 1;
-                if(estado.chaveNA == 1)
-
-                    PORTCbits.RC2 = 0;
-                else
-
-                    PORTCbits.RC2 = 1;
                 estado.testando = 1;
-                comunicacao.endereco = 0x0F;
-                if(estado.chaveNF == 1)
-                    comunicacao.resposta = 0x09;
+                if(estado.chaveNA == 1)
+                    pwm_setado = 0;
                 else
                 {
-                    if(estado.chaveNA == 1)
-                        comunicacao.resposta = 0x05;
+                    if(estado.chavecopo == 1)
+                        pwm_setado = 170;
                     else
-                        comunicacao.resposta = 0x03;
+                        pwm_setado = 105;
                 }
-                USART_Write(comunicacao.byte);
-                timer = 0;
-                estagio = ESTABILIZACAO;
+                if(timer > 2000)
+                {
+                    PORTCbits.RC5 = 1;
+                    comunicacao.endereco = 0x0F;
+                    if(estado.chaveNF == 1)
+                        comunicacao.resposta = 0x09;
+                    else
+                    {
+                        if(estado.chaveNA == 1)
+                            comunicacao.resposta = 0x05;
+                        else
+                            comunicacao.resposta = 0x03;
+                    }
+                    USART_Write(comunicacao.byte);
+                    timer = 0;
+                    estagio = ESTABILIZACAO;
+                }
             }
             break;
 
             case ESTABILIZACAO:
             {
-                if(timer > 1000)
+                if(timer > 5000)
                     estagio = TESTE_LIGA;
+
+                if(USART_RX_Ready() == 0)
+                    timeoutRx = 0;
+                else
+                {
+                    if(timeoutRx > 80)
+                    {
+                        USART_RX_Clear_Buffer();
+                        timeoutRx = 0;
+                    }
+                }
+
+                if(USART_RX_Ready() == 1)
+                {
+                    comunicacao.byte = USART_Read();
+                    if(comunicacao.endereco == 0x00)
+                    {
+                        if(comunicacao.resposta == 0x0F)
+                        {
+                            estagio = FALHA;
+                            estado.testando = 0;
+                            comunicacao.endereco = 0x0F;
+                            comunicacao.resposta = 0x00;
+                            USART_Write(comunicacao.byte);
+                        }
+                    }
+                }
             }
             break;
 
             case TESTE_LIGA:
             {
                 if(estado.chaveNA == 1)
-
-                    PORTCbits.RC2 = 1;
+                    pwm_setado = 105;
                 else
-
-                    PORTCbits.RC2 = 0;
+                    pwm_setado = 10;
                 timer = 0;
                 estagio = AGUARDA_TEMPO_LIGA;
             }
@@ -2054,32 +2052,196 @@ void main(void)
 
             case AGUARDA_TEMPO_LIGA:
             {
-                if(timer > 5000)
-                    estagio = TESTE_DESLIGA;
+                if((timer > 12000) || (escravo.byte == 0x03FF))
+                {
+                    if(timer > 3000)
+                    {
+                        escravo.byte = 0;
+                        endereco = 0;
+                        estagio = TESTE_DESLIGA;
+                    }
+                }
+                else
+                    estagio = VERIFICA_PLACAS_LIGA;
+            }
+            break;
+
+            case VERIFICA_PLACAS_LIGA:
+            {
+                endereco++;
+                if(endereco <= 10)
+                {
+                    timeoutRx = 0;
+                    USART_RX_Clear_Buffer();
+                    comunicacao.endereco = endereco;
+                    comunicacao.resposta = 0x0F;
+                    USART_Write(comunicacao.byte);
+                    estagio = MENSAGEM_RETORNO_PLACAS_LIGA;
+                }
+                else
+                    endereco = 0;
+            }
+            break;
+
+            case MENSAGEM_RETORNO_PLACAS_LIGA:
+            {
+                if(timeoutRx > 80)
+                    estagio = AGUARDA_TEMPO_LIGA;
+                else
+                {
+                    if(USART_RX_Ready() == 1)
+                    {
+                        comunicacao.byte = USART_Read();
+                        if(comunicacao.endereco == endereco)
+                        {
+                            if(comunicacao.resposta != 0x00)
+                            {
+                                switch(endereco)
+                                {
+                                    case 1:
+                                        escravo.endereco1 = 1;
+                                    break;
+                                    case 2:
+                                        escravo.endereco2 = 1;
+                                    break;
+                                    case 3:
+                                        escravo.endereco3 = 1;
+                                    break;
+                                    case 4:
+                                        escravo.endereco4 = 1;
+                                    break;
+                                    case 5:
+                                        escravo.endereco5 = 1;
+                                    break;
+                                    case 6:
+                                        escravo.endereco6 = 1;
+                                    break;
+                                    case 7:
+                                        escravo.endereco7 = 1;
+                                    break;
+                                    case 8:
+                                        escravo.endereco8 = 1;
+                                    break;
+                                    case 9:
+                                        escravo.endereco9 = 1;
+                                    break;
+                                    case 10:
+                                        escravo.endereco10 = 1;
+                                    break;
+                                }
+                            }
+                        }
+                        estagio = AGUARDA_TEMPO_LIGA;
+                    }
+                }
             }
             break;
 
             case TESTE_DESLIGA:
             {
                 if(estado.chaveNA == 1)
-
-                    PORTCbits.RC2 = 0;
+                    pwm_setado = 10;
                 else
-
-                    PORTCbits.RC2 = 1;
+                {
+                    if(estado.chavecopo == 1)
+                        pwm_setado = 170;
+                    else
+                        pwm_setado = 105;
+                }
                 timer = 0;
                 estagio = AGUARDA_TEMPO_DESLIGA;
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x07;
+                USART_Write(comunicacao.byte);
             }
             break;
 
             case AGUARDA_TEMPO_DESLIGA:
             {
-                if(timer > 6000)
+                if((timer > 10000) || (escravo.byte == 0x03FF))
                 {
-                    if(estado.reteste == 1)
-                        estagio = VERIFICA_PLACAS;
-                    else
-                        estagio = RETESTE;
+                    if((timer > 8000) || (estado.reteste == 1))
+                    {
+                        escravo.byte = 0;
+                        endereco = 0;
+                        if(estado.reteste == 1)
+                            estagio = VERIFICA_PLACAS;
+                        else
+                            estagio = RETESTE;
+                    }
+                }
+                else
+                    estagio = VERIFICA_PLACAS_DESLIGA;
+            }
+            break;
+
+            case VERIFICA_PLACAS_DESLIGA:
+            {
+                endereco++;
+                if(endereco <= 10)
+                {
+                    timeoutRx = 0;
+                    USART_RX_Clear_Buffer();
+                    comunicacao.endereco = endereco;
+                    comunicacao.resposta = 0x0F;
+                    USART_Write(comunicacao.byte);
+                    estagio = MENSAGEM_RETORNO_PLACAS_DESLIGA;
+                }
+                else
+                    endereco = 0;
+            }
+            break;
+
+            case MENSAGEM_RETORNO_PLACAS_DESLIGA:
+            {
+                if(timeoutRx > 80)
+                    estagio = AGUARDA_TEMPO_DESLIGA;
+                else
+                {
+                    if(USART_RX_Ready() == 1)
+                    {
+                        comunicacao.byte = USART_Read();
+                        if(comunicacao.endereco == endereco)
+                        {
+                            if(comunicacao.resposta != 0x00)
+                            {
+                                switch(endereco)
+                                {
+                                    case 1:
+                                        escravo.endereco1 = 1;
+                                    break;
+                                    case 2:
+                                        escravo.endereco2 = 1;
+                                    break;
+                                    case 3:
+                                        escravo.endereco3 = 1;
+                                    break;
+                                    case 4:
+                                        escravo.endereco4 = 1;
+                                    break;
+                                    case 5:
+                                        escravo.endereco5 = 1;
+                                    break;
+                                    case 6:
+                                        escravo.endereco6 = 1;
+                                    break;
+                                    case 7:
+                                        escravo.endereco7 = 1;
+                                    break;
+                                    case 8:
+                                        escravo.endereco8 = 1;
+                                    break;
+                                    case 9:
+                                        escravo.endereco9 = 1;
+                                    break;
+                                    case 10:
+                                        escravo.endereco10 = 1;
+                                    break;
+                                }
+                            }
+                        }
+                        estagio = AGUARDA_TEMPO_DESLIGA;
+                    }
                 }
             }
             break;
@@ -2088,6 +2250,9 @@ void main(void)
             {
                 estado.reteste = 1;
                 estagio = TESTE_LIGA;
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x0C;
+                USART_Write(comunicacao.byte);
             }
             break;
 
@@ -2096,12 +2261,12 @@ void main(void)
                 endereco++;
                 if(endereco <= 10)
                 {
-                    timer = 0;
+                    timeoutRx = 0;
                     USART_RX_Clear_Buffer();
                     comunicacao.endereco = endereco;
                     comunicacao.resposta = 0x0F;
                     USART_Write(comunicacao.byte);
-                    estagio = MENSAGEM_RETORNO;
+                    estagio = MENSAGEM_RETORNO_PLACAS;
                 }
                 else
                 {
@@ -2113,9 +2278,9 @@ void main(void)
             }
             break;
 
-            case MENSAGEM_RETORNO:
+            case MENSAGEM_RETORNO_PLACAS:
             {
-                if(timer > 80)
+                if(timeoutRx > 80)
                 {
                     estado.falha = 1;
                     estagio = VERIFICA_PLACAS;
@@ -2138,10 +2303,22 @@ void main(void)
             }
             break;
 
+            case FALHA_FIM_CURSO:
+            {
+                comunicacao.endereco = 0x0F;
+                comunicacao.resposta = 0x00;
+                USART_Write(comunicacao.byte);
+                pwm_setado = 0;
+                PORTAbits.RA1 = 1;
+                PORTAbits.RA0 = 1;
+                timer = 0;
+                estagio = TESTE_FINALIZADO;
+            }
+            break;
+
             case FALHA:
             {
-
-                PORTCbits.RC2 = 0;
+                pwm_setado = 0;
                 PORTAbits.RA1 = 1;
                 PORTAbits.RA0 = 1;
                 timer = 0;
@@ -2151,8 +2328,7 @@ void main(void)
 
             case OK:
             {
-
-                PORTCbits.RC2 = 0;
+                pwm_setado = 0;
                 PORTAbits.RA3 = 1;
                 estagio = TESTE_FINALIZADO;
             }

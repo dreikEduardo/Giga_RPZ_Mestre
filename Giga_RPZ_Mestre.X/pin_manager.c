@@ -8,7 +8,7 @@ void PinManager_Initialize(void)
     
     TRISA = 0b11010000;
     TRISB = 0b11111111;
-    TRISC = 0b10011000;  
+    TRISC = 0b10010000;  
 
     ADCON1 = 0b00000110;
 
