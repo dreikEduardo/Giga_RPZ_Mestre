@@ -254,6 +254,10 @@ void main(void)
                 endereco = 0;
                 escravo.byte = 0;
                 timer = 0;
+                naoliga = 0;
+                naodesliga = 0;
+                sincronismo = 0;
+                pecaOK = 0;
                 estagio = TESTE_TAMPA_FECHADA;
             }
             break;
@@ -592,6 +596,16 @@ void main(void)
                         comunicacao.byte = USART_Read();
                         if(comunicacao.endereco == endereco)
                         {
+                            if(comunicacao.resposta == 0x02)
+                                naodesliga++;
+                            if(comunicacao.resposta == 0x03)
+                                naoliga++;
+                            if(comunicacao.resposta == 0x04)
+                                sincronismo++;
+                            if(comunicacao.resposta == 0x08)
+                                pecaOK++;
+                            if(comunicacao.resposta == 0x0F)
+                                sincronismo++;
                             if(comunicacao.resposta != 0x08)
                                 estado.falha = 1;
                         }
@@ -639,6 +653,33 @@ void main(void)
                 if(timer > TEMPO_BUZZER)
                 {
                     BUZZER = 0;
+                    comunicacao.endereco = 0x0B;
+                    comunicacao.resposta = naoliga;
+                    USART_Write(comunicacao.byte);
+                    comunicacao.endereco = 0x0C;
+                    comunicacao.resposta = naodesliga;
+                    USART_Write(comunicacao.byte);
+                    comunicacao.endereco = 0x0D;
+                    comunicacao.resposta = sincronismo;
+                    USART_Write(comunicacao.byte);
+                    comunicacao.endereco = 0x0E;
+                    comunicacao.resposta = pecaOK;
+                    USART_Write(comunicacao.byte);
+                    comunicacao.endereco = 0x00;
+                    if(estado.chavecopo == 1)
+                        comunicacao.resposta = 1;
+                    else
+                        comunicacao.resposta = 0;
+                    if(estado.chaveNF == 1)
+                        comunicacao.resposta += 0x02;
+                    else
+                    {
+                        if(estado.chaveNA == 1)
+                            comunicacao.resposta += 0x08;
+                        else
+                            comunicacao.resposta += 0x04;
+                    }
+                    USART_Write(comunicacao.byte);
                     estagio = TESTE_BOTOES;
                 }
                 LED_EM_TESTE = 0;

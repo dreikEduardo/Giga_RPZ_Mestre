@@ -3,8 +3,8 @@
 [d edition pro ]
 [d chip 16F876A ]
 [d frameptr 0 ]
-"85 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
-[e E816 _estagio `uc
+"89 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
+[e E848 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -27,7 +27,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E816 _estagio `uc
+[e E848 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -50,7 +50,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E818 _estagio `uc
+[e E850 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -73,7 +73,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E823 _estagio `uc
+[e E855 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -96,31 +96,31 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"6 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
+"6 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
 [v _InterruptManager InterruptManager `II(v  1 e 1 0 ]
 "15
 [v _Interrupt_Enable Interrupt_Enable `(v  1 e 1 0 ]
-"17 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
+"17 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"3 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
+"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
 [v _PinManager_Initialize PinManager_Initialize `(v  1 e 1 0 ]
-"3 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
+"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
 [v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
 "14
 [v _PWM_LoadDutyValue PWM_LoadDutyValue `(v  1 e 1 0 ]
-"5 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"5 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "14
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
-"9 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"9 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
 [v _USART_Initialize USART_Initialize `(v  1 e 1 0 ]
 "22
 [v _USART_RX_ISR USART_RX_ISR `(v  1 e 1 0 ]
@@ -132,7 +132,7 @@ TESTE_FINALIZADO 20
 [v _USART_Write USART_Write `(v  1 e 1 0 ]
 "59
 [v _USART_RX_Clear_Buffer USART_RX_Clear_Buffer `(v  1 e 1 0 ]
-"7 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
+"7 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
 [v _timerbotao1 timerbotao1 `ui  1 e 2 0 ]
 "8
 [v _timerbotao2 timerbotao2 `ui  1 e 2 0 ]
@@ -156,10 +156,18 @@ TESTE_FINALIZADO 20
 [v _pwm_atual pwm_atual `ui  1 e 2 0 ]
 "18
 [v _endereco endereco `uc  1 e 1 0 ]
+"19
+[v _naoliga naoliga `uc  1 e 1 0 ]
+"20
+[v _naodesliga naodesliga `uc  1 e 1 0 ]
+"21
+[v _sincronismo sincronismo `uc  1 e 1 0 ]
+"22
+[v _pecaOK pecaOK `uc  1 e 1 0 ]
 [s S133 . 1 `uc 1 endereco 1 0 :4:0 
 `uc 1 resposta 1 0 :4:4 
 ]
-"27
+"31
 [u S136 . 1 `uc 1 byte 1 0 `S133 1 . 1 0 ]
 [v _comunicacao comunicacao `S136  1 e 1 0 ]
 [s S139 . 2 `uc 1 endereco1 1 0 :1:0 
@@ -174,7 +182,7 @@ TESTE_FINALIZADO 20
 `uc 1 endereco10 1 1 :1:1 
 `uc 1 . 1 1 :6:2 
 ]
-"45
+"49
 [u S151 . 2 `ui 1 byte 2 0 `S139 1 . 2 0 ]
 [v _escravo escravo `S151  1 e 2 0 ]
 [s S154 . 2 `uc 1 botao1 1 0 :1:0 
@@ -188,13 +196,13 @@ TESTE_FINALIZADO 20
 `uc 1 falha 1 1 :1:0 
 `uc 1 . 1 1 :7:1 
 ]
-"60
+"64
 [v _estado estado `S154  1 e 2 0 ]
-"85
-[v _estagio estagio `E816  1 s 1 estagio ]
-"59 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f876a.h
+"89
+[v _estagio estagio `E848  1 s 1 estagio ]
+"60 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
-"166
+"167
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
 [s S259 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -203,10 +211,10 @@ TESTE_FINALIZADO 20
 `uc 1 RA4 1 0 :1:4 
 `uc 1 RA5 1 0 :1:5 
 ]
-"181
+"182
 [u S266 . 1 `S259 1 . 1 0 ]
 [v _PORTAbits PORTAbits `VES266  1 e 1 @5 ]
-"216
+"217
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 [s S206 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
@@ -217,10 +225,10 @@ TESTE_FINALIZADO 20
 `uc 1 RB6 1 0 :1:6 
 `uc 1 RB7 1 0 :1:7 
 ]
-"233
+"234
 [u S215 . 1 `S206 1 . 1 0 ]
 [v _PORTBbits PORTBbits `VES215  1 e 1 @6 ]
-"278
+"279
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 [s S232 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
@@ -231,7 +239,7 @@ TESTE_FINALIZADO 20
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-"295
+"296
 [u S241 . 1 `S232 1 . 1 0 ]
 [v _PORTCbits PORTCbits `VES241  1 e 1 @7 ]
 [s S22 . 1 `uc 1 RBIF 1 0 :1:0 
@@ -243,7 +251,7 @@ TESTE_FINALIZADO 20
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"383
+"384
 [s S31 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -259,18 +267,18 @@ TESTE_FINALIZADO 20
 `uc 1 RCIF 1 0 :1:5 
 `uc 1 ADIF 1 0 :1:6 
 ]
-"454
+"455
 [u S85 . 1 `S77 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES85  1 e 1 @12 ]
-"637
+"638
 [v _T2CON T2CON `VEuc  1 e 1 @18 ]
-"792
+"793
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
-"806
+"807
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
-"864
+"865
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-[s S612 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S624 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -279,30 +287,30 @@ TESTE_FINALIZADO 20
 `uc 1 RX9 1 0 :1:6 
 `uc 1 SPEN 1 0 :1:7 
 ]
-"894
-[s S621 . 1 `uc 1 RCD8 1 0 :1:0 
+"895
+[s S633 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S625 . 1 `uc 1 . 1 0 :6:0 
+[s S637 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S628 . 1 `uc 1 . 1 0 :6:0 
+[s S640 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S631 . 1 `S612 1 . 1 0 `S621 1 . 1 0 `S625 1 . 1 0 `S628 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES631  1 e 1 @24 ]
-"959
+[u S643 . 1 `S624 1 . 1 0 `S633 1 . 1 0 `S637 1 . 1 0 `S640 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES643  1 e 1 @24 ]
+"960
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
-"966
+"967
 [v _RCREG RCREG `VEuc  1 e 1 @26 ]
-"1155
+"1156
 [v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
-"1225
+"1226
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
-"1275
+"1276
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-"1337
+"1338
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
 [s S58 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
@@ -312,27 +320,27 @@ TESTE_FINALIZADO 20
 `uc 1 RCIE 1 0 :1:5 
 `uc 1 ADIE 1 0 :1:6 
 ]
-"1415
+"1416
 [u S66 . 1 `S58 1 . 1 0 ]
 [v _PIE1bits PIE1bits `VES66  1 e 1 @140 ]
-"1591
+"1592
 [v _PR2 PR2 `VEuc  1 e 1 @146 ]
-"1774
+"1775
 [v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
-"1855
+"1856
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
-"2004
+"2005
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
-"6 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"6 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
 [v _rxBuffer rxBuffer `VE[3]uc  1 e 3 0 ]
 "7
 [v _rxCount rxCount `VEuc  1 e 1 0 ]
-"17 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
+"17 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"655
+"696
 } 0
-"51 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"51 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
 [v _USART_Write USART_Write `(v  1 e 1 0 ]
 {
 [v USART_Write@data data `uc  1 a 1 wreg ]
@@ -362,17 +370,17 @@ TESTE_FINALIZADO 20
 {
 "20
 } 0
-"5 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"5 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "12
 } 0
-"3 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
+"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
 [v _PinManager_Initialize PinManager_Initialize `(v  1 e 1 0 ]
 {
 "16
 } 0
-"3 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
+"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
 [v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
 {
 "12
@@ -383,7 +391,7 @@ TESTE_FINALIZADO 20
 [v PWM_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 4 ]
 "18
 } 0
-"15 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
+"15 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
 [v _Interrupt_Enable Interrupt_Enable `(v  1 e 1 0 ]
 {
 "19
@@ -393,12 +401,12 @@ TESTE_FINALIZADO 20
 {
 "13
 } 0
-"22 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"22 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
 [v _USART_RX_ISR USART_RX_ISR `(v  1 e 1 0 ]
 {
 "35
 } 0
-"14 C:\Users\Drei-K\OneDrive\Drei K - OneDrive\GitHub\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"14 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "32
