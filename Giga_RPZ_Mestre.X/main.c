@@ -238,7 +238,24 @@ void main(void)
                 {
                     if((timerbotao1 < 500) && (timerbotao2 < 500))
                         estagio = INICIA_TESTE;
-                }       
+                }
+                if(estado.falha == 1)
+                {
+                    if(addressFail > 0)
+                    {
+                        if(timer < TEMPO_PISCADA)
+                            LED_DEFEITO_TESTE = 1;
+                        else
+                            LED_DEFEITO_TESTE = 0;    
+                        if(timer > (TEMPO_PISCADA*2))
+                        {
+                            addressFail--;
+                            timer = 0;                                      
+                        }
+                    }
+                    else
+                        LED_DEFEITO_TESTE = 1;    
+                }
             }
             break;
             
@@ -258,6 +275,7 @@ void main(void)
                 naodesliga = 0;
                 sincronismo = 0;
                 pecaOK = 0;
+                addressFail = 0;
                 estagio = TESTE_TAMPA_FECHADA;
             }
             break;
@@ -565,6 +583,7 @@ void main(void)
                 endereco++;
                 if(endereco <= 10)
                 {
+                    countFailRx = 0;
                     timeoutRx = 0;
                     USART_RX_Clear_Buffer();
                     comunicacao.endereco = endereco;
@@ -586,8 +605,22 @@ void main(void)
             {
                 if(timeoutRx > TEMPO_TIMEOUT_RX)
                 {
-                    estado.falha = 1;
-                    estagio = VERIFICA_PLACAS;
+                    if(countFailRx < 3)
+                    {
+                        countFailRx++;
+                        timeoutRx = 0;
+                        USART_RX_Clear_Buffer();
+                        comunicacao.endereco = endereco;
+                        comunicacao.resposta = 0x0F;
+                        USART_Write(comunicacao.byte);
+                        estagio = MENSAGEM_RETORNO_PLACAS;     
+                    }
+                    else
+                    {
+                        estado.falha = 1;
+                        addressFail = endereco;
+                        estagio = VERIFICA_PLACAS;
+                    }
                 }
                 else
                 {
@@ -680,6 +713,7 @@ void main(void)
                             comunicacao.resposta += 0x04;
                     }
                     USART_Write(comunicacao.byte);
+                    timer = 0;
                     estagio = TESTE_BOTOES;
                 }
                 LED_EM_TESTE = 0;

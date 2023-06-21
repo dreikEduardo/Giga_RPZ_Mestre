@@ -1,26 +1,26 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- dist/default/production\Giga_RPZ_Mestre.X.production.hex
- -Odist/default/production\Giga_RPZ_Mestre.X.production.hex
- -logfile=dist/default/production\Giga_RPZ_Mestre.X.production.hxl
+ dist/default/production/Giga_RPZ_Mestre.X.production.hex
+ -Odist/default/production/Giga_RPZ_Mestre.X.production.hex
+ -logfile=dist/default/production/Giga_RPZ_Mestre.X.production.hxl
  -addressing=2
 
 ### Memory Usage ###
  Intel Hex-file ranges:
-  0h - 5h		(dist/default/production\Giga_RPZ_Mestre.X.production.hex)
-  8h - E4Bh		(dist/default/production\Giga_RPZ_Mestre.X.production.hex)
-  4000h - 4007h		(dist/default/production\Giga_RPZ_Mestre.X.production.hex)
-  400Eh - 400Fh		(dist/default/production\Giga_RPZ_Mestre.X.production.hex)
+  0h - 5h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
+  8h - E89h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
+  4000h - 4007h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
+  400Eh - 400Fh		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
  Unused ranges:
   6h - 7h
-  E4Ch - 3FFFh
+  E8Ah - 3FFFh
   4008h - 400Dh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Intel Hex-file         (dist/default/production\Giga_RPZ_Mestre.X.production.hex)
+  H1 = Intel Hex-file         (dist/default/production/Giga_RPZ_Mestre.X.production.hex)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -252,6 +252,10 @@
 00000E10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E20 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E30 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000E40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- --
+00000E40 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
 00004000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- H1 H1

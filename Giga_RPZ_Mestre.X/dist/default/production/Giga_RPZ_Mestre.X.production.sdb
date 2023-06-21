@@ -3,31 +3,8 @@
 [d edition pro ]
 [d chip 16F876A ]
 [d frameptr 0 ]
-"89 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
-[e E848 _estagio `uc
-INTERROMPIDO 0
-TESTE_BOTOES 1
-INICIA_TESTE 2
-TESTE_TAMPA_FECHADA 3
-ALIMENTA_PLACA 4
-ESTABILIZACAO 5
-TESTE_LIGA 6
-AGUARDA_TEMPO_LIGA 7
-VERIFICA_PLACAS_LIGA 8
-MENSAGEM_RETORNO_PLACAS_LIGA 9
-TESTE_DESLIGA 10
-AGUARDA_TEMPO_DESLIGA 11
-VERIFICA_PLACAS_DESLIGA 12
-MENSAGEM_RETORNO_PLACAS_DESLIGA 13
-RETESTE 14
-VERIFICA_PLACAS 15
-MENSAGEM_RETORNO_PLACAS 16
-FALHA_FIM_CURSO 17
-FALHA 18
-OK 19
-TESTE_FINALIZADO 20
-]
-[e E848 _estagio `uc
+"91 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.h
+[e E850 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -73,7 +50,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E855 _estagio `uc
+[e E852 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -96,31 +73,54 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcadd.c
+[e E857 _estagio `uc
+INTERROMPIDO 0
+TESTE_BOTOES 1
+INICIA_TESTE 2
+TESTE_TAMPA_FECHADA 3
+ALIMENTA_PLACA 4
+ESTABILIZACAO 5
+TESTE_LIGA 6
+AGUARDA_TEMPO_LIGA 7
+VERIFICA_PLACAS_LIGA 8
+MENSAGEM_RETORNO_PLACAS_LIGA 9
+TESTE_DESLIGA 10
+AGUARDA_TEMPO_DESLIGA 11
+VERIFICA_PLACAS_DESLIGA 12
+MENSAGEM_RETORNO_PLACAS_DESLIGA 13
+RETESTE 14
+VERIFICA_PLACAS 15
+MENSAGEM_RETORNO_PLACAS 16
+FALHA_FIM_CURSO 17
+FALHA 18
+OK 19
+TESTE_FINALIZADO 20
+]
+"10 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
+"4 /Applications/microchip/xc8/v2.40/pic/sources/c90/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\pic\__eeprom.c
+"6 /Applications/microchip/xc8/v2.40/pic/sources/c90/pic/__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"6 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
+"6 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/interrupt_manager.c
 [v _InterruptManager InterruptManager `II(v  1 e 1 0 ]
 "15
 [v _Interrupt_Enable Interrupt_Enable `(v  1 e 1 0 ]
-"17 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
+"17 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
+"3 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/pin_manager.c
 [v _PinManager_Initialize PinManager_Initialize `(v  1 e 1 0 ]
-"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
+"3 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/pwm.c
 [v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
 "14
 [v _PWM_LoadDutyValue PWM_LoadDutyValue `(v  1 e 1 0 ]
-"5 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"5 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "14
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
-"9 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"9 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/usart.c
 [v _USART_Initialize USART_Initialize `(v  1 e 1 0 ]
 "22
 [v _USART_RX_ISR USART_RX_ISR `(v  1 e 1 0 ]
@@ -132,7 +132,7 @@ TESTE_FINALIZADO 20
 [v _USART_Write USART_Write `(v  1 e 1 0 ]
 "59
 [v _USART_RX_Clear_Buffer USART_RX_Clear_Buffer `(v  1 e 1 0 ]
-"7 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X/main.h
+"7 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.h
 [v _timerbotao1 timerbotao1 `ui  1 e 2 0 ]
 "8
 [v _timerbotao2 timerbotao2 `ui  1 e 2 0 ]
@@ -164,10 +164,14 @@ TESTE_FINALIZADO 20
 [v _sincronismo sincronismo `uc  1 e 1 0 ]
 "22
 [v _pecaOK pecaOK `uc  1 e 1 0 ]
+"23
+[v _countFailRx countFailRx `uc  1 e 1 0 ]
+"24
+[v _addressFail addressFail `uc  1 e 1 0 ]
 [s S133 . 1 `uc 1 endereco 1 0 :4:0 
 `uc 1 resposta 1 0 :4:4 
 ]
-"31
+"33
 [u S136 . 1 `uc 1 byte 1 0 `S133 1 . 1 0 ]
 [v _comunicacao comunicacao `S136  1 e 1 0 ]
 [s S139 . 2 `uc 1 endereco1 1 0 :1:0 
@@ -182,7 +186,7 @@ TESTE_FINALIZADO 20
 `uc 1 endereco10 1 1 :1:1 
 `uc 1 . 1 1 :6:2 
 ]
-"49
+"51
 [u S151 . 2 `ui 1 byte 2 0 `S139 1 . 2 0 ]
 [v _escravo escravo `S151  1 e 2 0 ]
 [s S154 . 2 `uc 1 botao1 1 0 :1:0 
@@ -196,11 +200,11 @@ TESTE_FINALIZADO 20
 `uc 1 falha 1 1 :1:0 
 `uc 1 . 1 1 :7:1 
 ]
-"64
+"66
 [v _estado estado `S154  1 e 2 0 ]
-"89
-[v _estagio estagio `E848  1 s 1 estagio ]
-"60 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
+"91
+[v _estagio estagio `E850  1 s 1 estagio ]
+"60 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "167
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -278,7 +282,7 @@ TESTE_FINALIZADO 20
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
 "865
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-[s S624 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S630 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -288,18 +292,18 @@ TESTE_FINALIZADO 20
 `uc 1 SPEN 1 0 :1:7 
 ]
 "895
-[s S633 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S639 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S637 . 1 `uc 1 . 1 0 :6:0 
+[s S643 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S640 . 1 `uc 1 . 1 0 :6:0 
+[s S646 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S643 . 1 `S624 1 . 1 0 `S633 1 . 1 0 `S637 1 . 1 0 `S640 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES643  1 e 1 @24 ]
+[u S649 . 1 `S630 1 . 1 0 `S639 1 . 1 0 `S643 1 . 1 0 `S646 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES649  1 e 1 @24 ]
 "960
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "967
@@ -331,16 +335,16 @@ TESTE_FINALIZADO 20
 [v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
 "2005
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
-"6 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"6 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/usart.c
 [v _rxBuffer rxBuffer `VE[3]uc  1 e 3 0 ]
 "7
 [v _rxCount rxCount `VEuc  1 e 1 0 ]
-"17 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\main.c
+"17 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"696
+"730
 } 0
-"51 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"51 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/usart.c
 [v _USART_Write USART_Write `(v  1 e 1 0 ]
 {
 [v USART_Write@data data `uc  1 a 1 wreg ]
@@ -352,7 +356,7 @@ TESTE_FINALIZADO 20
 [v _USART_Read USART_Read `(uc  1 e 1 0 ]
 {
 "44
-[v USART_Read@data data `uc  1 a 1 5 ]
+[v USART_Read@data data `uc  1 a 1 4 ]
 "49
 } 0
 "37
@@ -370,17 +374,17 @@ TESTE_FINALIZADO 20
 {
 "20
 } 0
-"5 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"5 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "12
 } 0
-"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pin_manager.c
+"3 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/pin_manager.c
 [v _PinManager_Initialize PinManager_Initialize `(v  1 e 1 0 ]
 {
 "16
 } 0
-"3 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\pwm.c
+"3 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/pwm.c
 [v _PWM_Initialize PWM_Initialize `(v  1 e 1 0 ]
 {
 "12
@@ -391,7 +395,7 @@ TESTE_FINALIZADO 20
 [v PWM_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 4 ]
 "18
 } 0
-"15 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\interrupt_manager.c
+"15 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/interrupt_manager.c
 [v _Interrupt_Enable Interrupt_Enable `(v  1 e 1 0 ]
 {
 "19
@@ -401,12 +405,12 @@ TESTE_FINALIZADO 20
 {
 "13
 } 0
-"22 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\usart.c
+"22 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/usart.c
 [v _USART_RX_ISR USART_RX_ISR `(v  1 e 1 0 ]
 {
 "35
 } 0
-"14 C:\Users\dreik\OneDrive\Drei K - Eduardo\Software Gigas\Giga RPZ\Giga_RPZ_Mestre\Giga_RPZ_Mestre.X\tmr0.c
+"14 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "32

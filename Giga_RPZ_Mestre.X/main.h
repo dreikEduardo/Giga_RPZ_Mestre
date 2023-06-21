@@ -20,6 +20,8 @@ unsigned char naoliga = 0;
 unsigned char naodesliga = 0;
 unsigned char sincronismo = 0;
 unsigned char pecaOK = 0;
+unsigned char countFailRx = 0;
+unsigned char addressFail = 0;
 union
 {
     unsigned char byte;

@@ -1,28 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"27 ./main.h
-[; ;./main.h: 27:     {
+"29 ./main.h
+[; ;./main.h: 29:     {
 [s S88 :4 `uc 1 :4 `uc 1 ]
 [n S88 . endereco resposta ]
-"24
-[; ;./main.h: 24: {
+"26
+[; ;./main.h: 26: {
 [u S87 `uc 1 `S88 1 ]
 [n S87 . byte . ]
-"36
-[; ;./main.h: 36:     {
+"38
+[; ;./main.h: 38:     {
 [s S90 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :6 `uc 1 ]
 [n S90 . endereco1 endereco2 endereco3 endereco4 endereco5 endereco6 endereco7 endereco8 endereco9 endereco10 . ]
-"33
-[; ;./main.h: 33: {
+"35
+[; ;./main.h: 35: {
 [u S89 `ui 1 `S90 1 ]
 [n S89 . byte . ]
-"53
-[; ;./main.h: 53: {
+"55
+[; ;./main.h: 55: {
 [s S91 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :7 `uc 1 ]
 [n S91 . botao1 botao2 fimcurso chaveNF chaveNA chavecopo testando reteste falha . ]
-"89
-[; ;./main.h: 89: } estagio = INTERROMPIDO;
-[c E848 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 .. ]
-[n E848 _estagio INTERROMPIDO TESTE_BOTOES INICIA_TESTE TESTE_TAMPA_FECHADA ALIMENTA_PLACA ESTABILIZACAO TESTE_LIGA AGUARDA_TEMPO_LIGA VERIFICA_PLACAS_LIGA MENSAGEM_RETORNO_PLACAS_LIGA TESTE_DESLIGA AGUARDA_TEMPO_DESLIGA VERIFICA_PLACAS_DESLIGA MENSAGEM_RETORNO_PLACAS_DESLIGA RETESTE VERIFICA_PLACAS MENSAGEM_RETORNO_PLACAS FALHA_FIM_CURSO FALHA OK TESTE_FINALIZADO  ]
+"91
+[; ;./main.h: 91: } estagio = INTERROMPIDO;
+[c E850 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 .. ]
+[n E850 _estagio INTERROMPIDO TESTE_BOTOES INICIA_TESTE TESTE_TAMPA_FECHADA ALIMENTA_PLACA ESTABILIZACAO TESTE_LIGA AGUARDA_TEMPO_LIGA VERIFICA_PLACAS_LIGA MENSAGEM_RETORNO_PLACAS_LIGA TESTE_DESLIGA AGUARDA_TEMPO_DESLIGA VERIFICA_PLACAS_DESLIGA MENSAGEM_RETORNO_PLACAS_DESLIGA RETESTE VERIFICA_PLACAS MENSAGEM_RETORNO_PLACAS FALHA_FIM_CURSO FALHA OK TESTE_FINALIZADO  ]
 [p mainexit ]
 "7 ./pin_manager.h
 [; ;./pin_manager.h: 7: void PinManager_Initialize(void);
@@ -39,53 +39,53 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6 ./interrupt_manager.h
 [; ;./interrupt_manager.h: 6: void Interrupt_Enable(void);
 [v _Interrupt_Enable `(v ~T0 @X0 0 ef ]
-"1592 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1592: extern volatile unsigned char PR2 __attribute__((address(0x092)));
+"1592 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1592: extern volatile unsigned char PR2 __attribute__((address(0x092)));
 [v _PR2 `Vuc ~T0 @X0 0 e@146 ]
 "638
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 638: extern volatile unsigned char T2CON __attribute__((address(0x012)));
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 638: extern volatile unsigned char T2CON __attribute__((address(0x012)));
 [v _T2CON `Vuc ~T0 @X0 0 e@18 ]
 "223
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 223:     struct {
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 223:     struct {
 [s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S8 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
 "222
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 222: typedef union {
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 222: typedef union {
 [u S7 `S8 1 ]
 [n S7 . . ]
 "234
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 234: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 234: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
 [v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
 "10 ./usart.h
 [; ;./usart.h: 10: void USART_Write(unsigned char data);
 [v _USART_Write `(v ~T0 @X0 0 ef1`uc ]
-"285 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 285:     struct {
+"285 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 285:     struct {
 [s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S10 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 "284
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 284: typedef union {
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 284: typedef union {
 [u S9 `S10 1 ]
 [n S9 . . ]
 "296
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 296: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 296: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
 [v _PORTCbits `VS9 ~T0 @X0 0 e@7 ]
 "807
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 807: extern volatile unsigned char CCP1CON __attribute__((address(0x017)));
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 807: extern volatile unsigned char CCP1CON __attribute__((address(0x017)));
 [v _CCP1CON `Vuc ~T0 @X0 0 e@23 ]
 "7 ./pwm.h
 [; ;./pwm.h: 7: void PWM_LoadDutyValue(unsigned int dutyValue);
 [v _PWM_LoadDutyValue `(v ~T0 @X0 0 ef1`ui ]
-"173 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 173:     struct {
+"173 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 173:     struct {
 [s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S6 . RA0 RA1 RA2 RA3 RA4 RA5 ]
 "172
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 172: typedef union {
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 172: typedef union {
 [u S5 `S6 1 ]
 [n S5 . . ]
 "182
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 182: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 182: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x005)));
 [v _PORTAbits `VS5 ~T0 @X0 0 e@5 ]
 "8 ./usart.h
 [; ;./usart.h: 8: unsigned char USART_RX_Ready(void);
@@ -96,173 +96,173 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9
 [; ;./usart.h: 9: unsigned char USART_Read(void);
 [v _USART_Read `(uc ~T0 @X0 0 ef ]
-"55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 55: __asm("INDF equ 00h");
+"55 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 55: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 "62
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 62: __asm("TMR0 equ 01h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 62: __asm("TMR0 equ 01h");
 [; <" TMR0 equ 01h ;# ">
 "69
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 69: __asm("PCL equ 02h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 69: __asm("PCL equ 02h");
 [; <" PCL equ 02h ;# ">
 "76
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 76: __asm("STATUS equ 03h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 76: __asm("STATUS equ 03h");
 [; <" STATUS equ 03h ;# ">
 "162
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 162: __asm("FSR equ 04h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 162: __asm("FSR equ 04h");
 [; <" FSR equ 04h ;# ">
 "169
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 169: __asm("PORTA equ 05h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 169: __asm("PORTA equ 05h");
 [; <" PORTA equ 05h ;# ">
 "219
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 219: __asm("PORTB equ 06h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 219: __asm("PORTB equ 06h");
 [; <" PORTB equ 06h ;# ">
 "281
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 281: __asm("PORTC equ 07h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 281: __asm("PORTC equ 07h");
 [; <" PORTC equ 07h ;# ">
 "343
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 343: __asm("PCLATH equ 0Ah");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 343: __asm("PCLATH equ 0Ah");
 [; <" PCLATH equ 0Ah ;# ">
 "363
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 363: __asm("INTCON equ 0Bh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 363: __asm("INTCON equ 0Bh");
 [; <" INTCON equ 0Bh ;# ">
 "441
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 441: __asm("PIR1 equ 0Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 441: __asm("PIR1 equ 0Ch");
 [; <" PIR1 equ 0Ch ;# ">
 "497
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 497: __asm("PIR2 equ 0Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 497: __asm("PIR2 equ 0Dh");
 [; <" PIR2 equ 0Dh ;# ">
 "537
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 537: __asm("TMR1 equ 0Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 537: __asm("TMR1 equ 0Eh");
 [; <" TMR1 equ 0Eh ;# ">
 "544
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 544: __asm("TMR1L equ 0Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 544: __asm("TMR1L equ 0Eh");
 [; <" TMR1L equ 0Eh ;# ">
 "551
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 551: __asm("TMR1H equ 0Fh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 551: __asm("TMR1H equ 0Fh");
 [; <" TMR1H equ 0Fh ;# ">
 "558
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 558: __asm("T1CON equ 010h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 558: __asm("T1CON equ 010h");
 [; <" T1CON equ 010h ;# ">
 "633
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 633: __asm("TMR2 equ 011h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 633: __asm("TMR2 equ 011h");
 [; <" TMR2 equ 011h ;# ">
 "640
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 640: __asm("T2CON equ 012h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 640: __asm("T2CON equ 012h");
 [; <" T2CON equ 012h ;# ">
 "711
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 711: __asm("SSPBUF equ 013h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 711: __asm("SSPBUF equ 013h");
 [; <" SSPBUF equ 013h ;# ">
 "718
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 718: __asm("SSPCON equ 014h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 718: __asm("SSPCON equ 014h");
 [; <" SSPCON equ 014h ;# ">
 "788
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 788: __asm("CCPR1 equ 015h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 788: __asm("CCPR1 equ 015h");
 [; <" CCPR1 equ 015h ;# ">
 "795
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 795: __asm("CCPR1L equ 015h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 795: __asm("CCPR1L equ 015h");
 [; <" CCPR1L equ 015h ;# ">
 "802
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 802: __asm("CCPR1H equ 016h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 802: __asm("CCPR1H equ 016h");
 [; <" CCPR1H equ 016h ;# ">
 "809
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 809: __asm("CCP1CON equ 017h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 809: __asm("CCP1CON equ 017h");
 [; <" CCP1CON equ 017h ;# ">
 "867
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 867: __asm("RCSTA equ 018h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 867: __asm("RCSTA equ 018h");
 [; <" RCSTA equ 018h ;# ">
 "962
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 962: __asm("TXREG equ 019h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 962: __asm("TXREG equ 019h");
 [; <" TXREG equ 019h ;# ">
 "969
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 969: __asm("RCREG equ 01Ah");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 969: __asm("RCREG equ 01Ah");
 [; <" RCREG equ 01Ah ;# ">
 "976
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 976: __asm("CCPR2 equ 01Bh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 976: __asm("CCPR2 equ 01Bh");
 [; <" CCPR2 equ 01Bh ;# ">
 "983
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 983: __asm("CCPR2L equ 01Bh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 983: __asm("CCPR2L equ 01Bh");
 [; <" CCPR2L equ 01Bh ;# ">
 "990
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 990: __asm("CCPR2H equ 01Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 990: __asm("CCPR2H equ 01Ch");
 [; <" CCPR2H equ 01Ch ;# ">
 "997
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 997: __asm("CCP2CON equ 01Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 997: __asm("CCP2CON equ 01Dh");
 [; <" CCP2CON equ 01Dh ;# ">
 "1055
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1055: __asm("ADRESH equ 01Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1055: __asm("ADRESH equ 01Eh");
 [; <" ADRESH equ 01Eh ;# ">
 "1062
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1062: __asm("ADCON0 equ 01Fh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1062: __asm("ADCON0 equ 01Fh");
 [; <" ADCON0 equ 01Fh ;# ">
 "1158
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1158: __asm("OPTION_REG equ 081h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1158: __asm("OPTION_REG equ 081h");
 [; <" OPTION_REG equ 081h ;# ">
 "1228
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1228: __asm("TRISA equ 085h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1228: __asm("TRISA equ 085h");
 [; <" TRISA equ 085h ;# ">
 "1278
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1278: __asm("TRISB equ 086h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1278: __asm("TRISB equ 086h");
 [; <" TRISB equ 086h ;# ">
 "1340
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1340: __asm("TRISC equ 087h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1340: __asm("TRISC equ 087h");
 [; <" TRISC equ 087h ;# ">
 "1402
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1402: __asm("PIE1 equ 08Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1402: __asm("PIE1 equ 08Ch");
 [; <" PIE1 equ 08Ch ;# ">
 "1458
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1458: __asm("PIE2 equ 08Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1458: __asm("PIE2 equ 08Dh");
 [; <" PIE2 equ 08Dh ;# ">
 "1498
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1498: __asm("PCON equ 08Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1498: __asm("PCON equ 08Eh");
 [; <" PCON equ 08Eh ;# ">
 "1532
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1532: __asm("SSPCON2 equ 091h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1532: __asm("SSPCON2 equ 091h");
 [; <" SSPCON2 equ 091h ;# ">
 "1594
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1594: __asm("PR2 equ 092h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1594: __asm("PR2 equ 092h");
 [; <" PR2 equ 092h ;# ">
 "1601
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1601: __asm("SSPADD equ 093h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1601: __asm("SSPADD equ 093h");
 [; <" SSPADD equ 093h ;# ">
 "1608
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1608: __asm("SSPSTAT equ 094h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1608: __asm("SSPSTAT equ 094h");
 [; <" SSPSTAT equ 094h ;# ">
 "1777
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1777: __asm("TXSTA equ 098h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1777: __asm("TXSTA equ 098h");
 [; <" TXSTA equ 098h ;# ">
 "1858
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1858: __asm("SPBRG equ 099h");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1858: __asm("SPBRG equ 099h");
 [; <" SPBRG equ 099h ;# ">
 "1865
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1865: __asm("CMCON equ 09Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1865: __asm("CMCON equ 09Ch");
 [; <" CMCON equ 09Ch ;# ">
 "1935
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 1935: __asm("CVRCON equ 09Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1935: __asm("CVRCON equ 09Dh");
 [; <" CVRCON equ 09Dh ;# ">
 "2000
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2000: __asm("ADRESL equ 09Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2000: __asm("ADRESL equ 09Eh");
 [; <" ADRESL equ 09Eh ;# ">
 "2007
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2007: __asm("ADCON1 equ 09Fh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2007: __asm("ADCON1 equ 09Fh");
 [; <" ADCON1 equ 09Fh ;# ">
 "2066
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2066: __asm("EEDATA equ 010Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2066: __asm("EEDATA equ 010Ch");
 [; <" EEDATA equ 010Ch ;# ">
 "2073
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2073: __asm("EEADR equ 010Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2073: __asm("EEADR equ 010Dh");
 [; <" EEADR equ 010Dh ;# ">
 "2080
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2080: __asm("EEDATH equ 010Eh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2080: __asm("EEDATH equ 010Eh");
 [; <" EEDATH equ 010Eh ;# ">
 "2087
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2087: __asm("EEADRH equ 010Fh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2087: __asm("EEADRH equ 010Fh");
 [; <" EEADRH equ 010Fh ;# ">
 "2094
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2094: __asm("EECON1 equ 018Ch");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2094: __asm("EECON1 equ 018Ch");
 [; <" EECON1 equ 018Ch ;# ">
 "2139
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f876a.h: 2139: __asm("EECON2 equ 018Dh");
+[; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 2139: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "7 ./main.h
 [; ;./main.h: 7: unsigned int timerbotao1 = 0;
@@ -360,20 +360,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _pecaOK
 -> -> 0 `i `uc
 ]
-"31
-[; ;./main.h: 31: }comunicacao;
+"23
+[; ;./main.h: 23: unsigned char countFailRx = 0;
+[v _countFailRx `uc ~T0 @X0 1 e ]
+[i _countFailRx
+-> -> 0 `i `uc
+]
+"24
+[; ;./main.h: 24: unsigned char addressFail = 0;
+[v _addressFail `uc ~T0 @X0 1 e ]
+[i _addressFail
+-> -> 0 `i `uc
+]
+"33
+[; ;./main.h: 33: }comunicacao;
 [v _comunicacao `S87 ~T0 @X0 1 e ]
-"49
-[; ;./main.h: 49: }escravo;
+"51
+[; ;./main.h: 51: }escravo;
 [v _escravo `S89 ~T0 @X0 1 e ]
-"64
-[; ;./main.h: 64: }estado;
+"66
+[; ;./main.h: 66: }estado;
 [v _estado `S91 ~T0 @X0 1 e ]
-"89
-[; ;./main.h: 89: } estagio = INTERROMPIDO;
-[v _estagio `E848 ~T0 @X0 1 s ]
+"91
+[; ;./main.h: 91: } estagio = INTERROMPIDO;
+[v _estagio `E850 ~T0 @X0 1 s ]
 [i _estagio
-. `E848 0
+. `E850 0
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "17 main.c
@@ -407,7 +419,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _T2CON -> -> 7 `i `uc ]
 "28
 [; ;main.c: 28:     estagio = INTERROMPIDO;
-[e = _estagio . `E848 0 ]
+[e = _estagio . `E850 0 ]
 "29
 [; ;main.c: 29:     estado.botao1 = 0;
 [e = . _estado 0 -> -> 0 `i `uc ]
@@ -592,7 +604,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "90
 [; ;main.c: 90:                 estagio = INTERROMPIDO;
-[e = _estagio . `E848 0 ]
+[e = _estagio . `E850 0 ]
 "91
 [; ;main.c: 91:                 estado.testando = 0;
 [e = . _estado 6 -> -> 0 `i `uc ]
@@ -1023,7 +1035,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! && == -> . _estado 0 `i -> 1 `i == -> . _estado 1 `i -> 1 `i 142  ]
 "231
 [; ;main.c: 231:                     estagio = TESTE_BOTOES;
-[e = _estagio . `E848 1 ]
+[e = _estagio . `E850 1 ]
 [e :U 142 ]
 "232
 [; ;main.c: 232:             }
@@ -1048,1434 +1060,1544 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! && < _timerbotao1 -> -> 500 `i `ui < _timerbotao2 -> -> 500 `i `ui 145  ]
 "240
 [; ;main.c: 240:                         estagio = INICIA_TESTE;
-[e = _estagio . `E848 2 ]
+[e = _estagio . `E850 2 ]
 [e :U 145 ]
 "241
 [; ;main.c: 241:                 }
 }
 [e :U 144 ]
 "242
-[; ;main.c: 242:             }
-}
+[; ;main.c: 242:                 if(estado.falha == 1)
+[e $ ! == -> . _estado 8 `i -> 1 `i 146  ]
 "243
-[; ;main.c: 243:             break;
-[e $U 136  ]
+[; ;main.c: 243:                 {
+{
+"244
+[; ;main.c: 244:                     if(addressFail > 0)
+[e $ ! > -> _addressFail `i -> 0 `i 147  ]
 "245
-[; ;main.c: 245:             case INICIA_TESTE:
-[e :U 146 ]
+[; ;main.c: 245:                     {
+{
 "246
-[; ;main.c: 246:             {
-{
+[; ;main.c: 246:                         if(timer < 500)
+[e $ ! < _timer -> -> 500 `i `ui 148  ]
 "247
-[; ;main.c: 247:                 PORTAbits.RA1 = 0;
-[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
-"248
-[; ;main.c: 248:                 PORTAbits.RA3 = 0;
-[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
-"249
-[; ;main.c: 249:                 PORTAbits.RA2 = 1;
-[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
-"250
-[; ;main.c: 250:                 PORTAbits.RA0 = 0;
-[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
-"251
-[; ;main.c: 251:                 PORTAbits.RA5 = 1;
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"252
-[; ;main.c: 252:                 estado.reteste = 0;
-[e = . _estado 7 -> -> 0 `i `uc ]
-"253
-[; ;main.c: 253:                 estado.falha = 0;
-[e = . _estado 8 -> -> 0 `i `uc ]
-"254
-[; ;main.c: 254:                 endereco = 0;
-[e = _endereco -> -> 0 `i `uc ]
-"255
-[; ;main.c: 255:                 escravo.byte = 0;
-[e = . _escravo 0 -> -> 0 `i `ui ]
-"256
-[; ;main.c: 256:                 timer = 0;
-[e = _timer -> -> 0 `i `ui ]
-"257
-[; ;main.c: 257:                 naoliga = 0;
-[e = _naoliga -> -> 0 `i `uc ]
-"258
-[; ;main.c: 258:                 naodesliga = 0;
-[e = _naodesliga -> -> 0 `i `uc ]
-"259
-[; ;main.c: 259:                 sincronismo = 0;
-[e = _sincronismo -> -> 0 `i `uc ]
-"260
-[; ;main.c: 260:                 pecaOK = 0;
-[e = _pecaOK -> -> 0 `i `uc ]
-"261
-[; ;main.c: 261:                 estagio = TESTE_TAMPA_FECHADA;
-[e = _estagio . `E848 3 ]
-"262
-[; ;main.c: 262:             }
-}
-"263
-[; ;main.c: 263:             break;
-[e $U 136  ]
-"265
-[; ;main.c: 265:             case TESTE_TAMPA_FECHADA:
-[e :U 147 ]
-"266
-[; ;main.c: 266:             {
-{
-"267
-[; ;main.c: 267:                 if(timer > 5000)
-[e $ ! > _timer -> -> 5000 `i `ui 148  ]
-"268
-[; ;main.c: 268:                     estagio = FALHA_FIM_CURSO;
-[e = _estagio . `E848 17 ]
+[; ;main.c: 247:                             PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 [e $U 149  ]
-"269
-[; ;main.c: 269:                 else
+"248
+[; ;main.c: 248:                         else
 [e :U 148 ]
-"270
-[; ;main.c: 270:                 {
+"249
+[; ;main.c: 249:                             PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+[e :U 149 ]
+"250
+[; ;main.c: 250:                         if(timer > (500*2))
+[e $ ! > _timer -> * -> 500 `i -> 2 `i `ui 150  ]
+"251
+[; ;main.c: 251:                         {
 {
-"271
-[; ;main.c: 271:                     if(estado.fimcurso == 1)
-[e $ ! == -> . _estado 2 `i -> 1 `i 150  ]
-"272
-[; ;main.c: 272:                     {
-{
-"273
-[; ;main.c: 273:                         timer = 0;
+"252
+[; ;main.c: 252:                             addressFail--;
+[e -- _addressFail -> -> 1 `i `uc ]
+"253
+[; ;main.c: 253:                             timer = 0;
 [e = _timer -> -> 0 `i `ui ]
-"274
-[; ;main.c: 274:                         estagio = ALIMENTA_PLACA;
-[e = _estagio . `E848 4 ]
-"275
-[; ;main.c: 275:                     }
+"254
+[; ;main.c: 254:                         }
 }
 [e :U 150 ]
-"276
-[; ;main.c: 276:                 }
+"255
+[; ;main.c: 255:                     }
 }
-[e :U 149 ]
-"277
-[; ;main.c: 277:             }
-}
-"278
-[; ;main.c: 278:             break;
-[e $U 136  ]
-"280
-[; ;main.c: 280:             case ALIMENTA_PLACA:
+[e $U 151  ]
+"256
+[; ;main.c: 256:                     else
+[e :U 147 ]
+"257
+[; ;main.c: 257:                         PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 [e :U 151 ]
-"281
-[; ;main.c: 281:             {
-{
-"282
-[; ;main.c: 282:                 estado.testando = 1;
-[e = . _estado 6 -> -> 1 `i `uc ]
-"283
-[; ;main.c: 283:                 if(estado.chaveNA == 1)
-[e $ ! == -> . _estado 4 `i -> 1 `i 152  ]
-"284
-[; ;main.c: 284:                     pwm_setado = 0;
-[e = _pwm_setado -> -> 0 `i `ui ]
-[e $U 153  ]
-"285
-[; ;main.c: 285:                 else
+"258
+[; ;main.c: 258:                 }
+}
+[e :U 146 ]
+"259
+[; ;main.c: 259:             }
+}
+"260
+[; ;main.c: 260:             break;
+[e $U 136  ]
+"262
+[; ;main.c: 262:             case INICIA_TESTE:
 [e :U 152 ]
-"286
-[; ;main.c: 286:                 {
+"263
+[; ;main.c: 263:             {
 {
-"287
-[; ;main.c: 287:                     if(estado.chavecopo == 1)
-[e $ ! == -> . _estado 5 `i -> 1 `i 154  ]
-"288
-[; ;main.c: 288:                         pwm_setado = 170;
-[e = _pwm_setado -> -> 170 `i `ui ]
-[e $U 155  ]
-"289
-[; ;main.c: 289:                     else
-[e :U 154 ]
-"290
-[; ;main.c: 290:                         pwm_setado = 105;
-[e = _pwm_setado -> -> 105 `i `ui ]
-[e :U 155 ]
-"291
-[; ;main.c: 291:                 }
-}
-[e :U 153 ]
-"292
-[; ;main.c: 292:                 if(timer > 2000)
-[e $ ! > _timer -> -> 2000 `i `ui 156  ]
-"293
-[; ;main.c: 293:                 {
-{
-"294
-[; ;main.c: 294:                     PORTCbits.RC5 = 1;
-[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"295
-[; ;main.c: 295:                     comunicacao.endereco = 0x0F;
-[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
-"296
-[; ;main.c: 296:                     if(estado.chaveNF == 1)
-[e $ ! == -> . _estado 3 `i -> 1 `i 157  ]
-"297
-[; ;main.c: 297:                         comunicacao.resposta = 0x09;
-[e = . . _comunicacao 1 1 -> -> 9 `i `uc ]
-[e $U 158  ]
-"298
-[; ;main.c: 298:                     else
-[e :U 157 ]
-"299
-[; ;main.c: 299:                     {
-{
-"300
-[; ;main.c: 300:                         if(estado.chaveNA == 1)
-[e $ ! == -> . _estado 4 `i -> 1 `i 159  ]
-"301
-[; ;main.c: 301:                             comunicacao.resposta = 0x05;
-[e = . . _comunicacao 1 1 -> -> 5 `i `uc ]
-[e $U 160  ]
-"302
-[; ;main.c: 302:                         else
-[e :U 159 ]
-"303
-[; ;main.c: 303:                             comunicacao.resposta = 0x03;
-[e = . . _comunicacao 1 1 -> -> 3 `i `uc ]
-[e :U 160 ]
-"304
-[; ;main.c: 304:                     }
-}
-[e :U 158 ]
-"305
-[; ;main.c: 305:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"306
-[; ;main.c: 306:                     timer = 0;
+"264
+[; ;main.c: 264:                 PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"265
+[; ;main.c: 265:                 PORTAbits.RA3 = 0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"266
+[; ;main.c: 266:                 PORTAbits.RA2 = 1;
+[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
+"267
+[; ;main.c: 267:                 PORTAbits.RA0 = 0;
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"268
+[; ;main.c: 268:                 PORTAbits.RA5 = 1;
+[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
+"269
+[; ;main.c: 269:                 estado.reteste = 0;
+[e = . _estado 7 -> -> 0 `i `uc ]
+"270
+[; ;main.c: 270:                 estado.falha = 0;
+[e = . _estado 8 -> -> 0 `i `uc ]
+"271
+[; ;main.c: 271:                 endereco = 0;
+[e = _endereco -> -> 0 `i `uc ]
+"272
+[; ;main.c: 272:                 escravo.byte = 0;
+[e = . _escravo 0 -> -> 0 `i `ui ]
+"273
+[; ;main.c: 273:                 timer = 0;
 [e = _timer -> -> 0 `i `ui ]
-"307
-[; ;main.c: 307:                     estagio = ESTABILIZACAO;
-[e = _estagio . `E848 5 ]
-"308
-[; ;main.c: 308:                 }
+"274
+[; ;main.c: 274:                 naoliga = 0;
+[e = _naoliga -> -> 0 `i `uc ]
+"275
+[; ;main.c: 275:                 naodesliga = 0;
+[e = _naodesliga -> -> 0 `i `uc ]
+"276
+[; ;main.c: 276:                 sincronismo = 0;
+[e = _sincronismo -> -> 0 `i `uc ]
+"277
+[; ;main.c: 277:                 pecaOK = 0;
+[e = _pecaOK -> -> 0 `i `uc ]
+"278
+[; ;main.c: 278:                 addressFail = 0;
+[e = _addressFail -> -> 0 `i `uc ]
+"279
+[; ;main.c: 279:                 estagio = TESTE_TAMPA_FECHADA;
+[e = _estagio . `E850 3 ]
+"280
+[; ;main.c: 280:             }
+}
+"281
+[; ;main.c: 281:             break;
+[e $U 136  ]
+"283
+[; ;main.c: 283:             case TESTE_TAMPA_FECHADA:
+[e :U 153 ]
+"284
+[; ;main.c: 284:             {
+{
+"285
+[; ;main.c: 285:                 if(timer > 5000)
+[e $ ! > _timer -> -> 5000 `i `ui 154  ]
+"286
+[; ;main.c: 286:                     estagio = FALHA_FIM_CURSO;
+[e = _estagio . `E850 17 ]
+[e $U 155  ]
+"287
+[; ;main.c: 287:                 else
+[e :U 154 ]
+"288
+[; ;main.c: 288:                 {
+{
+"289
+[; ;main.c: 289:                     if(estado.fimcurso == 1)
+[e $ ! == -> . _estado 2 `i -> 1 `i 156  ]
+"290
+[; ;main.c: 290:                     {
+{
+"291
+[; ;main.c: 291:                         timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"292
+[; ;main.c: 292:                         estagio = ALIMENTA_PLACA;
+[e = _estagio . `E850 4 ]
+"293
+[; ;main.c: 293:                     }
 }
 [e :U 156 ]
-"309
-[; ;main.c: 309:             }
+"294
+[; ;main.c: 294:                 }
 }
-"310
-[; ;main.c: 310:             break;
+[e :U 155 ]
+"295
+[; ;main.c: 295:             }
+}
+"296
+[; ;main.c: 296:             break;
 [e $U 136  ]
-"312
-[; ;main.c: 312:             case ESTABILIZACAO:
+"298
+[; ;main.c: 298:             case ALIMENTA_PLACA:
+[e :U 157 ]
+"299
+[; ;main.c: 299:             {
+{
+"300
+[; ;main.c: 300:                 estado.testando = 1;
+[e = . _estado 6 -> -> 1 `i `uc ]
+"301
+[; ;main.c: 301:                 if(estado.chaveNA == 1)
+[e $ ! == -> . _estado 4 `i -> 1 `i 158  ]
+"302
+[; ;main.c: 302:                     pwm_setado = 0;
+[e = _pwm_setado -> -> 0 `i `ui ]
+[e $U 159  ]
+"303
+[; ;main.c: 303:                 else
+[e :U 158 ]
+"304
+[; ;main.c: 304:                 {
+{
+"305
+[; ;main.c: 305:                     if(estado.chavecopo == 1)
+[e $ ! == -> . _estado 5 `i -> 1 `i 160  ]
+"306
+[; ;main.c: 306:                         pwm_setado = 170;
+[e = _pwm_setado -> -> 170 `i `ui ]
+[e $U 161  ]
+"307
+[; ;main.c: 307:                     else
+[e :U 160 ]
+"308
+[; ;main.c: 308:                         pwm_setado = 105;
+[e = _pwm_setado -> -> 105 `i `ui ]
 [e :U 161 ]
-"313
-[; ;main.c: 313:             {
-{
-"314
-[; ;main.c: 314:                 if(timer > 5000)
-[e $ ! > _timer -> -> 5000 `i `ui 162  ]
-"315
-[; ;main.c: 315:                     estagio = TESTE_LIGA;
-[e = _estagio . `E848 6 ]
-[e :U 162 ]
-"317
-[; ;main.c: 317:                 if(USART_RX_Ready() == 0)
-[e $ ! == -> ( _USART_RX_Ready ..  `i -> 0 `i 163  ]
-"318
-[; ;main.c: 318:                     timeoutRx = 0;
-[e = _timeoutRx -> -> 0 `i `uc ]
-[e $U 164  ]
-"319
-[; ;main.c: 319:                 else
-[e :U 163 ]
-"320
-[; ;main.c: 320:                 {
-{
-"321
-[; ;main.c: 321:                     if(timeoutRx > 80)
-[e $ ! > -> _timeoutRx `i -> 80 `i 165  ]
-"322
-[; ;main.c: 322:                     {
-{
-"323
-[; ;main.c: 323:                         USART_RX_Clear_Buffer();
-[e ( _USART_RX_Clear_Buffer ..  ]
-"324
-[; ;main.c: 324:                         timeoutRx = 0;
-[e = _timeoutRx -> -> 0 `i `uc ]
-"325
-[; ;main.c: 325:                     }
+"309
+[; ;main.c: 309:                 }
 }
+[e :U 159 ]
+"310
+[; ;main.c: 310:                 if(timer > 2000)
+[e $ ! > _timer -> -> 2000 `i `ui 162  ]
+"311
+[; ;main.c: 311:                 {
+{
+"312
+[; ;main.c: 312:                     PORTCbits.RC5 = 1;
+[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
+"313
+[; ;main.c: 313:                     comunicacao.endereco = 0x0F;
+[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
+"314
+[; ;main.c: 314:                     if(estado.chaveNF == 1)
+[e $ ! == -> . _estado 3 `i -> 1 `i 163  ]
+"315
+[; ;main.c: 315:                         comunicacao.resposta = 0x09;
+[e = . . _comunicacao 1 1 -> -> 9 `i `uc ]
+[e $U 164  ]
+"316
+[; ;main.c: 316:                     else
+[e :U 163 ]
+"317
+[; ;main.c: 317:                     {
+{
+"318
+[; ;main.c: 318:                         if(estado.chaveNA == 1)
+[e $ ! == -> . _estado 4 `i -> 1 `i 165  ]
+"319
+[; ;main.c: 319:                             comunicacao.resposta = 0x05;
+[e = . . _comunicacao 1 1 -> -> 5 `i `uc ]
+[e $U 166  ]
+"320
+[; ;main.c: 320:                         else
 [e :U 165 ]
+"321
+[; ;main.c: 321:                             comunicacao.resposta = 0x03;
+[e = . . _comunicacao 1 1 -> -> 3 `i `uc ]
+[e :U 166 ]
+"322
+[; ;main.c: 322:                     }
+}
+[e :U 164 ]
+"323
+[; ;main.c: 323:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"324
+[; ;main.c: 324:                     timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"325
+[; ;main.c: 325:                     estagio = ESTABILIZACAO;
+[e = _estagio . `E850 5 ]
 "326
 [; ;main.c: 326:                 }
 }
-[e :U 164 ]
+[e :U 162 ]
+"327
+[; ;main.c: 327:             }
+}
 "328
-[; ;main.c: 328:                 if(USART_RX_Ready() == 1)
-[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 166  ]
-"329
-[; ;main.c: 329:                 {
-{
-"330
-[; ;main.c: 330:                     comunicacao.byte = USART_Read();
-[e = . _comunicacao 0 ( _USART_Read ..  ]
-"331
-[; ;main.c: 331:                     if(comunicacao.endereco == 0x00)
-[e $ ! == -> . . _comunicacao 1 0 `i -> 0 `i 167  ]
-"332
-[; ;main.c: 332:                     {
-{
-"333
-[; ;main.c: 333:                         if(comunicacao.resposta == 0x0F)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 15 `i 168  ]
-"334
-[; ;main.c: 334:                         {
-{
-"335
-[; ;main.c: 335:                             estagio = FALHA;
-[e = _estagio . `E848 18 ]
-"336
-[; ;main.c: 336:                             estado.testando = 0;
-[e = . _estado 6 -> -> 0 `i `uc ]
-"337
-[; ;main.c: 337:                             comunicacao.endereco = 0x0F;
-[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
-"338
-[; ;main.c: 338:                             comunicacao.resposta = 0x00;
-[e = . . _comunicacao 1 1 -> -> 0 `i `uc ]
-"339
-[; ;main.c: 339:                             USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"340
-[; ;main.c: 340:                         }
-}
-[e :U 168 ]
-"341
-[; ;main.c: 341:                     }
-}
-[e :U 167 ]
-"342
-[; ;main.c: 342:                 }
-}
-[e :U 166 ]
-"343
-[; ;main.c: 343:             }
-}
-"344
-[; ;main.c: 344:             break;
+[; ;main.c: 328:             break;
 [e $U 136  ]
-"346
-[; ;main.c: 346:             case TESTE_LIGA:
+"330
+[; ;main.c: 330:             case ESTABILIZACAO:
+[e :U 167 ]
+"331
+[; ;main.c: 331:             {
+{
+"332
+[; ;main.c: 332:                 if(timer > 5000)
+[e $ ! > _timer -> -> 5000 `i `ui 168  ]
+"333
+[; ;main.c: 333:                     estagio = TESTE_LIGA;
+[e = _estagio . `E850 6 ]
+[e :U 168 ]
+"335
+[; ;main.c: 335:                 if(USART_RX_Ready() == 0)
+[e $ ! == -> ( _USART_RX_Ready ..  `i -> 0 `i 169  ]
+"336
+[; ;main.c: 336:                     timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
+[e $U 170  ]
+"337
+[; ;main.c: 337:                 else
 [e :U 169 ]
+"338
+[; ;main.c: 338:                 {
+{
+"339
+[; ;main.c: 339:                     if(timeoutRx > 80)
+[e $ ! > -> _timeoutRx `i -> 80 `i 171  ]
+"340
+[; ;main.c: 340:                     {
+{
+"341
+[; ;main.c: 341:                         USART_RX_Clear_Buffer();
+[e ( _USART_RX_Clear_Buffer ..  ]
+"342
+[; ;main.c: 342:                         timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
+"343
+[; ;main.c: 343:                     }
+}
+[e :U 171 ]
+"344
+[; ;main.c: 344:                 }
+}
+[e :U 170 ]
+"346
+[; ;main.c: 346:                 if(USART_RX_Ready() == 1)
+[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 172  ]
 "347
-[; ;main.c: 347:             {
+[; ;main.c: 347:                 {
 {
 "348
-[; ;main.c: 348:                 if(estado.chaveNA == 1)
-[e $ ! == -> . _estado 4 `i -> 1 `i 170  ]
+[; ;main.c: 348:                     comunicacao.byte = USART_Read();
+[e = . _comunicacao 0 ( _USART_Read ..  ]
 "349
-[; ;main.c: 349:                     pwm_setado = 105;
-[e = _pwm_setado -> -> 105 `i `ui ]
-[e $U 171  ]
+[; ;main.c: 349:                     if(comunicacao.endereco == 0x00)
+[e $ ! == -> . . _comunicacao 1 0 `i -> 0 `i 173  ]
 "350
-[; ;main.c: 350:                 else
-[e :U 170 ]
+[; ;main.c: 350:                     {
+{
 "351
-[; ;main.c: 351:                     pwm_setado = 10;
-[e = _pwm_setado -> -> 10 `i `ui ]
-[e :U 171 ]
+[; ;main.c: 351:                         if(comunicacao.resposta == 0x0F)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 15 `i 174  ]
 "352
-[; ;main.c: 352:                 timer = 0;
-[e = _timer -> -> 0 `i `ui ]
+[; ;main.c: 352:                         {
+{
 "353
-[; ;main.c: 353:                 estagio = AGUARDA_TEMPO_LIGA;
-[e = _estagio . `E848 7 ]
+[; ;main.c: 353:                             estagio = FALHA;
+[e = _estagio . `E850 18 ]
 "354
-[; ;main.c: 354:             }
-}
+[; ;main.c: 354:                             estado.testando = 0;
+[e = . _estado 6 -> -> 0 `i `uc ]
 "355
-[; ;main.c: 355:             break;
-[e $U 136  ]
+[; ;main.c: 355:                             comunicacao.endereco = 0x0F;
+[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
+"356
+[; ;main.c: 356:                             comunicacao.resposta = 0x00;
+[e = . . _comunicacao 1 1 -> -> 0 `i `uc ]
 "357
-[; ;main.c: 357:             case AGUARDA_TEMPO_LIGA:
-[e :U 172 ]
+[; ;main.c: 357:                             USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
 "358
-[; ;main.c: 358:             {
-{
-"359
-[; ;main.c: 359:                 if((timer > 12000) || (escravo.byte == 0x03FF))
-[e $ ! || > _timer -> -> 12000 `i `ui == . _escravo 0 -> -> 1023 `i `ui 173  ]
-"360
-[; ;main.c: 360:                 {
-{
-"361
-[; ;main.c: 361:                     if(timer > 3000)
-[e $ ! > _timer -> -> 3000 `i `ui 174  ]
-"362
-[; ;main.c: 362:                     {
-{
-"363
-[; ;main.c: 363:                         escravo.byte = 0;
-[e = . _escravo 0 -> -> 0 `i `ui ]
-"364
-[; ;main.c: 364:                         endereco = 0;
-[e = _endereco -> -> 0 `i `uc ]
-"365
-[; ;main.c: 365:                         estagio = TESTE_DESLIGA;
-[e = _estagio . `E848 10 ]
-"366
-[; ;main.c: 366:                     }
+[; ;main.c: 358:                         }
 }
 [e :U 174 ]
-"367
-[; ;main.c: 367:                 }
+"359
+[; ;main.c: 359:                     }
 }
-[e $U 175  ]
+[e :U 173 ]
+"360
+[; ;main.c: 360:                 }
+}
+[e :U 172 ]
+"361
+[; ;main.c: 361:             }
+}
+"362
+[; ;main.c: 362:             break;
+[e $U 136  ]
+"364
+[; ;main.c: 364:             case TESTE_LIGA:
+[e :U 175 ]
+"365
+[; ;main.c: 365:             {
+{
+"366
+[; ;main.c: 366:                 if(estado.chaveNA == 1)
+[e $ ! == -> . _estado 4 `i -> 1 `i 176  ]
+"367
+[; ;main.c: 367:                     pwm_setado = 105;
+[e = _pwm_setado -> -> 105 `i `ui ]
+[e $U 177  ]
 "368
 [; ;main.c: 368:                 else
-[e :U 173 ]
-"369
-[; ;main.c: 369:                     estagio = VERIFICA_PLACAS_LIGA;
-[e = _estagio . `E848 8 ]
-[e :U 175 ]
-"370
-[; ;main.c: 370:             }
-}
-"371
-[; ;main.c: 371:             break;
-[e $U 136  ]
-"373
-[; ;main.c: 373:             case VERIFICA_PLACAS_LIGA:
 [e :U 176 ]
-"374
-[; ;main.c: 374:             {
-{
-"375
-[; ;main.c: 375:                 endereco++;
-[e ++ _endereco -> -> 1 `i `uc ]
-"376
-[; ;main.c: 376:                 if(endereco <= 10)
-[e $ ! <= -> _endereco `i -> 10 `i 177  ]
-"377
-[; ;main.c: 377:                 {
-{
-"378
-[; ;main.c: 378:                     timeoutRx = 0;
-[e = _timeoutRx -> -> 0 `i `uc ]
-"379
-[; ;main.c: 379:                     USART_RX_Clear_Buffer();
-[e ( _USART_RX_Clear_Buffer ..  ]
-"380
-[; ;main.c: 380:                     comunicacao.endereco = endereco;
-[e = . . _comunicacao 1 0 _endereco ]
-"381
-[; ;main.c: 381:                     comunicacao.resposta = 0x0F;
-[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
-"382
-[; ;main.c: 382:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"383
-[; ;main.c: 383:                     estagio = MENSAGEM_RETORNO_PLACAS_LIGA;
-[e = _estagio . `E848 9 ]
-"384
-[; ;main.c: 384:                 }
-}
-[e $U 178  ]
-"385
-[; ;main.c: 385:                 else
+"369
+[; ;main.c: 369:                     pwm_setado = 10;
+[e = _pwm_setado -> -> 10 `i `ui ]
 [e :U 177 ]
-"386
-[; ;main.c: 386:                     endereco = 0;
-[e = _endereco -> -> 0 `i `uc ]
-[e :U 178 ]
-"387
-[; ;main.c: 387:             }
+"370
+[; ;main.c: 370:                 timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"371
+[; ;main.c: 371:                 estagio = AGUARDA_TEMPO_LIGA;
+[e = _estagio . `E850 7 ]
+"372
+[; ;main.c: 372:             }
 }
-"388
-[; ;main.c: 388:             break;
+"373
+[; ;main.c: 373:             break;
 [e $U 136  ]
-"390
-[; ;main.c: 390:             case MENSAGEM_RETORNO_PLACAS_LIGA:
-[e :U 179 ]
-"391
-[; ;main.c: 391:             {
+"375
+[; ;main.c: 375:             case AGUARDA_TEMPO_LIGA:
+[e :U 178 ]
+"376
+[; ;main.c: 376:             {
 {
-"392
-[; ;main.c: 392:                 if(timeoutRx > 80)
-[e $ ! > -> _timeoutRx `i -> 80 `i 180  ]
-"393
-[; ;main.c: 393:                     estagio = AGUARDA_TEMPO_LIGA;
-[e = _estagio . `E848 7 ]
-[e $U 181  ]
-"394
-[; ;main.c: 394:                 else
+"377
+[; ;main.c: 377:                 if((timer > 12000) || (escravo.byte == 0x03FF))
+[e $ ! || > _timer -> -> 12000 `i `ui == . _escravo 0 -> -> 1023 `i `ui 179  ]
+"378
+[; ;main.c: 378:                 {
+{
+"379
+[; ;main.c: 379:                     if(timer > 3000)
+[e $ ! > _timer -> -> 3000 `i `ui 180  ]
+"380
+[; ;main.c: 380:                     {
+{
+"381
+[; ;main.c: 381:                         escravo.byte = 0;
+[e = . _escravo 0 -> -> 0 `i `ui ]
+"382
+[; ;main.c: 382:                         endereco = 0;
+[e = _endereco -> -> 0 `i `uc ]
+"383
+[; ;main.c: 383:                         estagio = TESTE_DESLIGA;
+[e = _estagio . `E850 10 ]
+"384
+[; ;main.c: 384:                     }
+}
 [e :U 180 ]
+"385
+[; ;main.c: 385:                 }
+}
+[e $U 181  ]
+"386
+[; ;main.c: 386:                 else
+[e :U 179 ]
+"387
+[; ;main.c: 387:                     estagio = VERIFICA_PLACAS_LIGA;
+[e = _estagio . `E850 8 ]
+[e :U 181 ]
+"388
+[; ;main.c: 388:             }
+}
+"389
+[; ;main.c: 389:             break;
+[e $U 136  ]
+"391
+[; ;main.c: 391:             case VERIFICA_PLACAS_LIGA:
+[e :U 182 ]
+"392
+[; ;main.c: 392:             {
+{
+"393
+[; ;main.c: 393:                 endereco++;
+[e ++ _endereco -> -> 1 `i `uc ]
+"394
+[; ;main.c: 394:                 if(endereco <= 10)
+[e $ ! <= -> _endereco `i -> 10 `i 183  ]
 "395
 [; ;main.c: 395:                 {
 {
 "396
-[; ;main.c: 396:                     if(USART_RX_Ready() == 1)
-[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 182  ]
+[; ;main.c: 396:                     timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
 "397
-[; ;main.c: 397:                     {
-{
+[; ;main.c: 397:                     USART_RX_Clear_Buffer();
+[e ( _USART_RX_Clear_Buffer ..  ]
 "398
-[; ;main.c: 398:                         comunicacao.byte = USART_Read();
-[e = . _comunicacao 0 ( _USART_Read ..  ]
+[; ;main.c: 398:                     comunicacao.endereco = endereco;
+[e = . . _comunicacao 1 0 _endereco ]
 "399
-[; ;main.c: 399:                         if(comunicacao.endereco == endereco)
-[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 183  ]
+[; ;main.c: 399:                     comunicacao.resposta = 0x0F;
+[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
 "400
-[; ;main.c: 400:                         {
-{
+[; ;main.c: 400:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
 "401
-[; ;main.c: 401:                             if(comunicacao.resposta != 0x00)
-[e $ ! != -> . . _comunicacao 1 1 `i -> 0 `i 184  ]
+[; ;main.c: 401:                     estagio = MENSAGEM_RETORNO_PLACAS_LIGA;
+[e = _estagio . `E850 9 ]
 "402
-[; ;main.c: 402:                             {
-{
+[; ;main.c: 402:                 }
+}
+[e $U 184  ]
 "403
-[; ;main.c: 403:                                 switch(endereco)
-[e $U 186  ]
+[; ;main.c: 403:                 else
+[e :U 183 ]
 "404
-[; ;main.c: 404:                                 {
-{
+[; ;main.c: 404:                     endereco = 0;
+[e = _endereco -> -> 0 `i `uc ]
+[e :U 184 ]
 "405
-[; ;main.c: 405:                                     case 1:
-[e :U 187 ]
+[; ;main.c: 405:             }
+}
 "406
-[; ;main.c: 406:                                         escravo.endereco1 = 1;
-[e = . . _escravo 1 0 -> -> 1 `i `uc ]
-"407
-[; ;main.c: 407:                                     break;
-[e $U 185  ]
+[; ;main.c: 406:             break;
+[e $U 136  ]
 "408
-[; ;main.c: 408:                                     case 2:
-[e :U 188 ]
+[; ;main.c: 408:             case MENSAGEM_RETORNO_PLACAS_LIGA:
+[e :U 185 ]
 "409
-[; ;main.c: 409:                                         escravo.endereco2 = 1;
-[e = . . _escravo 1 1 -> -> 1 `i `uc ]
+[; ;main.c: 409:             {
+{
 "410
-[; ;main.c: 410:                                     break;
-[e $U 185  ]
+[; ;main.c: 410:                 if(timeoutRx > 80)
+[e $ ! > -> _timeoutRx `i -> 80 `i 186  ]
 "411
-[; ;main.c: 411:                                     case 3:
-[e :U 189 ]
+[; ;main.c: 411:                     estagio = AGUARDA_TEMPO_LIGA;
+[e = _estagio . `E850 7 ]
+[e $U 187  ]
 "412
-[; ;main.c: 412:                                         escravo.endereco3 = 1;
-[e = . . _escravo 1 2 -> -> 1 `i `uc ]
+[; ;main.c: 412:                 else
+[e :U 186 ]
 "413
-[; ;main.c: 413:                                     break;
-[e $U 185  ]
+[; ;main.c: 413:                 {
+{
 "414
-[; ;main.c: 414:                                     case 4:
-[e :U 190 ]
+[; ;main.c: 414:                     if(USART_RX_Ready() == 1)
+[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 188  ]
 "415
-[; ;main.c: 415:                                         escravo.endereco4 = 1;
-[e = . . _escravo 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 415:                     {
+{
 "416
-[; ;main.c: 416:                                     break;
-[e $U 185  ]
+[; ;main.c: 416:                         comunicacao.byte = USART_Read();
+[e = . _comunicacao 0 ( _USART_Read ..  ]
 "417
-[; ;main.c: 417:                                     case 5:
-[e :U 191 ]
+[; ;main.c: 417:                         if(comunicacao.endereco == endereco)
+[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 189  ]
 "418
-[; ;main.c: 418:                                         escravo.endereco5 = 1;
-[e = . . _escravo 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 418:                         {
+{
 "419
-[; ;main.c: 419:                                     break;
-[e $U 185  ]
+[; ;main.c: 419:                             if(comunicacao.resposta != 0x00)
+[e $ ! != -> . . _comunicacao 1 1 `i -> 0 `i 190  ]
 "420
-[; ;main.c: 420:                                     case 6:
-[e :U 192 ]
+[; ;main.c: 420:                             {
+{
 "421
-[; ;main.c: 421:                                         escravo.endereco6 = 1;
-[e = . . _escravo 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 421:                                 switch(endereco)
+[e $U 192  ]
 "422
-[; ;main.c: 422:                                     break;
-[e $U 185  ]
+[; ;main.c: 422:                                 {
+{
 "423
-[; ;main.c: 423:                                     case 7:
+[; ;main.c: 423:                                     case 1:
 [e :U 193 ]
 "424
-[; ;main.c: 424:                                         escravo.endereco7 = 1;
-[e = . . _escravo 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 424:                                         escravo.endereco1 = 1;
+[e = . . _escravo 1 0 -> -> 1 `i `uc ]
 "425
 [; ;main.c: 425:                                     break;
-[e $U 185  ]
+[e $U 191  ]
 "426
-[; ;main.c: 426:                                     case 8:
+[; ;main.c: 426:                                     case 2:
 [e :U 194 ]
 "427
-[; ;main.c: 427:                                         escravo.endereco8 = 1;
-[e = . . _escravo 1 7 -> -> 1 `i `uc ]
+[; ;main.c: 427:                                         escravo.endereco2 = 1;
+[e = . . _escravo 1 1 -> -> 1 `i `uc ]
 "428
 [; ;main.c: 428:                                     break;
-[e $U 185  ]
+[e $U 191  ]
 "429
-[; ;main.c: 429:                                     case 9:
+[; ;main.c: 429:                                     case 3:
 [e :U 195 ]
 "430
-[; ;main.c: 430:                                         escravo.endereco9 = 1;
-[e = . . _escravo 1 8 -> -> 1 `i `uc ]
+[; ;main.c: 430:                                         escravo.endereco3 = 1;
+[e = . . _escravo 1 2 -> -> 1 `i `uc ]
 "431
 [; ;main.c: 431:                                     break;
-[e $U 185  ]
+[e $U 191  ]
 "432
-[; ;main.c: 432:                                     case 10:
+[; ;main.c: 432:                                     case 4:
 [e :U 196 ]
 "433
-[; ;main.c: 433:                                         escravo.endereco10 = 1;
-[e = . . _escravo 1 9 -> -> 1 `i `uc ]
+[; ;main.c: 433:                                         escravo.endereco4 = 1;
+[e = . . _escravo 1 3 -> -> 1 `i `uc ]
 "434
 [; ;main.c: 434:                                     break;
-[e $U 185  ]
+[e $U 191  ]
 "435
-[; ;main.c: 435:                                 }
-}
-[e $U 185  ]
-[e :U 186 ]
-[e [\ -> _endereco `i , $ -> 1 `i 187
- , $ -> 2 `i 188
- , $ -> 3 `i 189
- , $ -> 4 `i 190
- , $ -> 5 `i 191
- , $ -> 6 `i 192
- , $ -> 7 `i 193
- , $ -> 8 `i 194
- , $ -> 9 `i 195
- , $ -> 10 `i 196
- 185 ]
-[e :U 185 ]
-"436
-[; ;main.c: 436:                             }
-}
-[e :U 184 ]
-"437
-[; ;main.c: 437:                         }
-}
-[e :U 183 ]
-"438
-[; ;main.c: 438:                         estagio = AGUARDA_TEMPO_LIGA;
-[e = _estagio . `E848 7 ]
-"439
-[; ;main.c: 439:                     }
-}
-[e :U 182 ]
-"440
-[; ;main.c: 440:                 }
-}
-[e :U 181 ]
-"441
-[; ;main.c: 441:             }
-}
-"442
-[; ;main.c: 442:             break;
-[e $U 136  ]
-"444
-[; ;main.c: 444:             case TESTE_DESLIGA:
+[; ;main.c: 435:                                     case 5:
 [e :U 197 ]
-"445
-[; ;main.c: 445:             {
-{
-"446
-[; ;main.c: 446:                 if(estado.chaveNA == 1)
-[e $ ! == -> . _estado 4 `i -> 1 `i 198  ]
-"447
-[; ;main.c: 447:                     pwm_setado = 10;
-[e = _pwm_setado -> -> 10 `i `ui ]
-[e $U 199  ]
-"448
-[; ;main.c: 448:                 else
+"436
+[; ;main.c: 436:                                         escravo.endereco5 = 1;
+[e = . . _escravo 1 4 -> -> 1 `i `uc ]
+"437
+[; ;main.c: 437:                                     break;
+[e $U 191  ]
+"438
+[; ;main.c: 438:                                     case 6:
 [e :U 198 ]
-"449
-[; ;main.c: 449:                 {
-{
-"450
-[; ;main.c: 450:                     if(estado.chavecopo == 1)
-[e $ ! == -> . _estado 5 `i -> 1 `i 200  ]
-"451
-[; ;main.c: 451:                         pwm_setado = 170;
-[e = _pwm_setado -> -> 170 `i `ui ]
-[e $U 201  ]
-"452
-[; ;main.c: 452:                     else
-[e :U 200 ]
-"453
-[; ;main.c: 453:                         pwm_setado = 105;
-[e = _pwm_setado -> -> 105 `i `ui ]
-[e :U 201 ]
-"454
-[; ;main.c: 454:                 }
-}
+"439
+[; ;main.c: 439:                                         escravo.endereco6 = 1;
+[e = . . _escravo 1 5 -> -> 1 `i `uc ]
+"440
+[; ;main.c: 440:                                     break;
+[e $U 191  ]
+"441
+[; ;main.c: 441:                                     case 7:
 [e :U 199 ]
-"455
-[; ;main.c: 455:                 timer = 0;
-[e = _timer -> -> 0 `i `ui ]
-"456
-[; ;main.c: 456:                 estagio = AGUARDA_TEMPO_DESLIGA;
-[e = _estagio . `E848 11 ]
-"457
-[; ;main.c: 457:                 comunicacao.endereco = 0x0F;
-[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
-"458
-[; ;main.c: 458:                 comunicacao.resposta = 0x07;
-[e = . . _comunicacao 1 1 -> -> 7 `i `uc ]
-"459
-[; ;main.c: 459:                 USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"460
-[; ;main.c: 460:             }
-}
-"461
-[; ;main.c: 461:             break;
-[e $U 136  ]
-"463
-[; ;main.c: 463:             case AGUARDA_TEMPO_DESLIGA:
+"442
+[; ;main.c: 442:                                         escravo.endereco7 = 1;
+[e = . . _escravo 1 6 -> -> 1 `i `uc ]
+"443
+[; ;main.c: 443:                                     break;
+[e $U 191  ]
+"444
+[; ;main.c: 444:                                     case 8:
+[e :U 200 ]
+"445
+[; ;main.c: 445:                                         escravo.endereco8 = 1;
+[e = . . _escravo 1 7 -> -> 1 `i `uc ]
+"446
+[; ;main.c: 446:                                     break;
+[e $U 191  ]
+"447
+[; ;main.c: 447:                                     case 9:
+[e :U 201 ]
+"448
+[; ;main.c: 448:                                         escravo.endereco9 = 1;
+[e = . . _escravo 1 8 -> -> 1 `i `uc ]
+"449
+[; ;main.c: 449:                                     break;
+[e $U 191  ]
+"450
+[; ;main.c: 450:                                     case 10:
 [e :U 202 ]
-"464
-[; ;main.c: 464:             {
-{
-"465
-[; ;main.c: 465:                 if((timer > 10000) || (escravo.byte == 0x03FF))
-[e $ ! || > _timer -> -> 10000 `i `ui == . _escravo 0 -> -> 1023 `i `ui 203  ]
-"466
-[; ;main.c: 466:                 {
-{
-"467
-[; ;main.c: 467:                     if((timer > 8000) || (estado.reteste == 1))
-[e $ ! || > _timer -> -> 8000 `i `ui == -> . _estado 7 `i -> 1 `i 204  ]
-"468
-[; ;main.c: 468:                     {
-{
-"469
-[; ;main.c: 469:                         escravo.byte = 0;
-[e = . _escravo 0 -> -> 0 `i `ui ]
-"470
-[; ;main.c: 470:                         endereco = 0;
-[e = _endereco -> -> 0 `i `uc ]
-"471
-[; ;main.c: 471:                         if(estado.reteste == 1)
-[e $ ! == -> . _estado 7 `i -> 1 `i 205  ]
-"472
-[; ;main.c: 472:                             estagio = VERIFICA_PLACAS;
-[e = _estagio . `E848 15 ]
-[e $U 206  ]
-"473
-[; ;main.c: 473:                         else
-[e :U 205 ]
-"474
-[; ;main.c: 474:                             estagio = RETESTE;
-[e = _estagio . `E848 14 ]
-[e :U 206 ]
-"475
-[; ;main.c: 475:                     }
+"451
+[; ;main.c: 451:                                         escravo.endereco10 = 1;
+[e = . . _escravo 1 9 -> -> 1 `i `uc ]
+"452
+[; ;main.c: 452:                                     break;
+[e $U 191  ]
+"453
+[; ;main.c: 453:                                 }
 }
-[e :U 204 ]
-"476
-[; ;main.c: 476:                 }
+[e $U 191  ]
+[e :U 192 ]
+[e [\ -> _endereco `i , $ -> 1 `i 193
+ , $ -> 2 `i 194
+ , $ -> 3 `i 195
+ , $ -> 4 `i 196
+ , $ -> 5 `i 197
+ , $ -> 6 `i 198
+ , $ -> 7 `i 199
+ , $ -> 8 `i 200
+ , $ -> 9 `i 201
+ , $ -> 10 `i 202
+ 191 ]
+[e :U 191 ]
+"454
+[; ;main.c: 454:                             }
 }
-[e $U 207  ]
-"477
-[; ;main.c: 477:                 else
-[e :U 203 ]
-"478
-[; ;main.c: 478:                     estagio = VERIFICA_PLACAS_DESLIGA;
-[e = _estagio . `E848 12 ]
-[e :U 207 ]
-"479
-[; ;main.c: 479:             }
+[e :U 190 ]
+"455
+[; ;main.c: 455:                         }
 }
-"480
-[; ;main.c: 480:             break;
+[e :U 189 ]
+"456
+[; ;main.c: 456:                         estagio = AGUARDA_TEMPO_LIGA;
+[e = _estagio . `E850 7 ]
+"457
+[; ;main.c: 457:                     }
+}
+[e :U 188 ]
+"458
+[; ;main.c: 458:                 }
+}
+[e :U 187 ]
+"459
+[; ;main.c: 459:             }
+}
+"460
+[; ;main.c: 460:             break;
 [e $U 136  ]
-"482
-[; ;main.c: 482:             case VERIFICA_PLACAS_DESLIGA:
-[e :U 208 ]
-"483
-[; ;main.c: 483:             {
+"462
+[; ;main.c: 462:             case TESTE_DESLIGA:
+[e :U 203 ]
+"463
+[; ;main.c: 463:             {
 {
+"464
+[; ;main.c: 464:                 if(estado.chaveNA == 1)
+[e $ ! == -> . _estado 4 `i -> 1 `i 204  ]
+"465
+[; ;main.c: 465:                     pwm_setado = 10;
+[e = _pwm_setado -> -> 10 `i `ui ]
+[e $U 205  ]
+"466
+[; ;main.c: 466:                 else
+[e :U 204 ]
+"467
+[; ;main.c: 467:                 {
+{
+"468
+[; ;main.c: 468:                     if(estado.chavecopo == 1)
+[e $ ! == -> . _estado 5 `i -> 1 `i 206  ]
+"469
+[; ;main.c: 469:                         pwm_setado = 170;
+[e = _pwm_setado -> -> 170 `i `ui ]
+[e $U 207  ]
+"470
+[; ;main.c: 470:                     else
+[e :U 206 ]
+"471
+[; ;main.c: 471:                         pwm_setado = 105;
+[e = _pwm_setado -> -> 105 `i `ui ]
+[e :U 207 ]
+"472
+[; ;main.c: 472:                 }
+}
+[e :U 205 ]
+"473
+[; ;main.c: 473:                 timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"474
+[; ;main.c: 474:                 estagio = AGUARDA_TEMPO_DESLIGA;
+[e = _estagio . `E850 11 ]
+"475
+[; ;main.c: 475:                 comunicacao.endereco = 0x0F;
+[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
+"476
+[; ;main.c: 476:                 comunicacao.resposta = 0x07;
+[e = . . _comunicacao 1 1 -> -> 7 `i `uc ]
+"477
+[; ;main.c: 477:                 USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"478
+[; ;main.c: 478:             }
+}
+"479
+[; ;main.c: 479:             break;
+[e $U 136  ]
+"481
+[; ;main.c: 481:             case AGUARDA_TEMPO_DESLIGA:
+[e :U 208 ]
+"482
+[; ;main.c: 482:             {
+{
+"483
+[; ;main.c: 483:                 if((timer > 10000) || (escravo.byte == 0x03FF))
+[e $ ! || > _timer -> -> 10000 `i `ui == . _escravo 0 -> -> 1023 `i `ui 209  ]
 "484
-[; ;main.c: 484:                 endereco++;
-[e ++ _endereco -> -> 1 `i `uc ]
+[; ;main.c: 484:                 {
+{
 "485
-[; ;main.c: 485:                 if(endereco <= 10)
-[e $ ! <= -> _endereco `i -> 10 `i 209  ]
+[; ;main.c: 485:                     if((timer > 8000) || (estado.reteste == 1))
+[e $ ! || > _timer -> -> 8000 `i `ui == -> . _estado 7 `i -> 1 `i 210  ]
 "486
-[; ;main.c: 486:                 {
+[; ;main.c: 486:                     {
 {
 "487
-[; ;main.c: 487:                     timeoutRx = 0;
-[e = _timeoutRx -> -> 0 `i `uc ]
+[; ;main.c: 487:                         escravo.byte = 0;
+[e = . _escravo 0 -> -> 0 `i `ui ]
 "488
-[; ;main.c: 488:                     USART_RX_Clear_Buffer();
-[e ( _USART_RX_Clear_Buffer ..  ]
-"489
-[; ;main.c: 489:                     comunicacao.endereco = endereco;
-[e = . . _comunicacao 1 0 _endereco ]
-"490
-[; ;main.c: 490:                     comunicacao.resposta = 0x0F;
-[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
-"491
-[; ;main.c: 491:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"492
-[; ;main.c: 492:                     estagio = MENSAGEM_RETORNO_PLACAS_DESLIGA;
-[e = _estagio . `E848 13 ]
-"493
-[; ;main.c: 493:                 }
-}
-[e $U 210  ]
-"494
-[; ;main.c: 494:                 else
-[e :U 209 ]
-"495
-[; ;main.c: 495:                     endereco = 0;
+[; ;main.c: 488:                         endereco = 0;
 [e = _endereco -> -> 0 `i `uc ]
-[e :U 210 ]
-"496
-[; ;main.c: 496:             }
-}
-"497
-[; ;main.c: 497:             break;
-[e $U 136  ]
-"499
-[; ;main.c: 499:             case MENSAGEM_RETORNO_PLACAS_DESLIGA:
+"489
+[; ;main.c: 489:                         if(estado.reteste == 1)
+[e $ ! == -> . _estado 7 `i -> 1 `i 211  ]
+"490
+[; ;main.c: 490:                             estagio = VERIFICA_PLACAS;
+[e = _estagio . `E850 15 ]
+[e $U 212  ]
+"491
+[; ;main.c: 491:                         else
 [e :U 211 ]
-"500
-[; ;main.c: 500:             {
-{
-"501
-[; ;main.c: 501:                 if(timeoutRx > 80)
-[e $ ! > -> _timeoutRx `i -> 80 `i 212  ]
-"502
-[; ;main.c: 502:                     estagio = AGUARDA_TEMPO_DESLIGA;
-[e = _estagio . `E848 11 ]
-[e $U 213  ]
-"503
-[; ;main.c: 503:                 else
+"492
+[; ;main.c: 492:                             estagio = RETESTE;
+[e = _estagio . `E850 14 ]
 [e :U 212 ]
+"493
+[; ;main.c: 493:                     }
+}
+[e :U 210 ]
+"494
+[; ;main.c: 494:                 }
+}
+[e $U 213  ]
+"495
+[; ;main.c: 495:                 else
+[e :U 209 ]
+"496
+[; ;main.c: 496:                     estagio = VERIFICA_PLACAS_DESLIGA;
+[e = _estagio . `E850 12 ]
+[e :U 213 ]
+"497
+[; ;main.c: 497:             }
+}
+"498
+[; ;main.c: 498:             break;
+[e $U 136  ]
+"500
+[; ;main.c: 500:             case VERIFICA_PLACAS_DESLIGA:
+[e :U 214 ]
+"501
+[; ;main.c: 501:             {
+{
+"502
+[; ;main.c: 502:                 endereco++;
+[e ++ _endereco -> -> 1 `i `uc ]
+"503
+[; ;main.c: 503:                 if(endereco <= 10)
+[e $ ! <= -> _endereco `i -> 10 `i 215  ]
 "504
 [; ;main.c: 504:                 {
 {
 "505
-[; ;main.c: 505:                     if(USART_RX_Ready() == 1)
-[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 214  ]
+[; ;main.c: 505:                     timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
 "506
-[; ;main.c: 506:                     {
-{
+[; ;main.c: 506:                     USART_RX_Clear_Buffer();
+[e ( _USART_RX_Clear_Buffer ..  ]
 "507
-[; ;main.c: 507:                         comunicacao.byte = USART_Read();
-[e = . _comunicacao 0 ( _USART_Read ..  ]
+[; ;main.c: 507:                     comunicacao.endereco = endereco;
+[e = . . _comunicacao 1 0 _endereco ]
 "508
-[; ;main.c: 508:                         if(comunicacao.endereco == endereco)
-[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 215  ]
+[; ;main.c: 508:                     comunicacao.resposta = 0x0F;
+[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
 "509
-[; ;main.c: 509:                         {
-{
+[; ;main.c: 509:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
 "510
-[; ;main.c: 510:                             if(comunicacao.resposta != 0x00)
-[e $ ! != -> . . _comunicacao 1 1 `i -> 0 `i 216  ]
+[; ;main.c: 510:                     estagio = MENSAGEM_RETORNO_PLACAS_DESLIGA;
+[e = _estagio . `E850 13 ]
 "511
-[; ;main.c: 511:                             {
-{
+[; ;main.c: 511:                 }
+}
+[e $U 216  ]
 "512
-[; ;main.c: 512:                                 switch(endereco)
-[e $U 218  ]
+[; ;main.c: 512:                 else
+[e :U 215 ]
 "513
-[; ;main.c: 513:                                 {
-{
+[; ;main.c: 513:                     endereco = 0;
+[e = _endereco -> -> 0 `i `uc ]
+[e :U 216 ]
 "514
-[; ;main.c: 514:                                     case 1:
-[e :U 219 ]
+[; ;main.c: 514:             }
+}
 "515
-[; ;main.c: 515:                                         escravo.endereco1 = 1;
-[e = . . _escravo 1 0 -> -> 1 `i `uc ]
-"516
-[; ;main.c: 516:                                     break;
-[e $U 217  ]
+[; ;main.c: 515:             break;
+[e $U 136  ]
 "517
-[; ;main.c: 517:                                     case 2:
-[e :U 220 ]
+[; ;main.c: 517:             case MENSAGEM_RETORNO_PLACAS_DESLIGA:
+[e :U 217 ]
 "518
-[; ;main.c: 518:                                         escravo.endereco2 = 1;
-[e = . . _escravo 1 1 -> -> 1 `i `uc ]
+[; ;main.c: 518:             {
+{
 "519
-[; ;main.c: 519:                                     break;
-[e $U 217  ]
+[; ;main.c: 519:                 if(timeoutRx > 80)
+[e $ ! > -> _timeoutRx `i -> 80 `i 218  ]
 "520
-[; ;main.c: 520:                                     case 3:
-[e :U 221 ]
+[; ;main.c: 520:                     estagio = AGUARDA_TEMPO_DESLIGA;
+[e = _estagio . `E850 11 ]
+[e $U 219  ]
 "521
-[; ;main.c: 521:                                         escravo.endereco3 = 1;
-[e = . . _escravo 1 2 -> -> 1 `i `uc ]
+[; ;main.c: 521:                 else
+[e :U 218 ]
 "522
-[; ;main.c: 522:                                     break;
-[e $U 217  ]
+[; ;main.c: 522:                 {
+{
 "523
-[; ;main.c: 523:                                     case 4:
-[e :U 222 ]
+[; ;main.c: 523:                     if(USART_RX_Ready() == 1)
+[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 220  ]
 "524
-[; ;main.c: 524:                                         escravo.endereco4 = 1;
-[e = . . _escravo 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 524:                     {
+{
 "525
-[; ;main.c: 525:                                     break;
-[e $U 217  ]
+[; ;main.c: 525:                         comunicacao.byte = USART_Read();
+[e = . _comunicacao 0 ( _USART_Read ..  ]
 "526
-[; ;main.c: 526:                                     case 5:
-[e :U 223 ]
+[; ;main.c: 526:                         if(comunicacao.endereco == endereco)
+[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 221  ]
 "527
-[; ;main.c: 527:                                         escravo.endereco5 = 1;
-[e = . . _escravo 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 527:                         {
+{
 "528
-[; ;main.c: 528:                                     break;
-[e $U 217  ]
+[; ;main.c: 528:                             if(comunicacao.resposta != 0x00)
+[e $ ! != -> . . _comunicacao 1 1 `i -> 0 `i 222  ]
 "529
-[; ;main.c: 529:                                     case 6:
-[e :U 224 ]
+[; ;main.c: 529:                             {
+{
 "530
-[; ;main.c: 530:                                         escravo.endereco6 = 1;
-[e = . . _escravo 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 530:                                 switch(endereco)
+[e $U 224  ]
 "531
-[; ;main.c: 531:                                     break;
-[e $U 217  ]
+[; ;main.c: 531:                                 {
+{
 "532
-[; ;main.c: 532:                                     case 7:
+[; ;main.c: 532:                                     case 1:
 [e :U 225 ]
 "533
-[; ;main.c: 533:                                         escravo.endereco7 = 1;
-[e = . . _escravo 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 533:                                         escravo.endereco1 = 1;
+[e = . . _escravo 1 0 -> -> 1 `i `uc ]
 "534
 [; ;main.c: 534:                                     break;
-[e $U 217  ]
+[e $U 223  ]
 "535
-[; ;main.c: 535:                                     case 8:
+[; ;main.c: 535:                                     case 2:
 [e :U 226 ]
 "536
-[; ;main.c: 536:                                         escravo.endereco8 = 1;
-[e = . . _escravo 1 7 -> -> 1 `i `uc ]
+[; ;main.c: 536:                                         escravo.endereco2 = 1;
+[e = . . _escravo 1 1 -> -> 1 `i `uc ]
 "537
 [; ;main.c: 537:                                     break;
-[e $U 217  ]
+[e $U 223  ]
 "538
-[; ;main.c: 538:                                     case 9:
+[; ;main.c: 538:                                     case 3:
 [e :U 227 ]
 "539
-[; ;main.c: 539:                                         escravo.endereco9 = 1;
-[e = . . _escravo 1 8 -> -> 1 `i `uc ]
+[; ;main.c: 539:                                         escravo.endereco3 = 1;
+[e = . . _escravo 1 2 -> -> 1 `i `uc ]
 "540
 [; ;main.c: 540:                                     break;
-[e $U 217  ]
+[e $U 223  ]
 "541
-[; ;main.c: 541:                                     case 10:
+[; ;main.c: 541:                                     case 4:
 [e :U 228 ]
 "542
-[; ;main.c: 542:                                         escravo.endereco10 = 1;
-[e = . . _escravo 1 9 -> -> 1 `i `uc ]
+[; ;main.c: 542:                                         escravo.endereco4 = 1;
+[e = . . _escravo 1 3 -> -> 1 `i `uc ]
 "543
 [; ;main.c: 543:                                     break;
-[e $U 217  ]
+[e $U 223  ]
 "544
-[; ;main.c: 544:                                 }
-}
-[e $U 217  ]
-[e :U 218 ]
-[e [\ -> _endereco `i , $ -> 1 `i 219
- , $ -> 2 `i 220
- , $ -> 3 `i 221
- , $ -> 4 `i 222
- , $ -> 5 `i 223
- , $ -> 6 `i 224
- , $ -> 7 `i 225
- , $ -> 8 `i 226
- , $ -> 9 `i 227
- , $ -> 10 `i 228
- 217 ]
-[e :U 217 ]
-"545
-[; ;main.c: 545:                             }
-}
-[e :U 216 ]
-"546
-[; ;main.c: 546:                         }
-}
-[e :U 215 ]
-"547
-[; ;main.c: 547:                         estagio = AGUARDA_TEMPO_DESLIGA;
-[e = _estagio . `E848 11 ]
-"548
-[; ;main.c: 548:                     }
-}
-[e :U 214 ]
-"549
-[; ;main.c: 549:                 }
-}
-[e :U 213 ]
-"550
-[; ;main.c: 550:             }
-}
-"551
-[; ;main.c: 551:             break;
-[e $U 136  ]
-"553
-[; ;main.c: 553:             case RETESTE:
+[; ;main.c: 544:                                     case 5:
 [e :U 229 ]
-"554
-[; ;main.c: 554:             {
-{
-"555
-[; ;main.c: 555:                 estado.reteste = 1;
-[e = . _estado 7 -> -> 1 `i `uc ]
-"556
-[; ;main.c: 556:                 estagio = TESTE_LIGA;
-[e = _estagio . `E848 6 ]
-"557
-[; ;main.c: 557:                 comunicacao.endereco = 0x0F;
-[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
-"558
-[; ;main.c: 558:                 comunicacao.resposta = 0x0C;
-[e = . . _comunicacao 1 1 -> -> 12 `i `uc ]
-"559
-[; ;main.c: 559:                 USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"560
-[; ;main.c: 560:             }
-}
-"561
-[; ;main.c: 561:             break;
-[e $U 136  ]
-"563
-[; ;main.c: 563:             case VERIFICA_PLACAS:
+"545
+[; ;main.c: 545:                                         escravo.endereco5 = 1;
+[e = . . _escravo 1 4 -> -> 1 `i `uc ]
+"546
+[; ;main.c: 546:                                     break;
+[e $U 223  ]
+"547
+[; ;main.c: 547:                                     case 6:
 [e :U 230 ]
-"564
-[; ;main.c: 564:             {
-{
-"565
-[; ;main.c: 565:                 endereco++;
-[e ++ _endereco -> -> 1 `i `uc ]
-"566
-[; ;main.c: 566:                 if(endereco <= 10)
-[e $ ! <= -> _endereco `i -> 10 `i 231  ]
-"567
-[; ;main.c: 567:                 {
-{
-"568
-[; ;main.c: 568:                     timeoutRx = 0;
-[e = _timeoutRx -> -> 0 `i `uc ]
-"569
-[; ;main.c: 569:                     USART_RX_Clear_Buffer();
-[e ( _USART_RX_Clear_Buffer ..  ]
-"570
-[; ;main.c: 570:                     comunicacao.endereco = endereco;
-[e = . . _comunicacao 1 0 _endereco ]
-"571
-[; ;main.c: 571:                     comunicacao.resposta = 0x0F;
-[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
-"572
-[; ;main.c: 572:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"573
-[; ;main.c: 573:                     estagio = MENSAGEM_RETORNO_PLACAS;
-[e = _estagio . `E848 16 ]
-"574
-[; ;main.c: 574:                 }
-}
-[e $U 232  ]
-"575
-[; ;main.c: 575:                 else
+"548
+[; ;main.c: 548:                                         escravo.endereco6 = 1;
+[e = . . _escravo 1 5 -> -> 1 `i `uc ]
+"549
+[; ;main.c: 549:                                     break;
+[e $U 223  ]
+"550
+[; ;main.c: 550:                                     case 7:
 [e :U 231 ]
-"576
-[; ;main.c: 576:                 {
-{
-"577
-[; ;main.c: 577:                     if(estado.falha == 1)
-[e $ ! == -> . _estado 8 `i -> 1 `i 233  ]
-"578
-[; ;main.c: 578:                         estagio = FALHA;
-[e = _estagio . `E848 18 ]
-[e $U 234  ]
-"579
-[; ;main.c: 579:                     else
-[e :U 233 ]
-"580
-[; ;main.c: 580:                         estagio = OK;
-[e = _estagio . `E848 19 ]
-[e :U 234 ]
-"581
-[; ;main.c: 581:                 }
-}
+"551
+[; ;main.c: 551:                                         escravo.endereco7 = 1;
+[e = . . _escravo 1 6 -> -> 1 `i `uc ]
+"552
+[; ;main.c: 552:                                     break;
+[e $U 223  ]
+"553
+[; ;main.c: 553:                                     case 8:
 [e :U 232 ]
-"582
-[; ;main.c: 582:             }
+"554
+[; ;main.c: 554:                                         escravo.endereco8 = 1;
+[e = . . _escravo 1 7 -> -> 1 `i `uc ]
+"555
+[; ;main.c: 555:                                     break;
+[e $U 223  ]
+"556
+[; ;main.c: 556:                                     case 9:
+[e :U 233 ]
+"557
+[; ;main.c: 557:                                         escravo.endereco9 = 1;
+[e = . . _escravo 1 8 -> -> 1 `i `uc ]
+"558
+[; ;main.c: 558:                                     break;
+[e $U 223  ]
+"559
+[; ;main.c: 559:                                     case 10:
+[e :U 234 ]
+"560
+[; ;main.c: 560:                                         escravo.endereco10 = 1;
+[e = . . _escravo 1 9 -> -> 1 `i `uc ]
+"561
+[; ;main.c: 561:                                     break;
+[e $U 223  ]
+"562
+[; ;main.c: 562:                                 }
 }
-"583
-[; ;main.c: 583:             break;
+[e $U 223  ]
+[e :U 224 ]
+[e [\ -> _endereco `i , $ -> 1 `i 225
+ , $ -> 2 `i 226
+ , $ -> 3 `i 227
+ , $ -> 4 `i 228
+ , $ -> 5 `i 229
+ , $ -> 6 `i 230
+ , $ -> 7 `i 231
+ , $ -> 8 `i 232
+ , $ -> 9 `i 233
+ , $ -> 10 `i 234
+ 223 ]
+[e :U 223 ]
+"563
+[; ;main.c: 563:                             }
+}
+[e :U 222 ]
+"564
+[; ;main.c: 564:                         }
+}
+[e :U 221 ]
+"565
+[; ;main.c: 565:                         estagio = AGUARDA_TEMPO_DESLIGA;
+[e = _estagio . `E850 11 ]
+"566
+[; ;main.c: 566:                     }
+}
+[e :U 220 ]
+"567
+[; ;main.c: 567:                 }
+}
+[e :U 219 ]
+"568
+[; ;main.c: 568:             }
+}
+"569
+[; ;main.c: 569:             break;
 [e $U 136  ]
-"585
-[; ;main.c: 585:             case MENSAGEM_RETORNO_PLACAS:
+"571
+[; ;main.c: 571:             case RETESTE:
 [e :U 235 ]
-"586
-[; ;main.c: 586:             {
+"572
+[; ;main.c: 572:             {
 {
-"587
-[; ;main.c: 587:                 if(timeoutRx > 80)
-[e $ ! > -> _timeoutRx `i -> 80 `i 236  ]
-"588
-[; ;main.c: 588:                 {
-{
-"589
-[; ;main.c: 589:                     estado.falha = 1;
-[e = . _estado 8 -> -> 1 `i `uc ]
-"590
-[; ;main.c: 590:                     estagio = VERIFICA_PLACAS;
-[e = _estagio . `E848 15 ]
-"591
-[; ;main.c: 591:                 }
+"573
+[; ;main.c: 573:                 estado.reteste = 1;
+[e = . _estado 7 -> -> 1 `i `uc ]
+"574
+[; ;main.c: 574:                 estagio = TESTE_LIGA;
+[e = _estagio . `E850 6 ]
+"575
+[; ;main.c: 575:                 comunicacao.endereco = 0x0F;
+[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
+"576
+[; ;main.c: 576:                 comunicacao.resposta = 0x0C;
+[e = . . _comunicacao 1 1 -> -> 12 `i `uc ]
+"577
+[; ;main.c: 577:                 USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"578
+[; ;main.c: 578:             }
 }
-[e $U 237  ]
-"592
-[; ;main.c: 592:                 else
+"579
+[; ;main.c: 579:             break;
+[e $U 136  ]
+"581
+[; ;main.c: 581:             case VERIFICA_PLACAS:
 [e :U 236 ]
-"593
-[; ;main.c: 593:                 {
+"582
+[; ;main.c: 582:             {
 {
+"583
+[; ;main.c: 583:                 endereco++;
+[e ++ _endereco -> -> 1 `i `uc ]
+"584
+[; ;main.c: 584:                 if(endereco <= 10)
+[e $ ! <= -> _endereco `i -> 10 `i 237  ]
+"585
+[; ;main.c: 585:                 {
+{
+"586
+[; ;main.c: 586:                     countFailRx = 0;
+[e = _countFailRx -> -> 0 `i `uc ]
+"587
+[; ;main.c: 587:                     timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
+"588
+[; ;main.c: 588:                     USART_RX_Clear_Buffer();
+[e ( _USART_RX_Clear_Buffer ..  ]
+"589
+[; ;main.c: 589:                     comunicacao.endereco = endereco;
+[e = . . _comunicacao 1 0 _endereco ]
+"590
+[; ;main.c: 590:                     comunicacao.resposta = 0x0F;
+[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
+"591
+[; ;main.c: 591:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"592
+[; ;main.c: 592:                     estagio = MENSAGEM_RETORNO_PLACAS;
+[e = _estagio . `E850 16 ]
+"593
+[; ;main.c: 593:                 }
+}
+[e $U 238  ]
 "594
-[; ;main.c: 594:                     if(USART_RX_Ready() == 1)
-[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 238  ]
+[; ;main.c: 594:                 else
+[e :U 237 ]
 "595
-[; ;main.c: 595:                     {
+[; ;main.c: 595:                 {
 {
 "596
-[; ;main.c: 596:                         comunicacao.byte = USART_Read();
-[e = . _comunicacao 0 ( _USART_Read ..  ]
+[; ;main.c: 596:                     if(estado.falha == 1)
+[e $ ! == -> . _estado 8 `i -> 1 `i 239  ]
 "597
-[; ;main.c: 597:                         if(comunicacao.endereco == endereco)
-[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 239  ]
+[; ;main.c: 597:                         estagio = FALHA;
+[e = _estagio . `E850 18 ]
+[e $U 240  ]
 "598
-[; ;main.c: 598:                         {
-{
-"599
-[; ;main.c: 599:                             if(comunicacao.resposta == 0x02)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 2 `i 240  ]
-"600
-[; ;main.c: 600:                                 naodesliga++;
-[e ++ _naodesliga -> -> 1 `i `uc ]
-[e :U 240 ]
-"601
-[; ;main.c: 601:                             if(comunicacao.resposta == 0x03)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 3 `i 241  ]
-"602
-[; ;main.c: 602:                                 naoliga++;
-[e ++ _naoliga -> -> 1 `i `uc ]
-[e :U 241 ]
-"603
-[; ;main.c: 603:                             if(comunicacao.resposta == 0x04)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 4 `i 242  ]
-"604
-[; ;main.c: 604:                                 sincronismo++;
-[e ++ _sincronismo -> -> 1 `i `uc ]
-[e :U 242 ]
-"605
-[; ;main.c: 605:                             if(comunicacao.resposta == 0x08)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 8 `i 243  ]
-"606
-[; ;main.c: 606:                                 pecaOK++;
-[e ++ _pecaOK -> -> 1 `i `uc ]
-[e :U 243 ]
-"607
-[; ;main.c: 607:                             if(comunicacao.resposta == 0x0F)
-[e $ ! == -> . . _comunicacao 1 1 `i -> 15 `i 244  ]
-"608
-[; ;main.c: 608:                                 sincronismo++;
-[e ++ _sincronismo -> -> 1 `i `uc ]
-[e :U 244 ]
-"609
-[; ;main.c: 609:                             if(comunicacao.resposta != 0x08)
-[e $ ! != -> . . _comunicacao 1 1 `i -> 8 `i 245  ]
-"610
-[; ;main.c: 610:                                 estado.falha = 1;
-[e = . _estado 8 -> -> 1 `i `uc ]
-[e :U 245 ]
-"611
-[; ;main.c: 611:                         }
-}
-[e $U 246  ]
-"612
-[; ;main.c: 612:                         else
+[; ;main.c: 598:                     else
 [e :U 239 ]
-"613
-[; ;main.c: 613:                             estado.falha = 1;
-[e = . _estado 8 -> -> 1 `i `uc ]
-[e :U 246 ]
-"614
-[; ;main.c: 614:                         estagio = VERIFICA_PLACAS;
-[e = _estagio . `E848 15 ]
-"615
-[; ;main.c: 615:                     }
+"599
+[; ;main.c: 599:                         estagio = OK;
+[e = _estagio . `E850 19 ]
+[e :U 240 ]
+"600
+[; ;main.c: 600:                 }
 }
 [e :U 238 ]
-"616
-[; ;main.c: 616:                 }
+"601
+[; ;main.c: 601:             }
 }
-[e :U 237 ]
-"617
-[; ;main.c: 617:             }
-}
-"618
-[; ;main.c: 618:             break;
+"602
+[; ;main.c: 602:             break;
 [e $U 136  ]
-"620
-[; ;main.c: 620:             case FALHA_FIM_CURSO:
-[e :U 247 ]
-"621
-[; ;main.c: 621:             {
+"604
+[; ;main.c: 604:             case MENSAGEM_RETORNO_PLACAS:
+[e :U 241 ]
+"605
+[; ;main.c: 605:             {
 {
-"622
-[; ;main.c: 622:                 comunicacao.endereco = 0x0F;
-[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
-"623
-[; ;main.c: 623:                 comunicacao.resposta = 0x00;
-[e = . . _comunicacao 1 1 -> -> 0 `i `uc ]
-"624
-[; ;main.c: 624:                 USART_Write(comunicacao.byte);
+"606
+[; ;main.c: 606:                 if(timeoutRx > 80)
+[e $ ! > -> _timeoutRx `i -> 80 `i 242  ]
+"607
+[; ;main.c: 607:                 {
+{
+"608
+[; ;main.c: 608:                     if(countFailRx < 3)
+[e $ ! < -> _countFailRx `i -> 3 `i 243  ]
+"609
+[; ;main.c: 609:                     {
+{
+"610
+[; ;main.c: 610:                         countFailRx++;
+[e ++ _countFailRx -> -> 1 `i `uc ]
+"611
+[; ;main.c: 611:                         timeoutRx = 0;
+[e = _timeoutRx -> -> 0 `i `uc ]
+"612
+[; ;main.c: 612:                         USART_RX_Clear_Buffer();
+[e ( _USART_RX_Clear_Buffer ..  ]
+"613
+[; ;main.c: 613:                         comunicacao.endereco = endereco;
+[e = . . _comunicacao 1 0 _endereco ]
+"614
+[; ;main.c: 614:                         comunicacao.resposta = 0x0F;
+[e = . . _comunicacao 1 1 -> -> 15 `i `uc ]
+"615
+[; ;main.c: 615:                         USART_Write(comunicacao.byte);
 [e ( _USART_Write (1 . _comunicacao 0 ]
-"625
-[; ;main.c: 625:                 pwm_setado = 0;
-[e = _pwm_setado -> -> 0 `i `ui ]
-"626
-[; ;main.c: 626:                 PORTAbits.RA1 = 1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
-"627
-[; ;main.c: 627:                 PORTAbits.RA0 = 1;
-[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
-"628
-[; ;main.c: 628:                 timer = 0;
-[e = _timer -> -> 0 `i `ui ]
-"629
-[; ;main.c: 629:                 estagio = TESTE_FINALIZADO;
-[e = _estagio . `E848 20 ]
-"630
-[; ;main.c: 630:             }
+"616
+[; ;main.c: 616:                         estagio = MENSAGEM_RETORNO_PLACAS;
+[e = _estagio . `E850 16 ]
+"617
+[; ;main.c: 617:                     }
 }
+[e $U 244  ]
+"618
+[; ;main.c: 618:                     else
+[e :U 243 ]
+"619
+[; ;main.c: 619:                     {
+{
+"620
+[; ;main.c: 620:                         estado.falha = 1;
+[e = . _estado 8 -> -> 1 `i `uc ]
+"621
+[; ;main.c: 621:                         addressFail = endereco;
+[e = _addressFail _endereco ]
+"622
+[; ;main.c: 622:                         estagio = VERIFICA_PLACAS;
+[e = _estagio . `E850 15 ]
+"623
+[; ;main.c: 623:                     }
+}
+[e :U 244 ]
+"624
+[; ;main.c: 624:                 }
+}
+[e $U 245  ]
+"625
+[; ;main.c: 625:                 else
+[e :U 242 ]
+"626
+[; ;main.c: 626:                 {
+{
+"627
+[; ;main.c: 627:                     if(USART_RX_Ready() == 1)
+[e $ ! == -> ( _USART_RX_Ready ..  `i -> 1 `i 246  ]
+"628
+[; ;main.c: 628:                     {
+{
+"629
+[; ;main.c: 629:                         comunicacao.byte = USART_Read();
+[e = . _comunicacao 0 ( _USART_Read ..  ]
+"630
+[; ;main.c: 630:                         if(comunicacao.endereco == endereco)
+[e $ ! == -> . . _comunicacao 1 0 `i -> _endereco `i 247  ]
 "631
-[; ;main.c: 631:             break;
-[e $U 136  ]
+[; ;main.c: 631:                         {
+{
+"632
+[; ;main.c: 632:                             if(comunicacao.resposta == 0x02)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 2 `i 248  ]
 "633
-[; ;main.c: 633:             case FALHA:
+[; ;main.c: 633:                                 naodesliga++;
+[e ++ _naodesliga -> -> 1 `i `uc ]
 [e :U 248 ]
 "634
-[; ;main.c: 634:             {
-{
+[; ;main.c: 634:                             if(comunicacao.resposta == 0x03)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 3 `i 249  ]
 "635
-[; ;main.c: 635:                 pwm_setado = 0;
-[e = _pwm_setado -> -> 0 `i `ui ]
-"636
-[; ;main.c: 636:                 PORTAbits.RA1 = 1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
-"637
-[; ;main.c: 637:                 PORTAbits.RA0 = 1;
-[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
-"638
-[; ;main.c: 638:                 timer = 0;
-[e = _timer -> -> 0 `i `ui ]
-"639
-[; ;main.c: 639:                 estagio = TESTE_FINALIZADO;
-[e = _estagio . `E848 20 ]
-"640
-[; ;main.c: 640:             }
-}
-"641
-[; ;main.c: 641:             break;
-[e $U 136  ]
-"643
-[; ;main.c: 643:             case OK:
+[; ;main.c: 635:                                 naoliga++;
+[e ++ _naoliga -> -> 1 `i `uc ]
 [e :U 249 ]
-"644
-[; ;main.c: 644:             {
-{
-"645
-[; ;main.c: 645:                 pwm_setado = 0;
-[e = _pwm_setado -> -> 0 `i `ui ]
-"646
-[; ;main.c: 646:                 PORTAbits.RA3 = 1;
-[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
-"647
-[; ;main.c: 647:                 estagio = TESTE_FINALIZADO;
-[e = _estagio . `E848 20 ]
-"648
-[; ;main.c: 648:             }
-}
-"649
-[; ;main.c: 649:             break;
-[e $U 136  ]
-"651
-[; ;main.c: 651:             case TESTE_FINALIZADO:
+"636
+[; ;main.c: 636:                             if(comunicacao.resposta == 0x04)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 4 `i 250  ]
+"637
+[; ;main.c: 637:                                 sincronismo++;
+[e ++ _sincronismo -> -> 1 `i `uc ]
 [e :U 250 ]
-"652
-[; ;main.c: 652:             {
-{
+"638
+[; ;main.c: 638:                             if(comunicacao.resposta == 0x08)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 8 `i 251  ]
+"639
+[; ;main.c: 639:                                 pecaOK++;
+[e ++ _pecaOK -> -> 1 `i `uc ]
+[e :U 251 ]
+"640
+[; ;main.c: 640:                             if(comunicacao.resposta == 0x0F)
+[e $ ! == -> . . _comunicacao 1 1 `i -> 15 `i 252  ]
+"641
+[; ;main.c: 641:                                 sincronismo++;
+[e ++ _sincronismo -> -> 1 `i `uc ]
+[e :U 252 ]
+"642
+[; ;main.c: 642:                             if(comunicacao.resposta != 0x08)
+[e $ ! != -> . . _comunicacao 1 1 `i -> 8 `i 253  ]
+"643
+[; ;main.c: 643:                                 estado.falha = 1;
+[e = . _estado 8 -> -> 1 `i `uc ]
+[e :U 253 ]
+"644
+[; ;main.c: 644:                         }
+}
+[e $U 254  ]
+"645
+[; ;main.c: 645:                         else
+[e :U 247 ]
+"646
+[; ;main.c: 646:                             estado.falha = 1;
+[e = . _estado 8 -> -> 1 `i `uc ]
+[e :U 254 ]
+"647
+[; ;main.c: 647:                         estagio = VERIFICA_PLACAS;
+[e = _estagio . `E850 15 ]
+"648
+[; ;main.c: 648:                     }
+}
+[e :U 246 ]
+"649
+[; ;main.c: 649:                 }
+}
+[e :U 245 ]
+"650
+[; ;main.c: 650:             }
+}
+"651
+[; ;main.c: 651:             break;
+[e $U 136  ]
 "653
-[; ;main.c: 653:                 if(timer > 2000)
-[e $ ! > _timer -> -> 2000 `i `ui 251  ]
+[; ;main.c: 653:             case FALHA_FIM_CURSO:
+[e :U 255 ]
 "654
-[; ;main.c: 654:                 {
+[; ;main.c: 654:             {
 {
 "655
-[; ;main.c: 655:                     PORTAbits.RA0 = 0;
-[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 655:                 comunicacao.endereco = 0x0F;
+[e = . . _comunicacao 1 0 -> -> 15 `i `uc ]
 "656
-[; ;main.c: 656:                     comunicacao.endereco = 0x0B;
-[e = . . _comunicacao 1 0 -> -> 11 `i `uc ]
-"657
-[; ;main.c: 657:                     comunicacao.resposta = naoliga;
-[e = . . _comunicacao 1 1 _naoliga ]
-"658
-[; ;main.c: 658:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"659
-[; ;main.c: 659:                     comunicacao.endereco = 0x0C;
-[e = . . _comunicacao 1 0 -> -> 12 `i `uc ]
-"660
-[; ;main.c: 660:                     comunicacao.resposta = naodesliga;
-[e = . . _comunicacao 1 1 _naodesliga ]
-"661
-[; ;main.c: 661:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"662
-[; ;main.c: 662:                     comunicacao.endereco = 0x0D;
-[e = . . _comunicacao 1 0 -> -> 13 `i `uc ]
-"663
-[; ;main.c: 663:                     comunicacao.resposta = sincronismo;
-[e = . . _comunicacao 1 1 _sincronismo ]
-"664
-[; ;main.c: 664:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"665
-[; ;main.c: 665:                     comunicacao.endereco = 0x0E;
-[e = . . _comunicacao 1 0 -> -> 14 `i `uc ]
-"666
-[; ;main.c: 666:                     comunicacao.resposta = pecaOK;
-[e = . . _comunicacao 1 1 _pecaOK ]
-"667
-[; ;main.c: 667:                     USART_Write(comunicacao.byte);
-[e ( _USART_Write (1 . _comunicacao 0 ]
-"668
-[; ;main.c: 668:                     comunicacao.endereco = 0x00;
-[e = . . _comunicacao 1 0 -> -> 0 `i `uc ]
-"669
-[; ;main.c: 669:                     if(estado.chavecopo == 1)
-[e $ ! == -> . _estado 5 `i -> 1 `i 252  ]
-"670
-[; ;main.c: 670:                         comunicacao.resposta = 1;
-[e = . . _comunicacao 1 1 -> -> 1 `i `uc ]
-[e $U 253  ]
-"671
-[; ;main.c: 671:                     else
-[e :U 252 ]
-"672
-[; ;main.c: 672:                         comunicacao.resposta = 0;
+[; ;main.c: 656:                 comunicacao.resposta = 0x00;
 [e = . . _comunicacao 1 1 -> -> 0 `i `uc ]
-[e :U 253 ]
-"673
-[; ;main.c: 673:                     if(estado.chaveNF == 1)
-[e $ ! == -> . _estado 3 `i -> 1 `i 254  ]
-"674
-[; ;main.c: 674:                         comunicacao.resposta += 0x02;
-[e =+ . . _comunicacao 1 1 -> -> 2 `i `uc ]
-[e $U 255  ]
-"675
-[; ;main.c: 675:                     else
-[e :U 254 ]
-"676
-[; ;main.c: 676:                     {
-{
-"677
-[; ;main.c: 677:                         if(estado.chaveNA == 1)
-[e $ ! == -> . _estado 4 `i -> 1 `i 256  ]
-"678
-[; ;main.c: 678:                             comunicacao.resposta += 0x08;
-[e =+ . . _comunicacao 1 1 -> -> 8 `i `uc ]
-[e $U 257  ]
-"679
-[; ;main.c: 679:                         else
-[e :U 256 ]
-"680
-[; ;main.c: 680:                             comunicacao.resposta += 0x04;
-[e =+ . . _comunicacao 1 1 -> -> 4 `i `uc ]
-[e :U 257 ]
-"681
-[; ;main.c: 681:                     }
-}
-[e :U 255 ]
-"682
-[; ;main.c: 682:                     USART_Write(comunicacao.byte);
+"657
+[; ;main.c: 657:                 USART_Write(comunicacao.byte);
 [e ( _USART_Write (1 . _comunicacao 0 ]
-"683
-[; ;main.c: 683:                     estagio = TESTE_BOTOES;
-[e = _estagio . `E848 1 ]
+"658
+[; ;main.c: 658:                 pwm_setado = 0;
+[e = _pwm_setado -> -> 0 `i `ui ]
+"659
+[; ;main.c: 659:                 PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"660
+[; ;main.c: 660:                 PORTAbits.RA0 = 1;
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"661
+[; ;main.c: 661:                 timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"662
+[; ;main.c: 662:                 estagio = TESTE_FINALIZADO;
+[e = _estagio . `E850 20 ]
+"663
+[; ;main.c: 663:             }
+}
+"664
+[; ;main.c: 664:             break;
+[e $U 136  ]
+"666
+[; ;main.c: 666:             case FALHA:
+[e :U 256 ]
+"667
+[; ;main.c: 667:             {
+{
+"668
+[; ;main.c: 668:                 pwm_setado = 0;
+[e = _pwm_setado -> -> 0 `i `ui ]
+"669
+[; ;main.c: 669:                 PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"670
+[; ;main.c: 670:                 PORTAbits.RA0 = 1;
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"671
+[; ;main.c: 671:                 timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"672
+[; ;main.c: 672:                 estagio = TESTE_FINALIZADO;
+[e = _estagio . `E850 20 ]
+"673
+[; ;main.c: 673:             }
+}
+"674
+[; ;main.c: 674:             break;
+[e $U 136  ]
+"676
+[; ;main.c: 676:             case OK:
+[e :U 257 ]
+"677
+[; ;main.c: 677:             {
+{
+"678
+[; ;main.c: 678:                 pwm_setado = 0;
+[e = _pwm_setado -> -> 0 `i `ui ]
+"679
+[; ;main.c: 679:                 PORTAbits.RA3 = 1;
+[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
+"680
+[; ;main.c: 680:                 estagio = TESTE_FINALIZADO;
+[e = _estagio . `E850 20 ]
+"681
+[; ;main.c: 681:             }
+}
+"682
+[; ;main.c: 682:             break;
+[e $U 136  ]
 "684
-[; ;main.c: 684:                 }
-}
-[e :U 251 ]
-"685
-[; ;main.c: 685:                 PORTAbits.RA2 = 0;
-[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
-"686
-[; ;main.c: 686:                 PORTCbits.RC5 = 0;
-[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"687
-[; ;main.c: 687:                 PORTAbits.RA5 = 0;
-[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
-"688
-[; ;main.c: 688:                 estado.testando = 0;
-[e = . _estado 6 -> -> 0 `i `uc ]
-"689
-[; ;main.c: 689:             }
-}
-"690
-[; ;main.c: 690:             break;
-[e $U 136  ]
-"692
-[; ;main.c: 692:             default:
+[; ;main.c: 684:             case TESTE_FINALIZADO:
 [e :U 258 ]
+"685
+[; ;main.c: 685:             {
+{
+"686
+[; ;main.c: 686:                 if(timer > 2000)
+[e $ ! > _timer -> -> 2000 `i `ui 259  ]
+"687
+[; ;main.c: 687:                 {
+{
+"688
+[; ;main.c: 688:                     PORTAbits.RA0 = 0;
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"689
+[; ;main.c: 689:                     comunicacao.endereco = 0x0B;
+[e = . . _comunicacao 1 0 -> -> 11 `i `uc ]
+"690
+[; ;main.c: 690:                     comunicacao.resposta = naoliga;
+[e = . . _comunicacao 1 1 _naoliga ]
+"691
+[; ;main.c: 691:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"692
+[; ;main.c: 692:                     comunicacao.endereco = 0x0C;
+[e = . . _comunicacao 1 0 -> -> 12 `i `uc ]
 "693
-[; ;main.c: 693:             break;
-[e $U 136  ]
+[; ;main.c: 693:                     comunicacao.resposta = naodesliga;
+[e = . . _comunicacao 1 1 _naodesliga ]
 "694
-[; ;main.c: 694:         }
+[; ;main.c: 694:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"695
+[; ;main.c: 695:                     comunicacao.endereco = 0x0D;
+[e = . . _comunicacao 1 0 -> -> 13 `i `uc ]
+"696
+[; ;main.c: 696:                     comunicacao.resposta = sincronismo;
+[e = . . _comunicacao 1 1 _sincronismo ]
+"697
+[; ;main.c: 697:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"698
+[; ;main.c: 698:                     comunicacao.endereco = 0x0E;
+[e = . . _comunicacao 1 0 -> -> 14 `i `uc ]
+"699
+[; ;main.c: 699:                     comunicacao.resposta = pecaOK;
+[e = . . _comunicacao 1 1 _pecaOK ]
+"700
+[; ;main.c: 700:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"701
+[; ;main.c: 701:                     comunicacao.endereco = 0x00;
+[e = . . _comunicacao 1 0 -> -> 0 `i `uc ]
+"702
+[; ;main.c: 702:                     if(estado.chavecopo == 1)
+[e $ ! == -> . _estado 5 `i -> 1 `i 260  ]
+"703
+[; ;main.c: 703:                         comunicacao.resposta = 1;
+[e = . . _comunicacao 1 1 -> -> 1 `i `uc ]
+[e $U 261  ]
+"704
+[; ;main.c: 704:                     else
+[e :U 260 ]
+"705
+[; ;main.c: 705:                         comunicacao.resposta = 0;
+[e = . . _comunicacao 1 1 -> -> 0 `i `uc ]
+[e :U 261 ]
+"706
+[; ;main.c: 706:                     if(estado.chaveNF == 1)
+[e $ ! == -> . _estado 3 `i -> 1 `i 262  ]
+"707
+[; ;main.c: 707:                         comunicacao.resposta += 0x02;
+[e =+ . . _comunicacao 1 1 -> -> 2 `i `uc ]
+[e $U 263  ]
+"708
+[; ;main.c: 708:                     else
+[e :U 262 ]
+"709
+[; ;main.c: 709:                     {
+{
+"710
+[; ;main.c: 710:                         if(estado.chaveNA == 1)
+[e $ ! == -> . _estado 4 `i -> 1 `i 264  ]
+"711
+[; ;main.c: 711:                             comunicacao.resposta += 0x08;
+[e =+ . . _comunicacao 1 1 -> -> 8 `i `uc ]
+[e $U 265  ]
+"712
+[; ;main.c: 712:                         else
+[e :U 264 ]
+"713
+[; ;main.c: 713:                             comunicacao.resposta += 0x04;
+[e =+ . . _comunicacao 1 1 -> -> 4 `i `uc ]
+[e :U 265 ]
+"714
+[; ;main.c: 714:                     }
+}
+[e :U 263 ]
+"715
+[; ;main.c: 715:                     USART_Write(comunicacao.byte);
+[e ( _USART_Write (1 . _comunicacao 0 ]
+"716
+[; ;main.c: 716:                     timer = 0;
+[e = _timer -> -> 0 `i `ui ]
+"717
+[; ;main.c: 717:                     estagio = TESTE_BOTOES;
+[e = _estagio . `E850 1 ]
+"718
+[; ;main.c: 718:                 }
+}
+[e :U 259 ]
+"719
+[; ;main.c: 719:                 PORTAbits.RA2 = 0;
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
+"720
+[; ;main.c: 720:                 PORTCbits.RC5 = 0;
+[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+"721
+[; ;main.c: 721:                 PORTAbits.RA5 = 0;
+[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
+"722
+[; ;main.c: 722:                 estado.testando = 0;
+[e = . _estado 6 -> -> 0 `i `uc ]
+"723
+[; ;main.c: 723:             }
+}
+"724
+[; ;main.c: 724:             break;
+[e $U 136  ]
+"726
+[; ;main.c: 726:             default:
+[e :U 266 ]
+"727
+[; ;main.c: 727:             break;
+[e $U 136  ]
+"728
+[; ;main.c: 728:         }
 }
 [e $U 136  ]
 [e :U 137 ]
-[e [\ -> _estagio `ui , $ -> . `E848 0 `ui 138
- , $ -> . `E848 1 `ui 143
- , $ -> . `E848 2 `ui 146
- , $ -> . `E848 3 `ui 147
- , $ -> . `E848 4 `ui 151
- , $ -> . `E848 5 `ui 161
- , $ -> . `E848 6 `ui 169
- , $ -> . `E848 7 `ui 172
- , $ -> . `E848 8 `ui 176
- , $ -> . `E848 9 `ui 179
- , $ -> . `E848 10 `ui 197
- , $ -> . `E848 11 `ui 202
- , $ -> . `E848 12 `ui 208
- , $ -> . `E848 13 `ui 211
- , $ -> . `E848 14 `ui 229
- , $ -> . `E848 15 `ui 230
- , $ -> . `E848 16 `ui 235
- , $ -> . `E848 17 `ui 247
- , $ -> . `E848 18 `ui 248
- , $ -> . `E848 19 `ui 249
- , $ -> . `E848 20 `ui 250
- 258 ]
+[e [\ -> _estagio `ui , $ -> . `E850 0 `ui 138
+ , $ -> . `E850 1 `ui 143
+ , $ -> . `E850 2 `ui 152
+ , $ -> . `E850 3 `ui 153
+ , $ -> . `E850 4 `ui 157
+ , $ -> . `E850 5 `ui 167
+ , $ -> . `E850 6 `ui 175
+ , $ -> . `E850 7 `ui 178
+ , $ -> . `E850 8 `ui 182
+ , $ -> . `E850 9 `ui 185
+ , $ -> . `E850 10 `ui 203
+ , $ -> . `E850 11 `ui 208
+ , $ -> . `E850 12 `ui 214
+ , $ -> . `E850 13 `ui 217
+ , $ -> . `E850 14 `ui 235
+ , $ -> . `E850 15 `ui 236
+ , $ -> . `E850 16 `ui 241
+ , $ -> . `E850 17 `ui 255
+ , $ -> . `E850 18 `ui 256
+ , $ -> . `E850 19 `ui 257
+ , $ -> . `E850 20 `ui 258
+ 266 ]
 [e :U 136 ]
-"695
-[; ;main.c: 695:     }
+"729
+[; ;main.c: 729:     }
 }
 [e :U 93 ]
 [e $U 94  ]
 [e :U 95 ]
-"696
-[; ;main.c: 696: }
+"730
+[; ;main.c: 730: }
 [e :UE 92 ]
 }
