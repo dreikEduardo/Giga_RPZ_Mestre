@@ -227,6 +227,7 @@ void main(void)
                 pwm_setado = PWM_LAMPADA_DESLIGADA;
                 RELE_ALIMENTACAO_PLACA = 0;
                 RELE_VALVULA = 0;
+                RELE_SELECAO_TENSAO = 0;
                 if((estado.botao1 == 1) && (estado.botao2 == 1))
                     estagio = TESTE_BOTOES;
             }
@@ -266,6 +267,8 @@ void main(void)
                 LED_EM_TESTE = 1;
                 BUZZER = 0;
                 RELE_VALVULA = 1;
+                RELE_SELECAO_TENSAO = 1;
+                ciclos = 1;
                 estado.reteste = 0;
                 estado.falha = 0;
                 endereco = 0;
@@ -482,14 +485,22 @@ void main(void)
             {
                 if((timer > TEMPO_DESLIGA) || (escravo.byte == 0x03FF))
                 {
-                    if((timer > TEMPO_DESLIGADO) || (estado.reteste == 1))
+                    if(ciclos >= CICLOS_TESTE)
                     {
                         escravo.byte = 0;
                         endereco = 0;
-                        if(estado.reteste == 1)
-                            estagio = VERIFICA_PLACAS;
-                        else
+                        estagio = VERIFICA_PLACAS;
+                    }
+                    else
+                    {
+                        if(timer > TEMPO_DESLIGADO)
+                        {
+                            escravo.byte = 0;
+                            endereco = 0;
+                            timer = 0;
+                            comunicacao.resposta = 0;
                             estagio = RETESTE;
+                        }
                     }
                 }
                 else
@@ -570,6 +581,9 @@ void main(void)
             
             case RETESTE:
             {
+                ciclos++;
+                if(ciclos >= CICLOS_TESTE)
+                    RELE_SELECAO_TENSAO = 0;
                 estado.reteste = 1;
                 estagio = TESTE_LIGA;
                 comunicacao.endereco = 0x0F;

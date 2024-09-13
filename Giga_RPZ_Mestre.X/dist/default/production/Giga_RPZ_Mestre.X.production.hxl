@@ -9,12 +9,12 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 5h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
-  8h - E89h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
+  8h - EB1h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
   4000h - 4007h		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
   400Eh - 400Fh		(dist/default/production/Giga_RPZ_Mestre.X.production.hex)
  Unused ranges:
   6h - 7h
-  E8Ah - 3FFFh
+  EB2h - 3FFFh
   4008h - 400Dh
 
 ### Hex Memory Map ###
@@ -256,6 +256,9 @@
 00000E50 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E60 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000E70 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
+00000E80 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000E90 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000EA0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00000EB0 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00004000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- H1 H1

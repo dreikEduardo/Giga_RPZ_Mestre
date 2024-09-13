@@ -1,28 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"29 ./main.h
-[; ;./main.h: 29:     {
+"30 ./main.h
+[; ;./main.h: 30:     {
 [s S88 :4 `uc 1 :4 `uc 1 ]
 [n S88 . endereco resposta ]
-"26
-[; ;./main.h: 26: {
+"27
+[; ;./main.h: 27: {
 [u S87 `uc 1 `S88 1 ]
 [n S87 . byte . ]
-"38
-[; ;./main.h: 38:     {
+"39
+[; ;./main.h: 39:     {
 [s S90 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :6 `uc 1 ]
 [n S90 . endereco1 endereco2 endereco3 endereco4 endereco5 endereco6 endereco7 endereco8 endereco9 endereco10 . ]
-"35
-[; ;./main.h: 35: {
+"36
+[; ;./main.h: 36: {
 [u S89 `ui 1 `S90 1 ]
 [n S89 . byte . ]
-"55
-[; ;./main.h: 55: {
+"56
+[; ;./main.h: 56: {
 [s S91 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :7 `uc 1 ]
 [n S91 . botao1 botao2 fimcurso chaveNF chaveNA chavecopo testando reteste falha . ]
-"91
-[; ;./main.h: 91: } estagio = INTERROMPIDO;
-[c E852 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 .. ]
-[n E852 _estagio INTERROMPIDO TESTE_BOTOES INICIA_TESTE TESTE_TAMPA_FECHADA ALIMENTA_PLACA ESTABILIZACAO TESTE_LIGA AGUARDA_TEMPO_LIGA VERIFICA_PLACAS_LIGA MENSAGEM_RETORNO_PLACAS_LIGA TESTE_DESLIGA AGUARDA_TEMPO_DESLIGA VERIFICA_PLACAS_DESLIGA MENSAGEM_RETORNO_PLACAS_DESLIGA RETESTE VERIFICA_PLACAS MENSAGEM_RETORNO_PLACAS FALHA_FIM_CURSO FALHA OK TESTE_FINALIZADO  ]
+"92
+[; ;./main.h: 92: } estagio = INTERROMPIDO;
+[c E853 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 .. ]
+[n E853 _estagio INTERROMPIDO TESTE_BOTOES INICIA_TESTE TESTE_TAMPA_FECHADA ALIMENTA_PLACA ESTABILIZACAO TESTE_LIGA AGUARDA_TEMPO_LIGA VERIFICA_PLACAS_LIGA MENSAGEM_RETORNO_PLACAS_LIGA TESTE_DESLIGA AGUARDA_TEMPO_DESLIGA VERIFICA_PLACAS_DESLIGA MENSAGEM_RETORNO_PLACAS_DESLIGA RETESTE VERIFICA_PLACAS MENSAGEM_RETORNO_PLACAS FALHA_FIM_CURSO FALHA OK TESTE_FINALIZADO  ]
 "1156 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
 [; ;/Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h: 1156: extern volatile unsigned char OPTION_REG __attribute__((address(0x081)));
 [v _OPTION_REG `Vuc ~T0 @X0 0 e@129 ]
@@ -320,20 +320,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _addressFail
 -> -> 0 `i `uc
 ]
-"33
-[; ;./main.h: 33: }comunicacao;
+"25
+[; ;./main.h: 25: unsigned char ciclos = 0;
+[v _ciclos `uc ~T0 @X0 1 e ]
+[i _ciclos
+-> -> 0 `i `uc
+]
+"34
+[; ;./main.h: 34: }comunicacao;
 [v _comunicacao `S87 ~T0 @X0 1 e ]
-"51
-[; ;./main.h: 51: }escravo;
+"52
+[; ;./main.h: 52: }escravo;
 [v _escravo `S89 ~T0 @X0 1 e ]
-"66
-[; ;./main.h: 66: }estado;
+"67
+[; ;./main.h: 67: }estado;
 [v _estado `S91 ~T0 @X0 1 e ]
-"91
-[; ;./main.h: 91: } estagio = INTERROMPIDO;
-[v _estagio `E852 ~T0 @X0 1 s ]
+"92
+[; ;./main.h: 92: } estagio = INTERROMPIDO;
+[v _estagio `E853 ~T0 @X0 1 s ]
 [i _estagio
-. `E852 0
+. `E853 0
 ]
 "5 tmr0.c
 [; ;tmr0.c: 5: void TMR0_Initialize(void)

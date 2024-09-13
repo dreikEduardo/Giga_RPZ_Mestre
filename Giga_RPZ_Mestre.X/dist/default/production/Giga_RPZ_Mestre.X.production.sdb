@@ -3,8 +3,8 @@
 [d edition pro ]
 [d chip 16F876A ]
 [d frameptr 0 ]
-"91 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.h
-[e E850 _estagio `uc
+"92 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.h
+[e E851 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -27,7 +27,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E850 _estagio `uc
+[e E851 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -50,7 +50,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E852 _estagio `uc
+[e E853 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -73,7 +73,7 @@ FALHA 18
 OK 19
 TESTE_FINALIZADO 20
 ]
-[e E857 _estagio `uc
+[e E858 _estagio `uc
 INTERROMPIDO 0
 TESTE_BOTOES 1
 INICIA_TESTE 2
@@ -168,10 +168,12 @@ TESTE_FINALIZADO 20
 [v _countFailRx countFailRx `uc  1 e 1 0 ]
 "24
 [v _addressFail addressFail `uc  1 e 1 0 ]
+"25
+[v _ciclos ciclos `uc  1 e 1 0 ]
 [s S133 . 1 `uc 1 endereco 1 0 :4:0 
 `uc 1 resposta 1 0 :4:4 
 ]
-"33
+"34
 [u S136 . 1 `uc 1 byte 1 0 `S133 1 . 1 0 ]
 [v _comunicacao comunicacao `S136  1 e 1 0 ]
 [s S139 . 2 `uc 1 endereco1 1 0 :1:0 
@@ -186,7 +188,7 @@ TESTE_FINALIZADO 20
 `uc 1 endereco10 1 1 :1:1 
 `uc 1 . 1 1 :6:2 
 ]
-"51
+"52
 [u S151 . 2 `ui 1 byte 2 0 `S139 1 . 2 0 ]
 [v _escravo escravo `S151  1 e 2 0 ]
 [s S154 . 2 `uc 1 botao1 1 0 :1:0 
@@ -200,10 +202,10 @@ TESTE_FINALIZADO 20
 `uc 1 falha 1 1 :1:0 
 `uc 1 . 1 1 :7:1 
 ]
-"66
+"67
 [v _estado estado `S154  1 e 2 0 ]
-"91
-[v _estagio estagio `E850  1 s 1 estagio ]
+"92
+[v _estagio estagio `E851  1 s 1 estagio ]
 "60 /Applications/microchip/mplabx/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8/pic/include/proc/pic16f876a.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "167
@@ -282,7 +284,7 @@ TESTE_FINALIZADO 20
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
 "865
 [v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
-[s S630 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S633 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -292,18 +294,18 @@ TESTE_FINALIZADO 20
 `uc 1 SPEN 1 0 :1:7 
 ]
 "895
-[s S639 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S642 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S643 . 1 `uc 1 . 1 0 :6:0 
+[s S646 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S646 . 1 `uc 1 . 1 0 :6:0 
+[s S649 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S649 . 1 `S630 1 . 1 0 `S639 1 . 1 0 `S643 1 . 1 0 `S646 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES649  1 e 1 @24 ]
+[u S652 . 1 `S633 1 . 1 0 `S642 1 . 1 0 `S646 1 . 1 0 `S649 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES652  1 e 1 @24 ]
 "960
 [v _TXREG TXREG `VEuc  1 e 1 @25 ]
 "967
@@ -342,7 +344,7 @@ TESTE_FINALIZADO 20
 "17 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"730
+"744
 } 0
 "51 /Users/dreik/MPLABXProjects/Giga_RPZ_Mestre/Giga_RPZ_Mestre.X/usart.c
 [v _USART_Write USART_Write `(v  1 e 1 0 ]

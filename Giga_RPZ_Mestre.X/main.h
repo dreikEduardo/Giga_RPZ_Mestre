@@ -22,6 +22,7 @@ unsigned char sincronismo = 0;
 unsigned char pecaOK = 0;
 unsigned char countFailRx = 0;
 unsigned char addressFail = 0;
+unsigned char ciclos = 0;
 union
 {
     unsigned char byte;
@@ -92,6 +93,7 @@ static enum _estagio
 
 // Declaração das constantes
 #define ENDERECO 0
+#define CICLOS_TESTE 4
 #define TEMPO_TIMEOUT_RX 80         //80ms -> base de tempo 1ms
 #define TEMPO_DEBOUNCE 100          //100ms -> base de tempo 1ms
 #define TEMPO_FECHA_TAMPA 5000      //5s -> base de tempo 1ms

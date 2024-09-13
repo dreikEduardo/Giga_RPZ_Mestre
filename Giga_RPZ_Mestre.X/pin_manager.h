@@ -23,6 +23,7 @@ void PinManager_Initialize(void);
 #define LED_TESTE_NF PORTCbits.RC0
 #define LED_TESTE_NA PORTCbits.RC1
 #define LAMPADA PORTCbits.RC2
+#define RELE_SELECAO_TENSAO PORTCbits.RC4
 #define RELE_ALIMENTACAO_PLACA PORTCbits.RC5
 #define RELE_VALVULA PORTAbits.RA5
 #define BUZZER PORTAbits.RA0

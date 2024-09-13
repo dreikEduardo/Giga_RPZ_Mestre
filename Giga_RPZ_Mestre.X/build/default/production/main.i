@@ -1728,6 +1728,7 @@ unsigned char sincronismo = 0;
 unsigned char pecaOK = 0;
 unsigned char countFailRx = 0;
 unsigned char addressFail = 0;
+unsigned char ciclos = 0;
 union
 {
     unsigned char byte;
@@ -2062,6 +2063,7 @@ void main(void)
                 pwm_setado = 0;
                 PORTCbits.RC5 = 0;
                 PORTAbits.RA5 = 0;
+                PORTCbits.RC4 = 0;
                 if((estado.botao1 == 1) && (estado.botao2 == 1))
                     estagio = TESTE_BOTOES;
             }
@@ -2101,6 +2103,8 @@ void main(void)
                 PORTAbits.RA2 = 1;
                 PORTAbits.RA0 = 0;
                 PORTAbits.RA5 = 1;
+                PORTCbits.RC4 = 1;
+                ciclos = 1;
                 estado.reteste = 0;
                 estado.falha = 0;
                 endereco = 0;
@@ -2317,14 +2321,22 @@ void main(void)
             {
                 if((timer > 10000) || (escravo.byte == 0x03FF))
                 {
-                    if((timer > 8000) || (estado.reteste == 1))
+                    if(ciclos >= 4)
                     {
                         escravo.byte = 0;
                         endereco = 0;
-                        if(estado.reteste == 1)
-                            estagio = VERIFICA_PLACAS;
-                        else
+                        estagio = VERIFICA_PLACAS;
+                    }
+                    else
+                    {
+                        if(timer > 8000)
+                        {
+                            escravo.byte = 0;
+                            endereco = 0;
+                            timer = 0;
+                            comunicacao.resposta = 0;
                             estagio = RETESTE;
+                        }
                     }
                 }
                 else
@@ -2405,6 +2417,9 @@ void main(void)
 
             case RETESTE:
             {
+                ciclos++;
+                if(ciclos >= 4)
+                    PORTCbits.RC4 = 0;
                 estado.reteste = 1;
                 estagio = TESTE_LIGA;
                 comunicacao.endereco = 0x0F;

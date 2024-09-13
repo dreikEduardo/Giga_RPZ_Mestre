@@ -1726,6 +1726,7 @@ unsigned char sincronismo = 0;
 unsigned char pecaOK = 0;
 unsigned char countFailRx = 0;
 unsigned char addressFail = 0;
+unsigned char ciclos = 0;
 union
 {
     unsigned char byte;
@@ -1806,7 +1807,7 @@ void PinManager_Initialize(void)
 
     TRISA = 0b11010000;
     TRISB = 0b11111111;
-    TRISC = 0b10010000;
+    TRISC = 0b10000000;
 
     ADCON1 = 0b00000110;
 
